@@ -1,0 +1,26 @@
+Introduzione
+GraphQL è un linguaggio di query per API che consente richieste flessibili da parte dei client. Tuttavia, la sua natura dinamica introduce rischi specifici, come esposizione di dati eccessivi, DoS o injection, che richiedono controlli dedicati.
+
+Cause tipiche di problemi
+
+    Permessi inadeguati sul livello di query, consentendo accesso non autorizzato a dati sensibili.
+
+    Query complesse o malformate che possono causare rallentamenti o denial of service.
+
+    Mancata validazione delle query, esponendo l’applicazione a injection o altre manipolazioni.
+
+    Assenza di rate limiting e monitoraggio delle richieste.
+
+Soluzioni e prevenzione
+
+    Implementare un controllo rigoroso delle autorizzazioni per ogni tipo di query e campo.
+
+    Limitare la complessità delle query e la profondità delle richieste.
+
+    Validare e sanitizzare le query per prevenire injection.
+
+    Applicare meccanismi di rate limiting per evitare abusi e denial of service.
+
+    Loggare e monitorare l’utilizzo per individuare anomalie o attacchi.
+
+    Utilizzare schema stitching e altri metodi per isolare e proteggere risorse sensibili.

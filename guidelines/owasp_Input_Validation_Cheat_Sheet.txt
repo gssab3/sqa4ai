@@ -1,0 +1,24 @@
+Introduzione
+La validazione dell’input è il processo fondamentale per garantire che i dati forniti dagli utenti siano corretti, completi e sicuri prima di essere elaborati dal sistema. Una valida strategia di validazione aiuta a prevenire numerosi tipi di vulnerabilità, inclusi injection, XSS e problemi di logica applicativa.
+
+Cause tipiche di problemi
+
+    Mancata o insufficiente verifica dei dati in ingresso.
+
+    Validazione solo lato client, facilmente aggirabile.
+
+    Assunzione errata sui formati o sui limiti dei dati.
+
+    Permettere dati con caratteri pericolosi o input non attesi.
+
+Soluzioni e prevenzione
+
+    Implementare validazione lato server come principale linea di difesa.
+
+    Usare whitelist per definire esattamente cosa è accettabile (es. formato, lunghezza, tipo).
+
+    Evitare blacklist, che sono spesso incomplete.
+
+    Validare e sanificare ogni dato proveniente da fonti esterne, incluse API e file.
+
+    Gestire in modo robusto gli errori di validazione, evitando leak di informazioni.

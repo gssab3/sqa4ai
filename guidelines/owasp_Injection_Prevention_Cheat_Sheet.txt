@@ -1,0 +1,24 @@
+Introduzione
+Le vulnerabilità di injection si verificano quando dati non affidabili vengono interpretati come codice o comandi, permettendo a un attaccante di manipolare l’esecuzione del sistema. Questo tipo di vulnerabilità è tra le più comuni e critiche in applicazioni web e software.
+
+Cause tipiche di problemi
+
+    Mancata o insufficiente validazione e sanitizzazione dei dati di input.
+
+    Uso diretto di input utente in query SQL, comandi di sistema, o linguaggi di scripting senza protezioni.
+
+    Costruzione dinamica di comandi o query senza meccanismi di escaping o parametri.
+
+    Assenza di controlli di accesso su operazioni critiche.
+
+Soluzioni e prevenzione
+
+    Utilizzare query parametrizzate o prepared statements per tutte le interazioni con il database.
+
+    Validare e sanificare rigorosamente tutti i dati in ingresso, preferibilmente con whitelist.
+
+    Evitare la concatenazione dinamica di comandi o query con input non controllato.
+
+    Applicare il principio del minimo privilegio per gli account di accesso a database e sistemi.
+
+    Effettuare un’analisi di sicurezza durante lo sviluppo e utilizzare strumenti di scanning per rilevare possibili injection.

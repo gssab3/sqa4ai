@@ -1,0 +1,24 @@
+Introduzione
+Infrastructure as Code (IaC) è una pratica che consente di definire e gestire l’infrastruttura IT tramite file di configurazione automatizzati. Questa metodologia migliora l’efficienza e la ripetibilità, ma introduce anche rischi di sicurezza se non gestita correttamente, poiché errori o configurazioni insicure possono propagarsi rapidamente nell’ambiente.
+
+Cause tipiche di problemi
+
+    Codice IaC mal configurato o non revisionato che espone risorse sensibili, come server o database, a accessi non autorizzati.
+
+    Utilizzo di credenziali hardcoded o mancata gestione sicura delle chiavi e segreti all’interno dei file di configurazione.
+
+    Mancanza di controllo sulle modifiche, assenza di audit e testing delle configurazioni prima del deployment.
+
+    Dipendenza da moduli o componenti non sicuri o obsoleti.
+
+Soluzioni e prevenzione
+
+    Applicare best practice di gestione del codice, inclusi versionamento, revisione e testing automatico (ad esempio tramite pipeline CI/CD).
+
+    Implementare strumenti di scanning statico per rilevare vulnerabilità o configurazioni errate nei file IaC.
+
+    Separare i segreti e gestirli tramite vault sicuri o sistemi di gestione dedicati, evitando di inserirli direttamente nel codice.
+
+    Limitare i privilegi e adottare il principio del minimo privilegio per le risorse definite nel codice.
+
+    Educare il team di sviluppo e operazioni sull’importanza della sicurezza nell’IaC e mantenere aggiornate le policy di sicurezza.

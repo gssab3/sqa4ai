@@ -1,0 +1,29 @@
+Introduzione
+La Content Security Policy (CSP) è uno standard W3C che consente di specificare da quali origini (script, immagini, stili, ecc.) il browser è autorizzato a caricare risorse. Funziona come una difesa a più livelli, utile per contrastare principalmente attacchi XSS e clickjacking, riducendo l’impatto di codice non affidabile. CSP può anche aiutare a garantire che le risorse siano caricate tramite HTTPS e a fornire visibilità su violazioni tramite sistemi di reporting.
+OWASP Cheat Sheet Series
+MDN Web Docs
+
+Problemi / Cause
+
+    Iniezione di script malevoli (XSS) eseguiti nonostante altre misure preventive.
+
+    Clickjacking o specifiche tecniche lato client bypassate per mancanza di controllo dell’iframe.
+
+    Rischio elevato dal caricamento di risorse da origini non affidate.
+
+    Absence di una policy centralizzata; il sito diventa vulnerabile a risorse compromesse o malintenzionate.
+
+Cosa Fare / Come Prevenire
+
+    Definire e inviare tramite header HTTP una Content-Security-Policy valida per tutte le risposte, non solo la pagina iniziale.
+
+    Usare direttive chiare come script-src, object-src, img-src, frame-ancestors per limitare le risorse caricate e prevenire framing (sostituendo X-Frame-Options).
+    OWASP Cheat Sheet Series
+    jcarpizo.github.io
+    MDN Web Docs
+
+    Adottare una modalità “report-only” iniziale (CSP-Report-Only) per monitorare le violazioni senza bloccare il sito in produzione.
+
+    Applicare nonce o hash per migliorare la sicurezza nel caricamento di script dinamici.
+
+    Integrare CSP come layer aggiuntivo, non unico: continuare a seguire le best practice per prevenire XSS (es. input validation corretta).

@@ -1,0 +1,22 @@
+Introduzione
+Gli abuse case descrivono scenari in cui un sistema può essere usato in modo improprio o malevolo, andando oltre i normali casi d’uso. Spesso nei requisiti di sicurezza si trovano frasi vaghe come “Il sistema deve essere sicuro”, ma senza definire precisamente quali abusi si vogliono prevenire. Identificare gli abuse case permette di specificare rischi concreti e requisiti mirati per contrastare azioni dannose, migliorando la sicurezza complessiva.
+
+Cause comuni del problema
+
+    Mancanza di analisi dettagliata delle modalità di attacco o uso improprio del sistema.
+
+    Requisiti di sicurezza troppo generici e non misurabili.
+
+    Assenza di scenari che rappresentino intenzioni malevole o comportamenti anomali degli utenti o attaccanti.
+
+    Non considerare le possibili deviazioni dai comportamenti attesi durante la progettazione.
+
+Soluzioni e prevenzione
+
+    Definire abuse case specifici, cioè descrizioni dettagliate di possibili usi impropri del sistema.
+
+    Integrare abuse case all’interno del processo di raccolta requisiti per tradurre rischi concreti in requisiti precisi e verificabili.
+
+    Utilizzare gli abuse case come base per progettare controlli di sicurezza mirati, test e validazioni.
+
+    Mantenere aggiornati gli abuse case durante lo sviluppo, man mano che emergono nuove minacce o scenari.

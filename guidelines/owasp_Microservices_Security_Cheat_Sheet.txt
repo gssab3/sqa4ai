@@ -1,0 +1,30 @@
+Introduzione
+Questo cheat sheet si concentra sugli aspetti pratici della sicurezza nei microservizi, coprendo problematiche comuni, vulnerabilità e le migliori strategie per proteggerli durante tutto il ciclo di vita.
+
+Cause e rischi tipici
+
+    Errori di configurazione e gestione delle credenziali.
+
+    Insufficiente isolamento tra microservizi, permettendo escalation di privilegi.
+
+    Vulnerabilità legate all’autenticazione e gestione dei token.
+
+    Mancanza di validazione e sanitizzazione degli input tra servizi.
+
+    Problemi nella gestione della resilienza e protezione da denial-of-service.
+
+Soluzioni e prevenzione
+
+    Applicare una politica di sicurezza “zero trust” per ogni comunicazione e accesso.
+
+    Isolare microservizi con container e configurare firewall a livello di servizio.
+
+    Gestire le credenziali e segreti con strumenti dedicati (es. Vault).
+
+    Validare rigorosamente tutti i dati in ingresso e adottare misure contro injection e XSS.
+
+    Impostare limiti di rate e meccanismi di fallback per resistere a DoS.
+
+    Eseguire test di sicurezza regolari, inclusi penetration test specifici per microservizi.
+
+    Automatizzare la sicurezza nel processo CI/CD per garantire policy costanti.

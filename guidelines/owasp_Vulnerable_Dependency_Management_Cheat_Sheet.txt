@@ -1,0 +1,24 @@
+Introduzione
+La gestione delle dipendenze vulnerabili riguarda l’identificazione, l’aggiornamento e il controllo delle librerie e componenti terzi utilizzati in un’applicazione, per evitare l’introduzione di vulnerabilità note tramite software esterno.
+
+Cosa fare / Cause di rischio
+
+    Utilizzo di librerie obsolete o non aggiornate contenenti vulnerabilità conosciute.
+
+    Dipendenze transitivamente vulnerabili non monitorate.
+
+    Mancanza di processi automatizzati per il controllo delle versioni e aggiornamenti.
+
+    Incorporazione di componenti non affidabili o non verificati.
+
+Soluzioni e prevenzione
+
+    Adottare strumenti automatizzati per il monitoraggio delle dipendenze e per la scansione delle vulnerabilità (es. SCA - Software Composition Analysis).
+
+    Mantenere aggiornate tutte le librerie e framework con le ultime patch di sicurezza.
+
+    Valutare e approvare ogni dipendenza prima dell’uso in produzione.
+
+    Minimizzare il numero di dipendenze esterne per ridurre la superficie d’attacco.
+
+    Stabilire politiche di gestione del ciclo di vita delle dipendenze.

@@ -1,0 +1,24 @@
+Introduzione
+Questo cheat sheet fornisce linee guida per la protezione dei dati sensibili memorizzati da un’applicazione tramite crittografia. L’obiettivo è garantire la riservatezza, l’integrità e, in alcuni casi, l’autenticità dei dati, riducendo il rischio in caso di compromissione fisica o logica dell’archiviazione.
+
+Problemi / Cause Tipiche
+
+    Uso di algoritmi crittografici obsoleti o insicuri (es. MD5, SHA-1, DES).
+
+    Gestione inadeguata delle chiavi (chiavi hardcodate, mancata rotazione, archiviazione non sicura).
+
+    Assenza di protezione per dati sensibili “a riposo” (es. PII, password, segreti di API).
+
+    Implementazioni crittografiche custom, non verificate.
+
+Cosa fare / Come prevenire
+
+    Utilizzare algoritmi moderni e robusti (es. AES-256 per cifratura simmetrica, RSA o ECC per asimmetrica, SHA-256 o superiore per hashing).
+
+    Adottare funzioni di hashing con salt e stretching per password (es. Argon2, bcrypt, PBKDF2).
+
+    Proteggere le chiavi di cifratura tramite HSM o vault sicuri, con rotazione periodica.
+
+    Cifrare sempre i dati sensibili a riposo e in transito.
+
+    Seguire le librerie e API crittografiche consolidate e sicure, evitando implementazioni personalizzate.

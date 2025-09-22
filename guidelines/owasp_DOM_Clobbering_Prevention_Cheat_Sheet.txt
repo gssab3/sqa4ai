@@ -1,0 +1,26 @@
+Introduzione
+Il DOM Clobbering è un attacco in cui un aggressore sfrutta la sovrascrittura di proprietà o metodi del DOM, tipicamente tramite elementi HTML con nomi o ID che sovrascrivono variabili JavaScript o funzioni critiche, causando comportamenti imprevisti o vulnerabilità XSS. È un problema spesso sottovalutato ma che può compromettere la sicurezza delle applicazioni web manipolando il modello DOM a livello di scripting.
+
+Cause tipiche
+
+    Uso di elementi HTML con nomi, ID o attributi che collidono con variabili o funzioni JavaScript.
+
+    Assunzione errata che nomi di variabili globali non vengano sovrascritti da elementi DOM.
+
+    Mancanza di isolamento o di scope sicuri per il codice JavaScript nel frontend.
+
+    Accesso diretto a proprietà globali senza controlli o namespace.
+
+Soluzioni e prevenzione
+
+    Evitare di utilizzare nomi, ID o attributi che possono entrare in conflitto con variabili o metodi JavaScript globali.
+
+    Usare nomi univoci e pattern di naming per gli elementi DOM.
+
+    Incapsulare il codice JavaScript in moduli o namespace per evitare conflitti globali.
+
+    Validare e filtrare gli input che possono controllare attributi o nomi degli elementi DOM.
+
+    Implementare pratiche di sviluppo sicure per la manipolazione del DOM, evitando assunzioni sul contesto globale.
+
+    Testare l’applicazione per rilevare possibili sovrascritture di proprietà DOM.

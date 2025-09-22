@@ -1,0 +1,26 @@
+Introduzione
+La gestione delle chiavi crittografiche è un elemento cruciale per la sicurezza di sistemi crittografici. Questo cheat sheet fornisce linee guida su come generare, archiviare, distribuire, ruotare e revocare chiavi in modo sicuro, minimizzando rischi di compromissione.
+
+Cause tipiche di problemi
+
+    Conservazione non sicura delle chiavi (ad esempio hardcoding o archiviazione in chiaro).
+
+    Mancanza di rotazione periodica delle chiavi crittografiche.
+
+    Distribuzione insicura delle chiavi agli endpoint.
+
+    Assenza di controllo e auditing sull’uso delle chiavi.
+
+Soluzioni e prevenzione
+
+    Usare moduli hardware sicuri (HSM) o sistemi dedicati per archiviazione chiavi.
+
+    Implementare politiche di rotazione regolare delle chiavi e gestione del ciclo di vita.
+
+    Utilizzare protocolli sicuri per la distribuzione delle chiavi (es. TLS).
+
+    Mantenere un controllo rigoroso sugli accessi e log delle operazioni con chiavi.
+
+    Separare ruoli e responsabilità per la gestione delle chiavi (principio di separazione dei compiti).
+
+    Automatizzare la gestione delle chiavi ove possibile per ridurre errori umani.

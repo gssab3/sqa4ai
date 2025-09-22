@@ -1,0 +1,22 @@
+Introduzione
+La sicurezza delle CSS si occupa di prevenire attacchi legati all’uso malevolo o improprio degli stili, come la manipolazione visiva, la fuga di informazioni o tecniche per aggirare controlli di sicurezza lato client.
+
+Cause
+
+    Uso di CSS non filtrati o iniettati da fonti non attendibili.
+
+    Manipolazioni di stile che possono nascondere contenuti o elementi critici.
+
+    Possibilità di sfruttare tecniche CSS per esfiltrare dati o tracciare utenti.
+
+Soluzioni e prevenzione
+
+    Validare e sanificare input che possono influenzare CSS.
+
+    Limitare e controllare le fonti da cui si caricano gli stili (Content Security Policy).
+
+    Evitare l’uso di stili inline con dati dinamici non verificati.
+
+    Monitorare e limitare l’uso di tecniche CSS potenzialmente abusive come le animazioni o gli pseudo-elementi.
+
+    Integrare la sicurezza CSS nel processo di sviluppo frontend per ridurre rischi visivi e di manipolazione.

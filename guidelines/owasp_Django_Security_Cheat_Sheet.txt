@@ -1,0 +1,30 @@
+Introduzione
+Questo cheat sheet raccoglie le raccomandazioni principali per proteggere applicazioni web sviluppate con Django. Copre diversi aspetti della sicurezza, dall’autenticazione alla gestione delle sessioni, dalla protezione contro vulnerabilità comuni fino alla configurazione sicura del framework stesso.
+
+Problemi / Cause Tipiche
+
+    Configurazioni di sicurezza mancanti o non attivate di default (es. CSRF, X-Frame-Options).
+
+    Gestione non sicura di cookie, sessioni e dati sensibili.
+
+    Utilizzo di versioni non aggiornate di Django o librerie vulnerabili.
+
+    Esposizione di informazioni di debug e stack trace in ambiente di produzione.
+
+    Mancata protezione contro attacchi comuni come XSS, CSRF, SQL Injection.
+
+Cosa fare / Come prevenire
+
+    Attivare e configurare protezioni built-in di Django: CSRF middleware, X-Content-Type-Options, X-Frame-Options, HSTS.
+
+    Usare cookie sicuri e HttpOnly per sessioni e autenticazione.
+
+    Aggiornare regolarmente Django e tutte le dipendenze per correggere vulnerabilità note.
+
+    Disabilitare la modalità debug in produzione per evitare esposizione di informazioni sensibili.
+
+    Validare e sanificare l’input utente, utilizzare l’ORM Django per query sicure.
+
+    Applicare politiche di gestione password robuste, inclusa la limitazione dei tentativi di login.
+
+    Implementare logging e monitoraggio degli accessi e degli errori.

@@ -1,0 +1,26 @@
+Introduzione
+Questo cheat sheet offre indicazioni per proteggere applicazioni sviluppate con il framework Ruby on Rails, affrontando le vulnerabilità più comuni legate a questa piattaforma. L’obiettivo è aiutare sviluppatori a costruire applicazioni sicure e resilienti contro attacchi noti.
+
+Cause
+
+    Utilizzo di versioni obsolete o non aggiornate del framework e delle librerie.
+
+    Configurazioni di sicurezza non ottimali, come sessioni o gestione dei cookie insicure.
+
+    Mancata o errata protezione contro Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), SQL Injection.
+
+    Esposizione accidentale di dati sensibili tramite errori o log.
+
+Soluzioni e prevenzione
+
+    Mantenere aggiornate le versioni di Ruby on Rails e gemme utilizzate.
+
+    Abilitare protezioni integrate come CSRF tokens e Strong Parameters per la validazione input.
+
+    Usare tecniche di escaping e sanitizzazione per prevenire XSS.
+
+    Implementare controlli rigorosi di autenticazione e autorizzazione.
+
+    Configurare correttamente sessioni e cookie (HttpOnly, Secure, SameSite).
+
+    Gestire in modo appropriato logging e gestione degli errori per non rivelare informazioni sensibili.

@@ -1,0 +1,24 @@
+Introduzione
+L’integrazione di script JavaScript di terze parti è comune nelle applicazioni web, ma introduce rischi significativi di sicurezza, come l’iniezione di codice malevolo, perdita di dati e compromissione della privacy.
+
+Cause
+
+    Inclusione di librerie o script non verificati o compromessi.
+
+    Mancata segregazione tra codice di terze parti e codice interno.
+
+    Permessi eccessivi concessi agli script esterni.
+
+Soluzioni e prevenzione
+
+    Valutare e selezionare solo script affidabili e mantenuti attivamente.
+
+    Utilizzare Content Security Policy (CSP) per limitare le fonti di script consentite.
+
+    Caricare script da CDN sicure e con integrazione Subresource Integrity (SRI).
+
+    Isolare script di terze parti in iframe o sandbox per limitare l’impatto.
+
+    Monitorare regolarmente la sicurezza delle librerie utilizzate.
+
+    Evitare l’uso di eval() o altre funzioni pericolose che eseguono codice dinamico.

@@ -1,0 +1,20 @@
+Introduzione
+Il clickjacking è una tecnica malevola in cui un utente viene indotto a cliccare su elementi di una pagina web mascherati o sovrapposti, eseguendo azioni non intenzionali (ad esempio l’invio di un modulo o l’attivazione di comandi sensibili). Il documento OWASP fornisce indicazioni pratiche per proteggere le applicazioni web da questo attacco, con particolare attenzione alla prevenzione lato server e client.
+
+Principali rischi
+
+    Furto di informazioni sensibili (es. dati personali, credenziali).
+
+    Esecuzione di operazioni non autorizzate su applicazioni legittime.
+
+    Possibile compromissione di account e manipolazione di transazioni.
+
+Strategie di prevenzione
+
+    Utilizzo delle intestazioni HTTP X-Frame-Options o Content-Security-Policy (frame-ancestors) per impedire che le pagine vengano caricate all’interno di iframe non autorizzati.
+
+    Implementazione di controlli lato server per verificare il referrer o l’origine della richiesta.
+
+    Evitare l’uso di contenuti caricabili in contesti non sicuri e ridurre al minimo gli elementi incorporabili da terze parti.
+
+    Per applicazioni che devono essere visualizzate in iframe fidati, configurare regole di whitelisting specifiche.

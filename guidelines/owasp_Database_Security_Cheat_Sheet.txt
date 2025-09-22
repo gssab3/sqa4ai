@@ -1,0 +1,30 @@
+Introduzione
+Questo cheat sheet illustra le pratiche di sicurezza per la protezione di database e dati memorizzati, prevenendo accessi non autorizzati, perdita o compromissione dei dati. Copre sia aspetti di configurazione che di gestione operativa.
+
+Problemi / Cause Tipiche
+
+    Credenziali deboli o condivise tra più servizi.
+
+    Mancanza di cifratura per dati a riposo o in transito.
+
+    Configurazioni predefinite non sicure (porte esposte, utenti di default, permessi eccessivi).
+
+    Assenza di monitoraggio e logging delle attività.
+
+    Query vulnerabili a SQL Injection.
+
+Cosa fare / Come prevenire
+
+    Utilizzare autenticazione forte e gestione sicura delle credenziali.
+
+    Abilitare la cifratura a riposo (TDE, cifratura colonne) e TLS per connessioni client-server.
+
+    Limitare i privilegi seguendo il principio del minimo privilegio.
+
+    Disattivare o rimuovere account e servizi non necessari.
+
+    Implementare controlli contro SQL Injection (prepared statements, query parametrizzate).
+
+    Abilitare logging e audit per monitorare accessi e modifiche.
+
+    Tenere il DBMS aggiornato e applicare tempestivamente patch di sicurezza.

@@ -1,0 +1,24 @@
+Introduzione
+Il furto di cookie di sessione può permettere a un attaccante di impersonare la sessione di un utente, anche se l’autenticazione originaria è robusta (es. MFA). Questo Cheat Sheet fornisce strategie per rilevare e mitigare tali furti, aumentando la sicurezza delle sessioni utente.
+OWASP Cheat Sheet Series
+
+Problemi / Cause
+
+    I cookie possono essere utilizzati da macchine o contesti diversi rispetto a quelli originali; ciò indica un possibile furto.
+
+    I controlli basati su attributi anch’essi usati dinamicamente (IP, User-Agent, orario, lingua) possono generare falsi positivi o negativi se interpretati rigidamente.
+    OWASP Cheat Sheet Series
+
+Cosa Fare / Come Prevenire
+
+    Memorizzare al momento della creazione della sessione informazioni contestuali (IP, User-Agent, lingua, data) e confrontarle ad ogni richiesta.
+    OWASP Cheat Sheet Series
+
+    In caso di cambi contestuali sospetti, applicare misure come:
+
+        Rilogin forzato (invalidare la sessione, richiedere ri-autenticazione).
+
+        CAPTCHA come verifica alternativa, utile in presenza di bot o scenari sospetti ma ad uso legittimo.
+        OWASP Cheat Sheet Series
+
+    Device Bound Session Credentials: soluzione prospettica basata su cookie vincolati alla chiave privata interna del browser (ancora in draft) per impedire utilizzo dei cookie rubati.

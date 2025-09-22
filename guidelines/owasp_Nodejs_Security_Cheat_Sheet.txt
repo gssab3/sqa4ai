@@ -1,0 +1,28 @@
+Introduzione
+Il cheat sheet fornisce linee guida per scrivere e gestire applicazioni Node.js sicure, affrontando le vulnerabilità più comuni e le strategie per prevenire attacchi.
+
+Cause e problematiche
+
+    Input non validati che possono portare a injection o XSS.
+
+    Gestione impropria di autenticazione, sessioni e autorizzazioni.
+
+    Uso di moduli o dipendenze con vulnerabilità note.
+
+    Esposizione di dati sensibili nei log o tramite API non protette.
+
+    Mancanza di protezioni contro attacchi DoS o abuso delle risorse.
+
+Soluzioni e prevenzione
+
+    Validare e sanificare tutti i dati in ingresso, usando librerie affidabili.
+
+    Implementare meccanismi robusti di autenticazione e autorizzazione.
+
+    Mantenere aggiornate tutte le dipendenze e rimuovere moduli non necessari.
+
+    Limitare l’esposizione dei dati sensibili e cifrare dati sensibili a riposo e in transito.
+
+    Applicare rate limiting, caching e altre tecniche per mitigare DoS.
+
+    Monitorare e loggare eventi di sicurezza per individuare anomalie precocemente.

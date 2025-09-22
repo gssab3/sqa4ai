@@ -1,0 +1,30 @@
+Introduzione
+La Bean Validation è una specifica che definisce un framework per la validazione automatica degli oggetti Java (bean) tramite annotazioni. Serve a garantire che i dati siano corretti, coerenti e conformi ai vincoli prima di essere processati o memorizzati, evitando problemi come input malevoli, dati corrotti o stati inconsistente dell’applicazione.
+
+Problemi e Cause Tipiche
+
+    Validazione insufficiente o inconsistente sui dati in ingresso.
+
+    Assenza di validazione su campi critici, causando problemi di integrità o sicurezza.
+
+    Validazioni duplicate o sparpagliate, difficili da mantenere e aggiornare.
+
+    Mancanza di validazione su dati provenienti da fonti non affidabili o esterne.
+
+    Scarsa gestione degli errori di validazione, che può portare a comportamenti inattesi o vulnerabilità.
+
+Cosa Fare / Come Prevenire
+
+    Utilizzare annotazioni di Bean Validation per definire vincoli chiari e centralizzati su classi e campi.
+
+    Applicare la validazione sia lato client che lato server per una doppia verifica.
+
+    Validare sempre dati provenienti da input esterni prima di qualsiasi elaborazione o memorizzazione.
+
+    Gestire in modo appropriato gli errori di validazione, fornendo messaggi chiari e impedendo l’elaborazione di dati non validi.
+
+    Integrare Bean Validation nel ciclo di vita dell’applicazione e nei framework di sviluppo usati (es. Spring, Jakarta EE).
+
+    Testare regolarmente la correttezza dei vincoli di validazione, includendo casi limite e input malevoli.
+
+    Mantenere la documentazione aggiornata sui vincoli per facilitare manutenzione e sviluppo.

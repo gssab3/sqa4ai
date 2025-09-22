@@ -1,0 +1,26 @@
+Introduzione
+Questo cheat sheet fornisce linee guida per progettare e implementare API REST sicure, garantendo che le comunicazioni e le risorse siano protette da attacchi comuni e vulnerabilità specifiche.
+
+Cause
+
+    Assenza o errata gestione di autenticazione e sessioni.
+
+    Mancanza di autorizzazioni granulari e controllo degli accessi.
+
+    Vulnerabilità legate a input non validati, come injection e XSS.
+
+    Comunicazioni non cifrate o esposte a intercettazioni.
+
+Soluzioni e prevenzione
+
+    Implementare autenticazione robusta (OAuth, JWT, API Keys).
+
+    Applicare autorizzazioni a livello di risorsa e azione.
+
+    Usare HTTPS per tutte le comunicazioni.
+
+    Validare, sanificare e parametrizzare tutti gli input.
+
+    Impostare limiti di rate e monitoraggio delle chiamate API.
+
+    Gestire correttamente errori e log senza esporre dati sensibili.

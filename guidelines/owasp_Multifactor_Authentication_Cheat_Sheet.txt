@@ -1,0 +1,26 @@
+Introduzione
+Il cheat sheet spiega l’importanza e l’implementazione di sistemi di autenticazione multifattoriale (MFA) per migliorare la sicurezza degli accessi, riducendo il rischio di compromissione derivante da password deboli o rubate.
+
+Cause e problematiche
+
+    Dipendenza esclusiva da password vulnerabili a phishing, brute force, o riutilizzo.
+
+    Accessi non autorizzati a sistemi critici a causa di credenziali compromesse.
+
+    Difficoltà di implementazione di MFA senza degradare l’esperienza utente.
+
+    Mancanza di supporto o integrazione di MFA nelle applicazioni legacy.
+
+Soluzioni e prevenzione
+
+    Integrare almeno due fattori indipendenti per l’autenticazione: qualcosa che l’utente conosce (password), possiede (token, smartphone), o è (biometria).
+
+    Preferire metodi MFA resistenti al phishing, come app di autenticazione o chiavi hardware.
+
+    Offrire opzioni flessibili per l’utente, bilanciando sicurezza e usabilità.
+
+    Implementare MFA su tutte le funzionalità e dati critici, specialmente per accessi remoti o privilegiati.
+
+    Educare gli utenti sull’importanza e l’uso corretto dell’autenticazione multifattoriale.
+
+    Monitorare e aggiornare regolarmente le tecnologie e policy MFA per mantenere efficacia.

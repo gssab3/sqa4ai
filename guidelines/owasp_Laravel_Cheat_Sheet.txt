@@ -1,0 +1,30 @@
+Introduzione
+Laravel è un framework PHP molto popolare per lo sviluppo di applicazioni web. La sicurezza in Laravel copre vari aspetti, dalla gestione delle autenticazioni alle protezioni contro vulnerabilità comuni come XSS, CSRF, SQL injection e altro. Questo cheat sheet fornisce best practice per sfruttare le funzionalità di sicurezza integrate di Laravel e ridurre i rischi.
+
+Cause tipiche di problemi
+
+    Mancata validazione e sanificazione dell’input utente.
+
+    Gestione inadeguata delle sessioni e dei token CSRF.
+
+    Uso errato o assente di escaping nei template Blade.
+
+    Configurazioni di sicurezza errate o mancanti (es. debug attivo in produzione).
+
+    Gestione debole delle password e delle politiche di autenticazione.
+
+Soluzioni e prevenzione
+
+    Usare il sistema di validazione nativo di Laravel per tutti gli input.
+
+    Abilitare e proteggere token CSRF per tutte le richieste POST, PUT, DELETE.
+
+    Utilizzare l’escaping automatico di Blade per prevenire XSS.
+
+    Disabilitare modalità debug in ambienti di produzione.
+
+    Configurare politiche robuste di password (es. lunghezza minima, hashing con bcrypt).
+
+    Implementare autorizzazioni tramite middleware e policy Laravel.
+
+    Mantenere aggiornate le dipendenze e il framework.

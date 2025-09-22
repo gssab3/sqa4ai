@@ -1,0 +1,26 @@
+Introduzione
+Il REST Assessment riguarda la valutazione della sicurezza di API RESTful, focalizzandosi su come identificare rischi, vulnerabilità e punti deboli in queste architetture di comunicazione. Serve a garantire che le API REST siano progettate e implementate seguendo best practice di sicurezza.
+
+Cause
+
+    Mancanza di autenticazione e autorizzazione adeguate sulle API.
+
+    Esposizione eccessiva di endpoint o dati non necessari.
+
+    Assenza di validazione e sanificazione degli input ricevuti tramite API.
+
+    Configurazioni errate o insicure dei server API.
+
+Soluzioni e prevenzione
+
+    Effettuare audit regolari e penetration test specifici per API REST.
+
+    Controllare rigorosamente autenticazione e autorizzazione su ogni endpoint.
+
+    Minimizzare l’attacco surface limitando endpoint e dati esposti.
+
+    Usare protocolli sicuri (HTTPS) e rate limiting per mitigare attacchi.
+
+    Applicare validazione e sanitizzazione approfondita degli input.
+
+    Documentare chiaramente API e limiti di accesso.

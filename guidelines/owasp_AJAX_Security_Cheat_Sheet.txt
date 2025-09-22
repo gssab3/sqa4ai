@@ -1,0 +1,25 @@
+Introduzione
+
+AJAX (Asynchronous JavaScript and XML) è una tecnologia che consente di aggiornare le pagine web in modo asincrono, migliorando l'interattività dell'utente. Tuttavia, l'uso di AJAX introduce specifiche vulnerabilità, come l'esposizione a Cross-Site Scripting (XSS) e Cross-Site Request Forgery (CSRF), che possono compromettere la sicurezza delle applicazioni web. È fondamentale adottare pratiche di sicurezza adeguate per mitigare questi rischi.
+
+Cause comuni
+
+    Uso improprio di metodi JavaScript: l'uso di .innerHTML o eval() può introdurre vulnerabilità XSS.
+
+    Mancanza di validazione e codifica dell'output: non validare e codificare correttamente i dati in ingresso e in uscita può permettere l'iniezione di script dannosi.
+
+    Gestione inadeguata delle sessioni: la mancanza di protezioni contro CSRF e la gestione non sicura dei cookie possono esporre l'applicazione a attacchi.
+
+    Dipendenze da script di terze parti: l'inclusione di librerie JavaScript non sicure può introdurre vulnerabilità.
+
+Soluzioni per la prevenzione
+
+    Codifica dell'output: utilizzare metodi come .textContent o .innerText al posto di .innerHTML per prevenire l'iniezione di codice dannoso.
+
+    Validazione e codifica dell'input: implementare una validazione rigorosa dei dati in ingresso e codificare correttamente l'output per prevenire XSS.
+
+    Protezione contro CSRF: utilizzare token CSRF per proteggere le richieste sensibili e garantire che le azioni siano intenzionali.
+
+    Gestione sicura delle sessioni: impostare correttamente gli attributi dei cookie, come HttpOnly e Secure, per proteggere le informazioni di sessione.
+
+    Revisione delle dipendenze: verificare la sicurezza delle librerie di terze parti e mantenerle aggiornate per evitare vulnerabilità note.

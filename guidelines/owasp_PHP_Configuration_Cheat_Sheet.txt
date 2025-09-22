@@ -1,0 +1,26 @@
+Introduzione
+La configurazione sicura di PHP è cruciale per prevenire vulnerabilità derivanti da impostazioni predefinite o errate. Questo cheat sheet guida gli sviluppatori e amministratori a configurare PHP in modo da ridurre i rischi di sicurezza.
+
+Cause
+
+    Configurazioni di default permissive che permettono operazioni rischiose (es. esecuzione di codice remoto, visualizzazione di errori sensibili).
+
+    Abilitazione di funzioni pericolose o non necessarie (es. exec(), shell_exec()).
+
+    Mancanza di limitazioni sulle risorse o sui tempi di esecuzione che possono portare a DoS.
+
+    Registrazione di informazioni sensibili nei log o errori esposti agli utenti.
+
+Soluzioni e prevenzione
+
+    Disabilitare funzioni PHP inutili o pericolose (disable_functions).
+
+    Disabilitare la visualizzazione degli errori in ambiente di produzione (display_errors=Off) e loggare gli errori in modo sicuro.
+
+    Limitare l’upload di file e il loro tipo.
+
+    Impostare limiti su memoria, tempo di esecuzione, dimensioni upload per prevenire abuso di risorse.
+
+    Configurare correttamente la gestione delle sessioni (cookie sicuri, timeout, gestione rigenerazione ID).
+
+    Aggiornare PHP e moduli per correggere vulnerabilità note.

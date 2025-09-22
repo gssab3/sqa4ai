@@ -1,0 +1,91 @@
+Introduzione
+Le pipeline CI/CD automatizzano build, test e deploy; per questo motivo diventano obiettivi attraenti per un attaccante: una compromissione della pipeline può permettere l’inserimento di codice malevolo a valle, la diffusione di credenziali, o la manipolazione degli artefatti distribuiti. La guida OWASP fornisce raccomandazioni pratiche per ridurre il rischio e proteggere la catena di consegna del software.
+
+Problemi / Cause tipiche
+
+    Controlli di accesso inadeguati sul flusso CI/CD (identità e permessi eccessivi per job, token o macchine).
+    OWASP Foundation
+
+    Cattiva gestione dei segreti (credenziali hard-coded, accesso ai segreti non controllato o esposto nei logs).
+    OWASP Cheat Sheet Series+1
+
+    Abuso della supply chain (dependency / artifact): pacchetti o dipendenze compromesse che vengono buildate e distribuite.
+    OWASP Foundation
+
+    Poisoned Pipeline Execution: pipeline che eseguono codice non verificato (ad esempio PR maliziosi che attivano job con permessi elevati).
+    OWASP Cheat Sheet Series
+
+    Configurazioni insicure dei runner/workers o immagini build che permettono escalation o esfiltrazione.
+    OWASP Cheat Sheet Series
+
+    Scarsa visibilità e logging: mancanza di tracciamento delle azioni di build/deploy e degli accessi. 
+
+Cosa fare — categorie operative (ogni voce è trasformabile in requisito)
+1) Governance e progettazione del pipeline
+
+    Definire ownership, responsabilità e processi approvativi per ogni stage della pipeline.
+
+    Definire policy per cosa può essere eseguito automaticamente e cosa richiede approvazione umana.
+    OWASP Cheat Sheet Series
+
+2) Identity & Access Management per CI/CD
+
+    Applicare least privilege su account, token e service accounts (separare account per build, deploy, ecc.).
+
+    Usare Policy-Based Access Control per limitare azioni sui branch, job e artefatti.
+    OWASP Foundation
+    OWASP Cheat Sheet Series
+
+3) Secrets Management
+
+    Non memorizzare segreti nel codice o nelle configurazioni accessibili (evitare env var in chiaro).
+
+    Integrare una soluzione di secrets management (vault, KMS) con rotazione e auditing degli accessi.
+    OWASP Cheat Sheet Series+1
+
+4) Hardening di runner/build workers e immagini
+
+    Usare workers immutabili e isolati (es. ephemeral runners), minimizzare privilegi a livello OS/container.
+
+    Scansionare e hardenare immagini base (rimuovere tool non necessari, patchare CVE).
+    OWASP Cheat Sheet Series
+
+5) Verifica dell’integrità degli artefatti
+
+    Firmare e verificare gli artefatti (build, pacchetti, container images) e applicare controlli d’integrità prima del deploy.
+
+    Validare sorgenti e dipendenze con meccanismi come SLSA / sigstore / in-toto.
+    OWASP Cheat Sheet Series
+    OWASP Foundation
+
+6) Dependency & Supply Chain Controls
+
+    Scansione automatica delle dipendenze (SCA), blocco di versioni con CVE critiche e policy di approvazione per nuove dipendenze.
+
+    Minimizzare fiducia in pacchetti esterni: usare proxy/registry interni se possibile.
+    OWASP Foundation
+
+7) Controlli sui trigger e sull’esecuzione (flow control)
+
+    Limitare cosa può attivare job sensibili (es. PR da forche, triggers su branch protetti).
+
+    Separare pipeline di build/test da pipeline con privilegi di rilascio.
+    OWASP Cheat Sheet Series
+
+8) Logging, monitoring e rilevamento anomalie
+
+    Loggare tutte le azioni critiche (chi ha avviato la build, quali segreti sono stati richiesti, cambi di configurazione).
+
+    Integrare alerting per esecuzioni anomale, uso inaspettato di segreti o firma/artifact non valida.
+    OWASP Foundation
+
+9) Test & Validazione automatica
+
+    Integrare SAST/DAST/SCA in pipeline; eseguire test di sicurezza prima del merge e del deploy.
+
+    Automatizzare test che simulano attacchi alla pipeline (es. PR malevoli che cercano di esfiltrare segreti).
+    OWASP Cheat Sheet Series
+
+10) Incident response e recovery per CI/CD
+
+    Definire playbook per compromissione della pipeline (revoca credenziali, isolamento runner, ricostruzione da sorgenti integrità-verified).

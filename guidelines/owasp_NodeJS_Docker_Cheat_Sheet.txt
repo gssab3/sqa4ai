@@ -1,0 +1,28 @@
+Introduzione
+Questo cheat sheet affronta le best practice di sicurezza per eseguire applicazioni Node.js all’interno di container Docker, evidenziando rischi specifici legati a questa combinazione e come mitigarli.
+
+Cause e problematiche
+
+    Configurazioni errate dei container che espongono servizi o dati sensibili.
+
+    Immagini Docker non sicure o non aggiornate contenenti vulnerabilità note.
+
+    Mancanza di isolamento tra container o privilegi eccessivi assegnati ai container.
+
+    Scarsa gestione delle variabili d’ambiente, che possono contenere segreti.
+
+    Vulnerabilità nel codice Node.js che possono essere amplificate in ambiente containerizzato.
+
+Soluzioni e prevenzione
+
+    Utilizzare immagini Docker ufficiali e mantenere aggiornate le dipendenze.
+
+    Limitare i privilegi dei container (ad esempio, non eseguire come root).
+
+    Gestire e criptare correttamente i segreti e le variabili d’ambiente.
+
+    Applicare pratiche di sicurezza nel codice Node.js: validazione input, gestione degli errori, ecc.
+
+    Configurare il networking Docker per isolare i container e minimizzare esposizione.
+
+    Usare strumenti di scansione automatica delle immagini per vulnerabilità e configurazioni errate.

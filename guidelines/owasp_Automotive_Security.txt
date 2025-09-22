@@ -1,0 +1,36 @@
+Introduzione
+La sicurezza automotive riguarda la protezione dei sistemi elettronici e software all’interno dei veicoli moderni, che sono sempre più connessi e complessi. Questi sistemi includono infotainment, controllo motore, frenata, e comunicazioni tra veicoli e infrastrutture. L’obiettivo è prevenire accessi non autorizzati, manipolazioni e attacchi che possano compromettere la sicurezza, la privacy o il funzionamento del veicolo, proteggendo passeggeri, dati e infrastrutture.
+
+Problemi e Cause Tipiche
+
+    Superficie di attacco ampia a causa di molteplici interfacce (wireless, CAN bus, Bluetooth, ecc.).
+
+    Mancanza di autenticazione e autorizzazione adeguate nei sistemi di controllo e comunicazione.
+
+    Vulnerabilità nel firmware e software embedded, spesso non aggiornati.
+
+    Assenza di crittografia o protocolli insicuri nelle comunicazioni tra componenti.
+
+    Possibilità di attacchi fisici o tramite interfacce di diagnostica non protette.
+
+    Gestione inadeguata delle chiavi crittografiche e dei certificati digitali.
+
+    Scarso controllo degli accessi interni ai sistemi, facilitando attacchi laterali o escalation di privilegi.
+
+Cosa Fare / Come Prevenire
+
+    Applicare una difesa in profondità, includendo autenticazione forte e autorizzazioni per ogni componente.
+
+    Implementare aggiornamenti firmware sicuri e regolari (OTA) per correggere vulnerabilità.
+
+    Utilizzare crittografia robusta per tutte le comunicazioni e dati sensibili.
+
+    Segmentare le reti interne del veicolo per limitare la propagazione di attacchi.
+
+    Proteggere fisicamente le interfacce di diagnostica e manutenzione.
+
+    Gestire in modo sicuro chiavi e certificati, con rotazioni e revoche tempestive.
+
+    Effettuare analisi continua della superficie di attacco durante lo sviluppo e il ciclo di vita del veicolo.
+
+    Integrare test di sicurezza specifici per automotive in ogni fase del processo di sviluppo.

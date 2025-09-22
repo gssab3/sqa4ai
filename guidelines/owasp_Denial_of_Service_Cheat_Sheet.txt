@@ -1,0 +1,26 @@
+Denial of Service Cheat Sheet
+
+Introduzione
+Questo cheat sheet fornisce indicazioni per prevenire e mitigare gli attacchi Denial of Service (DoS) e Distributed Denial of Service (DDoS), volti a rendere un’applicazione o un servizio indisponibile sovraccaricandolo di richieste o risorse. L’obiettivo è garantire la continuità operativa e la resilienza dell’infrastruttura.
+
+Problemi / Cause Tipiche
+
+    Mancanza di limiti di risorse o di rate limiting sulle richieste.
+
+    Assenza di controlli su input che possono causare elaborazioni pesanti o cicli infiniti.
+
+    Architetture monolitiche non scalabili o con colli di bottiglia evidenti.
+
+    Mancato utilizzo di protezioni a livello di rete e applicativo.
+
+Cosa fare / Come prevenire
+
+    Implementare rate limiting e throttling per ridurre richieste abusive.
+
+    Validare input per prevenire elaborazioni eccessivamente onerose.
+
+    Utilizzare architetture scalabili e bilanciatori di carico.
+
+    Adottare WAF, CDN e servizi di mitigazione DDoS dedicati.
+
+    Monitorare traffico e risorse per individuare picchi anomali e reagire tempestivamente.

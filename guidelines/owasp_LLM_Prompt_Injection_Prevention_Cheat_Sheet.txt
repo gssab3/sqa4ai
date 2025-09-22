@@ -1,0 +1,26 @@
+Introduzione
+Il Prompt Injection è una vulnerabilità specifica nell’uso di modelli linguistici (LLM) dove un attaccante inserisce comandi o contenuti malevoli all’interno del prompt, manipolando il comportamento del modello e potenzialmente ottenendo risposte non sicure o errate. Questo cheat sheet descrive le problematiche e le contromisure per mitigare questi rischi.
+
+Cause tipiche di problemi
+
+    Inserimento non filtrato o non controllato di input utente nei prompt LLM.
+
+    Mancanza di isolamento tra dati di contesto e comandi generali.
+
+    Prompt troppo generici o con possibilità di interpretare istruzioni nascoste o ambigue.
+
+    Assenza di validazione o sanitizzazione degli input concatenati nel prompt.
+
+Soluzioni e prevenzione
+
+    Sanitizzare e validare accuratamente tutti i dati inseriti nei prompt.
+
+    Separare chiaramente i dati utente dai comandi di sistema nel prompt (es. usare template rigidi).
+
+    Limitare il contesto fornito al modello per minimizzare le superfici di attacco.
+
+    Monitorare e loggare i prompt e le risposte per identificare tentativi di injection.
+
+    Utilizzare tecniche di prompt engineering per ridurre ambiguità e interpretazioni indesiderate.
+
+    Implementare meccanismi di filtraggio e controllo sulle risposte generate.

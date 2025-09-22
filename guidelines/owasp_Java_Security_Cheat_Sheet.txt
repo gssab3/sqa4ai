@@ -1,0 +1,26 @@
+Introduzione
+La sicurezza in Java copre un ampio spettro di pratiche per proteggere le applicazioni scritte in questo linguaggio, comprese le gestione delle autorizzazioni, la crittografia, il controllo degli accessi e la sandbox di esecuzione. Java fornisce API e framework dedicati a questi scopi.
+
+Cause tipiche di problemi
+
+    Uso improprio o debole di API di sicurezza Java.
+
+    Scarsa gestione delle eccezioni di sicurezza e errori di configurazione.
+
+    Mancanza di aggiornamenti o patch per le librerie di sicurezza.
+
+    Gestione inadeguata delle credenziali e delle chiavi crittografiche.
+
+Soluzioni e prevenzione
+
+    Utilizzare correttamente le API di sicurezza Java come java.security, JAAS, e Java Cryptography Architecture.
+
+    Applicare il principio del minimo privilegio usando i manager di sicurezza Java.
+
+    Gestire in modo sicuro chiavi e certificati, evitando hardcoding.
+
+    Aggiornare regolarmente le librerie e i componenti di sicurezza Java.
+
+    Implementare un robusto sistema di logging per monitorare eventi di sicurezza.
+
+    Eseguire analisi di sicurezza specifiche per il codice Java e fare penetration test mirati.

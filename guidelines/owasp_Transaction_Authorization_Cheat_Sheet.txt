@@ -1,0 +1,24 @@
+Introduzione
+La Transaction Authorization riguarda il controllo rigoroso e sicuro delle operazioni che comportano modifiche di stato o transazioni finanziarie, assicurando che solo utenti e processi autorizzati possano eseguire azioni sensibili.
+
+Cosa fare / Cause di rischio
+
+    Autorizzazioni insufficienti o errate che permettono azioni non consentite.
+
+    Mancata verifica contestuale (es. controlli a più fattori o limiti di importo).
+
+    Mancanza di logging e audit delle transazioni autorizzate.
+
+    Vulnerabilità legate a sessioni e gestione di token di autorizzazione.
+
+Soluzioni e prevenzione
+
+    Applicare principi di autorizzazione basati su ruoli (RBAC) o attributi (ABAC).
+
+    Implementare controlli di autorizzazione a livello di singola transazione.
+
+    Richiedere conferme o autenticazioni aggiuntive per azioni ad alto rischio (multifactor authentication).
+
+    Registrare tutte le transazioni con dettagli sufficienti per audit e rilevamento frodi.
+
+    Proteggere i token di autorizzazione e le sessioni da furto o manipolazione.

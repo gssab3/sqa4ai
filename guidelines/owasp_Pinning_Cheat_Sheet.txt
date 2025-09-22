@@ -1,0 +1,22 @@
+Introduzione
+Il Pinning è una tecnica di sicurezza che aiuta a prevenire attacchi man-in-the-middle (MITM) vincolando un’applicazione a fidarsi solo di un set specifico di certificati o chiavi pubbliche durante le connessioni TLS.
+
+Cause
+
+    Attacchi MITM sfruttano certificati fraudolenti o compromessi se il client accetta qualsiasi certificato firmato da un’autorità attendibile.
+
+    Dipendenza eccessiva dalla catena di certificati CA senza verifiche più stringenti.
+
+    Assenza di meccanismi di verifica che blocchino certificati non previsti.
+
+Soluzioni e prevenzione
+
+    Implementare il Public Key Pinning (PKP) o certificato pinning nelle applicazioni client.
+
+    Definire e mantenere una lista di hash di certificati o chiavi pubbliche attendibili.
+
+    Gestire con attenzione il ciclo di vita dei pin per evitare problemi di accesso (ad esempio, pin temporanei, fallback).
+
+    Monitorare e aggiornare regolarmente i pin per allinearsi alle nuove chiavi o certificati.
+
+    Testare approfonditamente l’implementazione per evitare blocchi legittimi.

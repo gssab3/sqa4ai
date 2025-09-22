@@ -1,0 +1,20 @@
+Introduzione
+XSS Filter Evasion descrive le tecniche che gli attaccanti usano per bypassare i filtri anti-XSS implementati nei browser o nelle applicazioni, permettendo l’esecuzione di script dannosi nonostante le contromisure.
+
+Cosa fare / Cause di rischio
+
+    Filtri XSS mal configurati o insufficienti.
+
+    Input non sanitizzato in modo completo.
+
+    Uso di tecniche avanzate di offuscamento, encoding e concatenazione da parte degli attaccanti.
+
+Soluzioni e prevenzione
+
+    Utilizzare validazione e sanificazione dell’input lato server e client.
+
+    Implementare Content Security Policy (CSP) robuste.
+
+    Evitare la dipendenza esclusiva dai filtri XSS dei browser.
+
+    Aggiornare regolarmente i filtri e strumenti di sicurezza.

@@ -1,0 +1,36 @@
+Introduzione
+Le estensioni del browser sono componenti software che estendono le funzionalità dei browser web. Pur essendo molto utili, rappresentano un vettore di attacco potenzialmente critico perché hanno accesso a dati sensibili dell’utente, possono manipolare il contenuto delle pagine web e interagire con altre risorse di sistema. La sicurezza delle estensioni è fondamentale per proteggere la privacy e la sicurezza degli utenti e prevenire abusi, come il furto di dati, l’esecuzione di codice malevolo o attacchi di phishing.
+
+Problemi e Cause Tipiche
+
+    Permessi eccessivi o troppo generosi concessi alle estensioni, che espongono dati o funzioni sensibili.
+
+    Mancanza di controllo sull’origine e l’integrità del codice delle estensioni (codice malevolo o compromesso).
+
+    Vulnerabilità nei meccanismi di comunicazione tra l’estensione e la pagina web o i server backend (es. man-in-the-middle, injection).
+
+    Uso improprio di API critiche, che può portare a escalation di privilegi o accesso non autorizzato.
+
+    Cattiva gestione dei dati sensibili, come credenziali o token di sessione, memorizzati o trasmessi senza protezioni.
+
+    Assenza di meccanismi di aggiornamento sicuri, lasciando estensioni vulnerabili a lungo.
+
+    Scarsa validazione degli input provenienti dalle pagine web o dagli utenti, esponendo a Cross-Site Scripting (XSS) o altre vulnerabilità.
+
+Cosa Fare / Come Prevenire
+
+    Limitare i permessi dell’estensione al minimo indispensabile per le funzionalità richieste.
+
+    Effettuare una rigorosa revisione del codice e usare firme digitali per garantire l’integrità del software.
+
+    Proteggere le comunicazioni tramite protocolli sicuri (HTTPS, message passing sicuro).
+
+    Usare API sicure e seguire le best practice per la gestione delle autorizzazioni.
+
+    Crittografare e proteggere dati sensibili in modo appropriato, evitando di memorizzarli in chiaro.
+
+    Implementare aggiornamenti automatici e firmati per correggere tempestivamente vulnerabilità.
+
+    Validare e sanitizzare sempre gli input provenienti da pagine web o utenti per prevenire attacchi XSS e injection.
+
+    Informare gli utenti chiaramente sui permessi richiesti dall’estensione e motivarne l’uso.

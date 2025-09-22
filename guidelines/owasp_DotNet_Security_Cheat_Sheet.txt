@@ -1,0 +1,26 @@
+Introduzione
+La sicurezza nelle applicazioni .NET è cruciale per proteggere dati, autenticità e integrità dei sistemi. Questo cheat sheet fornisce linee guida e best practice specifiche per lo sviluppo sicuro in ambiente .NET, coprendo aspetti quali gestione di identità, protezione dei dati, configurazioni sicure e prevenzione delle vulnerabilità comuni.
+
+Cause tipiche di vulnerabilità
+
+    Errata gestione dell’autenticazione e dell’autorizzazione, portando a accessi non autorizzati.
+
+    Uso improprio o mancanza di cifratura per dati sensibili sia a riposo sia in transito.
+
+    Configurazioni di sicurezza deboli o di default (es. gestione errata di certificati, sessioni o permessi).
+
+    Vulnerabilità comuni come injection, Cross-Site Scripting, e vulnerabilità nel framework stesso non patchate.
+
+Soluzioni e prevenzione
+
+    Implementare l’autenticazione e autorizzazione usando meccanismi integrati di .NET (es. ASP.NET Identity).
+
+    Utilizzare crittografia forte per proteggere dati sensibili, incluse password, chiavi e dati in transito (SSL/TLS).
+
+    Applicare principi di least privilege per utenti, ruoli e servizi.
+
+    Mantenere aggiornate le librerie e framework .NET, applicando patch di sicurezza regolarmente.
+
+    Usare tecniche di validazione e sanificazione degli input per prevenire injection.
+
+    Configurare correttamente le opzioni di sicurezza, come Cross-Origin Resource Sharing (CORS), Content Security Policy e gestione delle sessioni.

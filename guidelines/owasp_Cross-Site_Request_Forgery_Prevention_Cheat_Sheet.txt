@@ -1,0 +1,24 @@
+Introduzione
+L’attacco CSRF induce un browser autenticato a inviare richieste indesiderate a un’applicazione, sfruttando la fiducia del sito nell’identità dell’utente. Questo può comportare operazioni non autorizzate (es. cambio password, acquisto, elevazione privilegi).
+
+Problemi / Cause Tipiche
+
+    Browser che inviano automaticamente cookie di sessione, rendendo indistinguibili le richieste legittime da quelle forgiate.
+
+    Se l’applicazione si basa solo su cookie per l’autenticazione, è vulnerabile a CSRF.
+
+Cosa fare / Come prevenire
+
+    Verificare se il framework utilizzato offre protezioni CSRF integrate; preferirle.
+
+    Implementare Synchronizer Token Pattern: generare un token univoco, inviarlo nei form e validarlo in ogni richiesta.
+
+    Alternative:
+
+        Double Submit Cookie: inserire il token sia in cookie sia in campo hidden del form e verificare la corrispondenza.
+
+        Cookie-to-Header Token: il client JavaScript legge il token da cookie e lo invia in header personalizzato.
+
+    Aggiungere l’attributo SameSite ai cookie (es. Strict o Lax) per limitare l’invio in contesti cross-site.
+
+    Evitare l’uso di metodi GET per operazioni state-changing; utilizzare sempre token CSRF per richieste sensibili.

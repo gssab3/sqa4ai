@@ -1,0 +1,28 @@
+Introduzione
+Le applicazioni legacy rappresentano spesso un rischio di sicurezza a causa di tecnologie obsolete, mancanza di aggiornamenti e incompatibilità con pratiche moderne. Questo cheat sheet offre strategie per gestire e mitigare i rischi associati alle applicazioni legacy durante la loro manutenzione o migrazione.
+
+Cause tipiche di problemi
+
+    Uso di librerie e framework non aggiornati e vulnerabili.
+
+    Mancanza di patch di sicurezza e aggiornamenti.
+
+    Codice non documentato o poco chiaro che rende difficile la manutenzione.
+
+    Difficoltà di integrazione con nuovi sistemi di sicurezza.
+
+    Assenza di controlli moderni di autenticazione e autorizzazione.
+
+Soluzioni e prevenzione
+
+    Effettuare una valutazione completa dei rischi e delle vulnerabilità dell’applicazione legacy.
+
+    Applicare patch e aggiornamenti di sicurezza ove possibile.
+
+    Isolare l’applicazione legacy in reti o ambienti protetti.
+
+    Pianificare la migrazione verso soluzioni più moderne e sicure.
+
+    Implementare controlli di sicurezza aggiuntivi a livello di rete o proxy.
+
+    Documentare e migliorare progressivamente il codice e i processi.

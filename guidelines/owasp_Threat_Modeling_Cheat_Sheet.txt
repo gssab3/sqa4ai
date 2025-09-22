@@ -1,0 +1,24 @@
+Introduzione
+Il Threat Modeling è un processo sistematico volto a identificare, comprendere e gestire le minacce alla sicurezza di un’applicazione o sistema fin dalle prime fasi di progettazione. Aiuta a prevenire vulnerabilità riducendo la superficie di attacco e anticipando possibili rischi.
+
+Cosa fare / Cause di rischio
+
+    Mancata identificazione delle potenziali minacce durante la progettazione.
+
+    Non considerare tutti i componenti e le interazioni del sistema, comprese dipendenze esterne.
+
+    Scarsa comprensione del contesto di utilizzo e delle motivazioni degli attaccanti.
+
+    Assenza di un processo di aggiornamento continuo del modello in seguito a modifiche.
+
+Soluzioni e prevenzione
+
+    Utilizzare metodi strutturati come STRIDE, PASTA o Attack Trees per classificare le minacce.
+
+    Definire chiaramente asset, attori, flussi di dati e punti di ingresso.
+
+    Coinvolgere team multidisciplinari per avere una visione completa delle vulnerabilità.
+
+    Aggiornare il modello regolarmente con l’evoluzione del sistema e del contesto di minaccia.
+
+    Prioritizzare le minacce in base al rischio (impatto e probabilità) per indirizzare gli sforzi di mitigazione.

@@ -1,0 +1,20 @@
+Introduzione
+HTTP Strict Transport Security (HSTS) è un meccanismo di sicurezza che obbliga i browser a comunicare esclusivamente tramite HTTPS, riducendo il rischio di attacchi di tipo man-in-the-middle e downgrade.
+
+Cause tipiche di problemi
+
+    Assenza di HSTS permette agli attaccanti di intercettare o modificare le comunicazioni HTTP non cifrate.
+
+    Configurazioni errate o mancata inclusione del dominio principale e dei sottodomini possono lasciare aperte vulnerabilità.
+
+    Durate di validità insufficienti o mancata inclusione nella preload list riducono l’efficacia di HSTS.
+
+Soluzioni e prevenzione
+
+    Abilitare HSTS con un tempo di validità adeguato (es. almeno 6 mesi o più).
+
+    Includere l’opzione includeSubDomains per estendere la protezione a tutti i sottodomini.
+
+    Registrare il dominio nella HSTS preload list per garantire l’applicazione immediata della policy da parte dei browser.
+
+    Testare la configurazione per evitare problemi di accessibilità o loop di reindirizzamento.

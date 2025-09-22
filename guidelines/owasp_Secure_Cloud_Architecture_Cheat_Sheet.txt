@@ -1,0 +1,28 @@
+Introduzione
+La sicurezza dell’architettura cloud riguarda la protezione di infrastrutture, piattaforme e servizi distribuiti in ambienti cloud pubblici, privati o ibridi. Il focus è su come progettare, implementare e gestire risorse cloud per mitigare rischi specifici di questi ambienti, mantenendo confidenzialità, integrità e disponibilità.
+
+Cause
+
+    Configurazioni errate o errata gestione dei permessi sulle risorse cloud.
+
+    Mancanza di visibilità o controllo sull’accesso e l’uso delle risorse distribuite.
+
+    Insufficiente segmentazione e isolamento tra componenti e servizi.
+
+    Mancanza di monitoraggio e gestione centralizzata degli eventi di sicurezza.
+
+    Esposizione involontaria di dati sensibili o segreti.
+
+Soluzioni e prevenzione
+
+    Adottare principi di sicurezza come il principio del minimo privilegio e segmentazione di rete.
+
+    Usare strumenti di gestione delle configurazioni e monitoraggio per individuare anomalie.
+
+    Crittografare dati in transito e a riposo, anche nelle risorse cloud.
+
+    Integrare automazione e infrastruttura come codice per applicare policy di sicurezza coerenti.
+
+    Implementare meccanismi di autenticazione forte e gestione sicura delle identità (IAM).
+
+    Eseguire regolari audit e penetration test specifici per ambienti cloud.

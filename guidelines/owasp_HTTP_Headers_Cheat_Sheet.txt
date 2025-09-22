@@ -1,0 +1,16 @@
+Introduzione
+Gli HTTP headers sono componenti essenziali delle comunicazioni web che permettono di trasmettere informazioni di controllo tra client e server. La configurazione corretta degli headers di sicurezza è cruciale per proteggere le applicazioni da molteplici tipi di attacchi.
+
+Cause tipiche di problemi
+
+    Mancanza o errata configurazione di headers di sicurezza, che lascia la porta aperta a exploit come Cross-Site Scripting (XSS), Clickjacking, e altre vulnerabilità di tipo client-side.
+
+    Headers mancanti o con valori default insicuri possono permettere il furto di dati o manipolazioni non autorizzate delle risposte HTTP.
+
+Soluzioni e prevenzione
+
+    Implementare headers di sicurezza fondamentali come Content-Security-Policy (CSP), X-Content-Type-Options, X-Frame-Options, Referrer-Policy, e Strict-Transport-Security (HSTS).
+
+    Personalizzare e aggiornare regolarmente i valori degli headers in base alle specifiche esigenze e al contesto applicativo.
+
+    Monitorare l’efficacia della configurazione tramite test di sicurezza e strumenti di scansione automatizzati.

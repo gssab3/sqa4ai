@@ -1,0 +1,26 @@
+Introduzione
+La segmentazione della rete è una pratica di sicurezza che suddivide una rete in sottoreti più piccole per limitare l’accesso e contenere potenziali compromissioni. Serve a minimizzare la superficie di attacco e proteggere risorse critiche isolandole.
+
+Cause e problematiche
+
+    Reti piatte e non segmentate permettono a un attaccante di muoversi liberamente una volta entrato.
+
+    Mancanza di controllo granulare degli accessi tra diverse zone di rete.
+
+    Disposizione errata o assente di firewall e controlli di accesso tra segmenti.
+
+    Difficoltà nel monitorare e gestire i flussi di traffico tra servizi e utenti.
+
+Soluzioni e prevenzione
+
+    Suddividere la rete in segmenti logici basati su funzioni, livelli di rischio o tipi di dati.
+
+    Implementare firewall e sistemi di controllo degli accessi tra segmenti di rete.
+
+    Usare VLAN, subnetting e tecnologie di micro-segmentazione per isolamento dettagliato.
+
+    Applicare il principio del minimo privilegio nel traffico di rete e nelle comunicazioni tra segmenti.
+
+    Monitorare costantemente i flussi di traffico per rilevare anomalie o accessi non autorizzati.
+
+    Integrare segmentazione con politiche di sicurezza complessive, includendo autenticazione e cifratura.

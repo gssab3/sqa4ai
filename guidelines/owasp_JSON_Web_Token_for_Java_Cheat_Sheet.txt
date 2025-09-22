@@ -1,0 +1,26 @@
+Introduzione
+I JSON Web Token (JWT) sono uno standard aperto per trasmettere in modo sicuro informazioni tra parti come JSON, comunemente usati per autenticazione e autorizzazione in applicazioni Java. Questo cheat sheet guida l’implementazione sicura di JWT in Java, coprendo creazione, firma, verifica e gestione del ciclo di vita del token.
+
+Cause tipiche di problemi
+
+    Uso di algoritmi di firma deboli o non adeguati (es. none o HS256 con chiavi insufficienti).
+
+    Mancata verifica della firma del token o dei suoi parametri.
+
+    Gestione errata della scadenza e del rinnovo del token.
+
+    Esposizione di informazioni sensibili all’interno del payload non cifrato.
+
+Soluzioni e prevenzione
+
+    Usare algoritmi di firma robusti come RS256 con chiavi private/pubbliche.
+
+    Verificare sempre la firma e i parametri essenziali (issuer, audience, scadenza).
+
+    Impostare una durata breve per i token e usare refresh token per rinnovi sicuri.
+
+    Non memorizzare dati sensibili in chiaro nel payload.
+
+    Gestire correttamente la revoca e invalidazione dei token.
+
+    Usare librerie Java affidabili e mantenute per la manipolazione dei JWT.

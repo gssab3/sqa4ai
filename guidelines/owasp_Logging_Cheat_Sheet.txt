@@ -1,0 +1,30 @@
+Introduzione
+Il logging è fondamentale per tracciare eventi, errori e attività di sicurezza in un sistema. Una buona gestione del logging aiuta nel rilevamento di incidenti, nella diagnosi di problemi e nella compliance. Questo cheat sheet illustra best practice per la progettazione e implementazione di un sistema di logging sicuro ed efficace.
+
+Cause tipiche di problemi
+
+    Log incompleti o mancanti che impediscono la ricostruzione di eventi.
+
+    Logging eccessivo che può esporre dati sensibili o generare overhead.
+
+    Mancata protezione dei log da accessi non autorizzati o modifiche.
+
+    Mancanza di correlazione tra eventi di log per l’analisi degli incidenti.
+
+    Uso di formati incoerenti o non standard.
+
+Soluzioni e prevenzione
+
+    Definire chiaramente quali eventi devono essere loggati (autenticazioni, errori, accessi, ecc.).
+
+    Evitare di loggare dati sensibili come password, token o dati personali non necessari.
+
+    Proteggere i log tramite crittografia, controllo accessi e integrità (es. checksum).
+
+    Utilizzare formati di log standardizzati (es. JSON, Common Event Format).
+
+    Implementare rotazione, archiviazione e gestione del ciclo di vita dei log.
+
+    Integrare sistemi di monitoraggio e alerting basati sui log per rilevare anomalie.
+
+    Correlare eventi su più sistemi per una visione completa degli incidenti.

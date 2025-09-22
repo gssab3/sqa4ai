@@ -1,0 +1,22 @@
+Nel mondo dello sviluppo di progetti software, si parla spesso del termine "Requisito" che, in base alla sua natura, può essere un requisito funzionale o non funzionale.
+Essi sono due pilastri dello studio della creazione di un qualsiasi progetto di Ingegneria del Software.
+La stesura dei requisiti richiede Precisione e Completezza, ma anche Univocità. Ogni requisito deve essere misurabile (indipendentemente da un punto di vista, quindi dalla soggettività, si può facilmente capire se quel requisito è stato soddisfatto o meno), deve essere descritto in maniera chiara e completa. NON DEVE ESSERE VAGO. 
+
+I requisiti funzionali descrivono le funzionalità effettive che il software deve offrire, ovvero l'elenco di servizi da erogare.
+Rispondono alla domanda "cosa fa" e descrive l'insieme di servizi offerti dal sistema o cosa necessita dall'utente per effettuare determinate operazioni.
+
+I requisiti non funzionali descrivono "come deve fare" il sistema determinati servizi o operazioni. In altre parole, è l'insieme delle caratteristiche e qualità che il sistema deve possedere.
+Esistono 3 diverse categorie di requisiti non funzionali:
+1. Requisiti di Prodotto: Si riferiscono alle caratteristiche del sistema stesso (ciò che ci interesserà maggiormente) e si dividono in:
+    - Prestazioni (e.g. il sistema deve essere in grado di gestire e quindi permettere l'accesso a 50 utenti contemporaneamente e di rispondere alle richieste entro 1 secondo)
+    - Sicurezza ( e.g. Il sistema deve proteggere i dati degli utenti autorizzati e non attraverso x metodo)
+    - Affidabilità (e.g. il sistema deve funzionare in maniera continua senza errori frequenti)
+    - Usabilità (e.g. Il sistema deve avere un buon contrasto tra lo sfondo e i caratteri utilizzati, inoltre quest'ultimi devono avere una dimensione minima di 16px)
+    - Manutenibilità (e.g. Il sistema deve aggiornarsi ogni settimana)
+2. Requisiti di processo/organizzativi: Si definiscono le modalità di consegna, standard da adottare e procedure da seguire
+3. Requisiti esterni: Riguardano fattori completamente esterni al sistema, come requisiti legali da soddisfare, interoperabilità con altri sistemi (dipende perchè anche questo potrebbe essere un requisito di prodotto) o etici.
+
+I requisiti di sicurezza, in base al tipo di servizio, possono essere funzionali o non funzionali.
+L'autenticazione a 2 fattori o l'autenticazione tramite password è un requisito funzionale, per esempio, poichè si richiede una funzionalità specifica da soddisfare e che richiede interazione con l'utente, mentre un esempio di requisito non funzionale è sicuramente la descrizione di certi criteri di sicurezza (da specificare in maniera esaustiva, dettagliata e misurabile) per non garantire all'attaccante scenari di tipo "Denial of Service" (e.g.).
+
+In sintesi, in base a come si formula il requisito e se si occupa di servizi o di qualità di essi può essere funzionale o non funzionale.

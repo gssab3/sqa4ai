@@ -1,0 +1,24 @@
+Introduzione
+L’Insecure Direct Object Reference (IDOR) si verifica quando un’applicazione espone direttamente oggetti o risorse (es. file, record database) tramite identificatori prevedibili senza adeguati controlli di autorizzazione. Ciò permette ad un attaccante di accedere o manipolare risorse altrui.
+
+Cause tipiche di problemi
+
+    Esposizione di identificatori diretti e prevedibili (es. ID numerici incrementali).
+
+    Mancanza o scarsa verifica delle autorizzazioni per l’accesso a risorse.
+
+    Assunzioni errate sulla sicurezza degli identificatori.
+
+    Uso di parametri non protetti nelle URL o nelle API.
+
+Soluzioni e prevenzione
+
+    Implementare controlli rigorosi di autorizzazione per ogni richiesta di accesso a risorse.
+
+    Utilizzare identificatori non prevedibili (es. UUID o token randomici).
+
+    Non esporre direttamente riferimenti a oggetti sensibili.
+
+    Loggare e monitorare accessi alle risorse critiche per individuare attività sospette.
+
+    Testare regolarmente le API e le interfacce per vulnerabilità IDOR.

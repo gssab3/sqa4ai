@@ -1,0 +1,22 @@
+Introduzione
+La sicurezza XML si occupa di proteggere le applicazioni che elaborano dati in formato XML da attacchi specifici come XXE, XPath Injection e Denial of Service, garantendo integrità, riservatezza e disponibilità dei dati.
+
+Cosa fare / Cause di rischio
+
+    Parser XML non configurati correttamente, vulnerabili a XXE e XPath Injection.
+
+    Mancanza di validazione e sanificazione dell’input XML.
+
+    Uso di documenti XML da fonti non fidate.
+
+    Configurazioni errate che consentono l’accesso a risorse interne o la modifica di dati sensibili.
+
+Soluzioni e prevenzione
+
+    Disabilitare funzionalità pericolose come entità esterne e DTD (Document Type Definition).
+
+    Validare, sanificare e limitare la dimensione dei documenti XML in ingresso.
+
+    Usare parser XML aggiornati e sicuri.
+
+    Monitorare e loggare le richieste XML.

@@ -1,0 +1,26 @@
+Introduzione
+La vulnerabilità DOM Based Cross-Site Scripting (XSS) si verifica quando un'applicazione web manipola dati non fidati nel DOM (Document Object Model) del browser senza un'adeguata validazione o sanificazione, permettendo a un attaccante di eseguire codice JavaScript malevolo nel contesto della pagina. Questo tipo di XSS è particolarmente insidioso perché il codice dannoso non viene processato dal server, ma direttamente dal browser, rendendo la difesa più complessa.
+
+Cause tipiche
+
+    Inserimento di dati non sanitizzati in elementi del DOM tramite JavaScript (es. innerHTML, document.write).
+
+    Manipolazione diretta di URL, fragment identifiers (#), o dati provenienti da storage locale senza controllo.
+
+    Uso di funzioni che interpretano stringhe come codice (es. eval) o manipolano il DOM senza sanificazione.
+
+    Mancanza di una chiara separazione tra dati e codice nel frontend.
+
+Soluzioni e prevenzione
+
+    Evitare di usare innerHTML e simili per inserire dati dinamici, preferendo metodi più sicuri come textContent o setAttribute.
+
+    Sanificare e validare rigorosamente tutti i dati provenienti da input utente o da fonti non affidabili prima di inserirli nel DOM.
+
+    Utilizzare librerie di sicurezza per la gestione di contenuti dinamici e l’escape di caratteri speciali.
+
+    Applicare Content Security Policy (CSP) per limitare l’esecuzione di script non autorizzati.
+
+    Evitare l’uso di funzioni pericolose come eval, setTimeout con stringhe, e document.write.
+
+    Tenere aggiornata la libreria e i framework per beneficiare di patch di sicurezza.

@@ -1,0 +1,28 @@
+Introduzione
+La protezione della privacy degli utenti è fondamentale per garantire il rispetto delle normative (es. GDPR) e mantenere la fiducia. Consiste nella corretta gestione, raccolta, conservazione e utilizzo dei dati personali, minimizzando l’esposizione a rischi di violazioni e abusi.
+
+Cosa fare / Cause di rischio
+
+    Raccolta eccessiva o non necessaria di dati personali.
+
+    Conservazione di dati sensibili senza adeguate protezioni.
+
+    Mancanza di consenso informato o trasparenza sulle modalità di trattamento.
+
+    Esposizione accidentale o intenzionale di dati a terzi non autorizzati.
+
+    Assenza di controlli di accesso e audit su dati personali.
+
+Soluzioni e prevenzione
+
+    Applicare il principio di minimizzazione dei dati (collezionare solo dati necessari).
+
+    Implementare politiche di consenso esplicito e trasparenza per gli utenti.
+
+    Crittografare dati sensibili a riposo e in transito.
+
+    Definire ruoli e permessi chiari per l’accesso ai dati personali.
+
+    Implementare sistemi di audit e monitoraggio per rilevare accessi non autorizzati.
+
+    Prevedere meccanismi di anonimizzazione o pseudonimizzazione dove possibile.

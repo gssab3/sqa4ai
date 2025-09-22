@@ -1,0 +1,24 @@
+Introduzione
+La vulnerabilità XML External Entity (XXE) riguarda l’uso improprio di entità esterne in documenti XML, che può portare a esposizione di dati sensibili, denial of service, o accesso non autorizzato a risorse interne.
+
+Cosa fare / Cause di rischio
+
+    Parser XML configurati per permettere l’espansione di entità esterne.
+
+    Uso di XML da fonti non fidate senza adeguate misure di sicurezza.
+
+    Mancanza di filtri e restrizioni sull’input XML.
+
+    Configurazioni errate che permettono l’accesso a file locali o servizi interni tramite XXE.
+
+Soluzioni e prevenzione
+
+    Disabilitare l’espansione delle entità esterne nei parser XML.
+
+    Utilizzare parser XML sicuri e aggiornati.
+
+    Validare e sanificare tutti i dati XML in ingresso.
+
+    Applicare limiti alle dimensioni dei documenti XML per prevenire denial of service.
+
+    Monitorare e loggare le richieste XML per identificare attività sospette.

@@ -1,0 +1,24 @@
+Introduzione
+JAAS (Java Authentication and Authorization Service) è il framework di Java per gestire autenticazione e autorizzazione in modo modulare e flessibile. Permette di integrare diversi meccanismi di sicurezza senza modificare il codice dell’applicazione, supportando login, controllo degli accessi e gestione dei permessi.
+
+Cause tipiche di problemi
+
+    Configurazioni errate o incomplete del sistema di login.
+
+    Mancanza di separazione chiara tra autenticazione e autorizzazione.
+
+    Gestione impropria di permessi e ruoli.
+
+    Assenza di auditing o logging dettagliato sulle operazioni di sicurezza.
+
+Soluzioni e prevenzione
+
+    Usare le policy JAAS per definire chiaramente permessi e ruoli.
+
+    Implementare moduli di login robusti e personalizzati per esigenze specifiche.
+
+    Separare logicamente i processi di autenticazione da quelli di autorizzazione.
+
+    Abilitare logging e auditing dettagliato per monitorare gli accessi e modifiche di permessi.
+
+    Testare e validare le configurazioni JAAS regolarmente per prevenire errori di sicurezza.

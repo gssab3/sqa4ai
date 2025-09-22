@@ -1,0 +1,28 @@
+Introduzione
+Questo cheat sheet si focalizza sulle migliori pratiche di sicurezza per applicazioni basate su Django REST Framework (DRF), un toolkit popolare per costruire API REST in Django. L’obiettivo è proteggere le API da attacchi comuni e vulnerabilità, assicurando integrità, riservatezza e disponibilità dei dati esposti tramite API.
+
+Problemi / Cause Tipiche
+
+    Mancanza di autenticazione e autorizzazione adeguate sugli endpoint API.
+
+    Permessi troppo permissivi o mal configurati che espongono dati o funzioni sensibili.
+
+    Mancata validazione dei dati in input, che può causare injection o esecuzione di codice malevolo.
+
+    Esposizione di informazioni sensibili nelle risposte o nei messaggi di errore.
+
+    Cross-Origin Resource Sharing (CORS) mal configurato, che può permettere richieste da origini non fidate.
+
+Cosa fare / Come prevenire
+
+    Implementare meccanismi robusti di autenticazione (token, OAuth, JWT) e autorizzazione granulari.
+
+    Utilizzare permessi basati sui ruoli e limitare l’accesso agli endpoint sensibili.
+
+    Validare accuratamente tutti i dati in ingresso con serializer e campi Django REST.
+
+    Configurare correttamente CORS e limitare le origini autorizzate.
+
+    Nascondere o limitare informazioni sensibili nei messaggi di errore.
+
+    Applicare meccanismi di logging e monitoraggio per rilevare attività sospette.

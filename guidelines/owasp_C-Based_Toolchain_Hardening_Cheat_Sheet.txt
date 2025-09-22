@@ -1,0 +1,28 @@
+Introduzione
+Questo cheat sheet si focalizza sulle tecniche per rafforzare la catena di strumenti (toolchain) utilizzata nello sviluppo di software in linguaggio C, con l’obiettivo di ridurre le vulnerabilità introdotte da compilatori, linker e altri strumenti. La toolchain hardening aiuta a prevenire exploit sfruttando debolezze nel codice compilato, offrendo protezioni a livello di binario e runtime.
+
+Problemi e Cause Tipiche
+
+    Codice compilato con opzioni di sicurezza insufficienti che facilita exploit come buffer overflow, format string attack, o uso di puntatori invalidi.
+
+    Mancanza di controlli a livello di linker e loader che permettono manipolazioni come code injection o hijacking del flusso di esecuzione.
+
+    Assenza di mitigazioni a livello di memoria come Address Space Layout Randomization (ASLR) o stack canaries.
+
+    Toolchain obsolete o non aggiornate che non supportano le ultime protezioni di sicurezza.
+
+    Dipendenza da librerie non sicure o vulnerabili.
+
+Cosa Fare / Come Prevenire
+
+    Usare flag di compilazione per abilitare mitigazioni di sicurezza, come -fstack-protector, -D_FORTIFY_SOURCE=2, e -Wformat.
+
+    Abilitare ASLR e protezioni contro l’esecuzione di codice in aree di memoria non previste (NX bit).
+
+    Integrare tecniche di link-time optimization (LTO) per migliorare l’analisi e la sicurezza del codice.
+
+    Aggiornare costantemente toolchain e librerie usate, preferendo versioni sicure e supportate.
+
+    Effettuare analisi statica e dinamica del codice per identificare potenziali vulnerabilità.
+
+    Applicare pratiche di coding sicuro e revisione del codice in combinazione con la toolchain hardening.

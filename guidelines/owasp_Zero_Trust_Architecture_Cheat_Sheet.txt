@@ -1,0 +1,19 @@
+L’architettura Zero Trust è un modello di sicurezza che assume che nessuna entità, interna o esterna alla rete aziendale, sia affidabile di default, e quindi richiede verifiche continue di identità e autorizzazioni per ogni accesso.
+
+Cosa fare / Cause di rischio
+
+    Modelli di sicurezza tradizionali basati su perimetri di rete fidati che possono essere compromessi.
+
+    Mancanza di segmentazione e controllo granulare degli accessi.
+
+    Assenza di monitoraggio continuo delle attività.
+
+Soluzioni e prevenzione
+
+    Implementare autenticazione forte e continua, anche per risorse interne.
+
+    Segmentare la rete e limitare gli accessi secondo il principio del minimo privilegio.
+
+    Monitorare e analizzare costantemente il comportamento degli utenti e dei dispositivi.
+
+    Automatizzare risposte a minacce e anomalie.

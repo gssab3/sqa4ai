@@ -1,0 +1,28 @@
+Introduzione
+La sicurezza dei web service riguarda la protezione delle API e dei servizi esposti su rete, che spesso sono vettori critici di comunicazione e dati tra sistemi distribuiti.
+
+Cosa fare / Cause di rischio
+
+    Mancanza di autenticazione e autorizzazione adeguate sulle API.
+
+    Comunicazioni non cifrate che espongono dati sensibili.
+
+    Input non validato che può causare injection o altri attacchi.
+
+    Esposizione eccessiva di endpoint o funzionalità non necessarie.
+
+    Gestione inadeguata degli errori che può rivelare informazioni sensibili.
+
+Soluzioni e prevenzione
+
+    Implementare autenticazione forte e autorizzazione granulare sulle API.
+
+    Usare HTTPS per tutte le comunicazioni tra client e web service.
+
+    Validare rigorosamente tutti i dati in ingresso.
+
+    Limitare l’esposizione degli endpoint solo a quelli strettamente necessari.
+
+    Gestire gli errori in modo sicuro senza esporre informazioni interne.
+
+    Applicare rate limiting e monitoraggio per prevenire abusi.

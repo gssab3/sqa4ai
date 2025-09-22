@@ -1,0 +1,20 @@
+Introduzione
+Gli attacchi XSS avvengono quando un’applicazione web incorpora dati non fidati (ad esempio input utente) in pagine web senza una corretta validazione o codifica, consentendo l’esecuzione di script malevoli nel browser della vittima. Ciò compromette la confidenzialità, l’integrità e la disponibilità del sistema e degli utenti. ([turn0search0])
+
+Problemi / Cause Tipiche
+
+    Input non validato o sanitizzato che viene incorporato direttamente nel DOM o nel markup HTML.
+
+    Utilizzo di variabili senza escaping, rendendole interpretabili come codice.
+
+    Framework impiegati senza sfruttare le protezioni automatiche contro XSS, o con lacune nei contesti specifici (HTML, JavaScript, CSS, URL).
+
+Cosa fare / Come prevenire
+
+    Applicare output encoding contestuale, ad esempio HTML entity encoding per contenuto in markup, escaping JS per dati inseriti in script, URL encoding per parametri, CSS escaping in CSS.
+
+    Utilizzare preferibilmente framework che automatizzino escaping e validazione (es. React, Angular), ma restare consapevoli dei loro limiti.
+
+    Validare rigorosamente gli input, contrastando l’iniezione attraverso whitelist e sanity checks.
+
+    Implementare Content Security Policy (CSP) come livello di difesa aggiuntivo, per limitare le fonti di script caricabili.

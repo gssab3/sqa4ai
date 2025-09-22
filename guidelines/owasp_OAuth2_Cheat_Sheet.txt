@@ -1,0 +1,28 @@
+Introduzione
+Questo cheat sheet fornisce linee guida per implementare in modo sicuro OAuth 2.0, il protocollo standard per autorizzazioni delegate, molto usato per l’accesso e la gestione delle identità.
+
+Cause e problematiche
+
+    Implementazioni errate del flusso OAuth che possono portare a esposizione di token o accessi non autorizzati.
+
+    Mancanza di validazione degli stati (state parameter) nei flussi di autorizzazione, esponendo a attacchi CSRF.
+
+    Scarsa gestione della scadenza e revoca dei token.
+
+    Trasmissione di token non cifrati o in contesti insicuri.
+
+    Uso di redirect URI non sicuri o non validati, permettendo redirect malevoli.
+
+Soluzioni e prevenzione
+
+    Implementare correttamente i flussi OAuth con validazione del parametro state per protezione CSRF.
+
+    Usare HTTPS per tutte le comunicazioni contenenti token e dati sensibili.
+
+    Limitare la durata e i privilegi dei token, implementando meccanismi di revoca.
+
+    Validare rigorosamente i redirect URI accettati.
+
+    Monitorare l’uso dei token per individuare eventuali anomalie o abusi.
+
+    Seguire le best practice ufficiali OAuth 2.0 e aggiornarsi sulle vulnerabilità note.

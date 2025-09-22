@@ -1,0 +1,22 @@
+Introduzione
+La Prototype Pollution è una vulnerabilità tipica in ambienti JavaScript, dove un attacker può manipolare la proprietà __proto__ o altre proprietà di prototipo per alterare il comportamento di oggetti globali o specifici, causando effetti imprevisti e potenzialmente pericolosi.
+
+Cause
+
+    Manca di validazione sull’input che modifica proprietà di oggetti, specialmente quelle riservate al prototipo.
+
+    Uso di librerie o codice che permette modifiche dirette ai prototipi senza restrizioni.
+
+    Passaggio di dati non sicuri da input esterni senza sanificazione.
+
+Soluzioni e prevenzione
+
+    Validare e filtrare rigorosamente gli input prima di usarli in operazioni di modifica oggetti.
+
+    Evitare di assegnare o leggere direttamente proprietà __proto__, constructor.prototype o simili.
+
+    Usare librerie aggiornate che prevengono automaticamente la prototype pollution.
+
+    Applicare principi di programmazione sicura per isolare dati e impedire modifiche globali indesiderate.
+
+    Effettuare test di sicurezza specifici per prototype pollution.

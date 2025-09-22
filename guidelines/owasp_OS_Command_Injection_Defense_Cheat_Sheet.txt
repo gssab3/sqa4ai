@@ -1,0 +1,24 @@
+Introduzione
+L’OS Command Injection è una vulnerabilità che permette a un attaccante di eseguire comandi arbitrari sul sistema operativo tramite un’applicazione vulnerabile. Questa falla si verifica quando l’applicazione passa dati non sanitizzati direttamente a un interprete di comandi (shell), consentendo esecuzione di codice malevolo.
+
+Cause
+
+    Mancata o insufficiente validazione e sanitizzazione dell’input utente.
+
+    Uso diretto di funzioni di sistema (es. exec, system) con parametri non controllati.
+
+    Assunzione errata che l’input utente sia sicuro.
+
+    Configurazioni errate o privilegi troppo elevati per il processo che esegue i comandi.
+
+Soluzioni e prevenzione
+
+    Evitare completamente di invocare comandi di sistema con input utente; preferire API sicure o librerie dedicate.
+
+    Se necessario, validare rigorosamente gli input (whitelist di valori accettabili).
+
+    Usare funzioni che non passano l’input alla shell (ad esempio execve con array di parametri).
+
+    Limitare i privilegi del processo che esegue i comandi.
+
+    Monitorare e loggare l’attività per individuare eventuali abusi.

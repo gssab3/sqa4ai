@@ -1,0 +1,28 @@
+Introduzione
+Questo cheat sheet si concentra sulla sicurezza nell’uso di npm, il package manager più usato per JavaScript/Node.js, evidenziando rischi legati a dipendenze, supply chain e gestione dei pacchetti.
+
+Cause e problematiche
+
+    Uso di pacchetti non sicuri o compromessi contenenti malware o codice malevolo.
+
+    Dipendenze con vulnerabilità note o non aggiornate.
+
+    Possibilità di attacchi supply chain (ad esempio pacchetti “typosquatting” o pacchetti malevoli pubblicati).
+
+    Mancanza di verifica della provenienza e integrità dei pacchetti.
+
+    Configurazioni errate nei file di progetto che possono esporre dati sensibili.
+
+Soluzioni e prevenzione
+
+    Usare pacchetti da fonti affidabili e verificare l’autorevolezza.
+
+    Mantenere aggiornate le dipendenze e monitorare vulnerabilità tramite strumenti automatici (es. npm audit).
+
+    Usare strumenti di scansione per controllare la sicurezza delle dipendenze e la loro integrità.
+
+    Evitare di includere file sensibili o segreti nei pacchetti o nei repository pubblici.
+
+    Configurare correttamente il file package.json per limitare i rischi e ridurre la superficie di attacco.
+
+    Educare gli sviluppatori sul rischio della supply chain e sulle best practice npm.

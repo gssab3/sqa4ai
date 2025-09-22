@@ -1,0 +1,26 @@
+Introduzione
+HTML5 introduce nuove funzionalità per il web moderno, migliorando l’esperienza utente, ma porta anche nuovi rischi di sicurezza se non gestite correttamente. È fondamentale comprendere come le nuove API e tecnologie HTML5 possono essere sfruttate da attaccanti per compromettere la sicurezza dell’applicazione.
+
+Cause tipiche di problemi
+
+    Uso improprio di API HTML5 come localStorage, sessionStorage, IndexedDB, che possono esporre dati sensibili se non protetti adeguatamente.
+
+    Mancanza di controllo sull’origine dei dati caricati tramite Web Workers, WebSockets o Cross-Origin Resource Sharing (CORS), favorendo attacchi di tipo Cross-Site Scripting (XSS) o Cross-Site Request Forgery (CSRF).
+
+    Vulnerabilità legate a funzionalità multimediali, geolocalizzazione e notifiche, che possono essere sfruttate per ottenere informazioni sull’utente o per eseguire azioni non autorizzate.
+
+    Insufficiente validazione e sanitizzazione dei dati immessi dall’utente tramite nuovi input HTML5.
+
+Soluzioni e prevenzione
+
+    Limitare l’uso di storage lato client a dati non sensibili e implementare crittografia ove necessario.
+
+    Applicare politiche CORS restrittive e validare sempre le origini delle richieste esterne.
+
+    Utilizzare Content Security Policy (CSP) per ridurre i rischi di XSS.
+
+    Validare e sanitizzare tutti i dati provenienti da input HTML5, inclusi quelli provenienti da nuovi tipi di input e API.
+
+    Gestire attentamente i permessi per API sensibili come geolocalizzazione e notifiche, richiedendo sempre consenso esplicito dell’utente.
+
+    Monitorare e aggiornare costantemente le librerie e i framework per evitare vulnerabilità note.

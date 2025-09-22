@@ -1,0 +1,30 @@
+Introduzione
+Questo cheat sheet fornisce linee guida per migliorare la sicurezza delle applicazioni containerizzate con Docker. Poiché Docker isola processi e ambienti, è fondamentale gestire correttamente le immagini, i container e l’ambiente di esecuzione per prevenire attacchi e compromissioni.
+
+Problemi / Cause Tipiche
+
+    Uso di immagini Docker non verificate o con vulnerabilità note.
+
+    Esecuzione di container con privilegi elevati o come root, aumentando il rischio di escalation.
+
+    Configurazioni errate della rete che espongono servizi sensibili.
+
+    Mancata gestione delle credenziali e segreti all’interno dei container.
+
+    Assenza di aggiornamenti regolari di immagini e runtime Docker.
+
+Cosa fare / Come prevenire
+
+    Utilizzare immagini ufficiali o verificate, preferibilmente minimali e aggiornate.
+
+    Limitare i privilegi dei container, evitando di eseguire processi come root.
+
+    Applicare policy di rete restrittive e segmentare i container.
+
+    Gestire segreti e credenziali in modo sicuro, ad esempio con Docker secrets o strumenti esterni.
+
+    Aggiornare regolarmente il motore Docker, le immagini e i container.
+
+    Monitorare attività sospette e configurare correttamente i log.
+
+    Applicare controlli di integrità e firme per le immagini Docker.

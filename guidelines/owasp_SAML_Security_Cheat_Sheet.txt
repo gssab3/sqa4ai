@@ -1,0 +1,26 @@
+Introduzione
+Il cheat sheet affronta la sicurezza nel contesto di SAML (Security Assertion Markup Language), un protocollo di Single Sign-On (SSO) largamente utilizzato per l’autenticazione federata tra provider di identità e servizi. Garantire la sicurezza in SAML è cruciale per evitare furti di identità e accessi non autorizzati.
+
+Cause
+
+    Implementazioni errate di SAML che permettono attacchi di replay, spoofing o man-in-the-middle.
+
+    Gestione insufficiente delle firme digitali e della crittografia nelle assertion SAML.
+
+    Configurazioni sbagliate di metadata tra identity provider e service provider.
+
+    Mancata verifica dell’audience, timestamp o condizioni di validità delle assertion.
+
+Soluzioni e prevenzione
+
+    Utilizzare firme digitali e crittografia per proteggere assertion e messaggi SAML.
+
+    Validare sempre audience, issuer, timestamp e condizioni di validità.
+
+    Configurare correttamente i metadata tra identity provider e service provider, aggiornandoli regolarmente.
+
+    Proteggere i canali di comunicazione tramite HTTPS/TLS.
+
+    Monitorare e loggare accessi e tentativi di autenticazione sospetti.
+
+    Seguire le best practice di implementazione specifiche del framework o libreria SAML utilizzata.

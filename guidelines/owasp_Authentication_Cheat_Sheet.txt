@@ -1,0 +1,39 @@
+Introduzione
+
+L’Authentication è il processo mediante il quale un sistema verifica l’identità di un utente o di un sistema prima di concedere l’accesso. Una solida autenticazione è essenziale per proteggere risorse sensibili e prevenire accessi non autorizzati, che potrebbero compromettere la sicurezza e la privacy. Le tecniche di autenticazione includono l’uso di password, token, certificati digitali, e metodi biometrici. Inoltre, è importante considerare l’interazione con la gestione delle sessioni e l’autorizzazione.
+
+Problemi e Cause Tipiche
+
+    Password deboli o facilmente indovinabili, senza policy di complessità o di scadenza, che favoriscono attacchi di forza bruta o credential stuffing.
+
+    Mancata protezione delle credenziali durante la trasmissione (assenza di HTTPS) o la memorizzazione (password salvate in chiaro o con hashing insicuro come MD5 o SHA1).
+
+    Assenza o cattiva implementazione del Multi-Factor Authentication (MFA), che espone il sistema a compromissioni con un solo fattore (es. password).
+
+    Vulnerabilità legate alla gestione delle sessioni, come session fixation, session hijacking o mancanza di scadenza automatica delle sessioni.
+
+    Meccanismi di recupero password non sicuri, ad esempio reset tramite domande facilmente indovinabili o link non temporizzati.
+
+    Implementazioni custom non testate, che possono introdurre vulnerabilità non previste (es. errori di logica o bypass).
+
+    Mancanza di monitoraggio e logging degli eventi di autenticazione, che riduce la capacità di rilevare attacchi in corso.
+
+Cosa Fare / Come Prevenire
+
+    Applicare policy di password forti, richiedendo lunghezza minima, complessità (caratteri speciali, numeri, lettere maiuscole e minuscole) e periodicità nel cambio password, bilanciando usabilità e sicurezza.
+
+    Proteggere le credenziali con hashing robusti e salting, utilizzando algoritmi moderni come bcrypt, Argon2 o PBKDF2 per memorizzare le password in modo sicuro.
+
+    Forzare l’uso di HTTPS/TLS per la trasmissione di dati di autenticazione, prevenendo intercettazioni (MITM).
+
+    Implementare l’autenticazione multi-fattore (MFA), preferibilmente combinando qualcosa che l’utente conosce (password) con qualcosa che possiede (token OTP) o è (biometria).
+
+    Limitare i tentativi di login con meccanismi di blocco temporaneo o CAPTCHA per mitigare attacchi brute force.
+
+    Gestire in modo sicuro le sessioni, con timeout automatici, invalidazione dopo logout, rigenerazione dell’ID sessione dopo login e protezione da fixation/hijacking.
+
+    Realizzare procedure sicure per il recupero e reset della password, con link temporizzati, verifica dell’identità e monitoraggio delle attività sospette.
+
+    Registrare e monitorare gli eventi di autenticazione per rilevare e reagire rapidamente a tentativi sospetti o anomalie.
+
+    Testare regolarmente la sicurezza del sistema di autenticazione, anche tramite penetration testing e revisione del codice.

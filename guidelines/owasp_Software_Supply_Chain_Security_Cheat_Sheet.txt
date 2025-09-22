@@ -1,0 +1,26 @@
+Introduzione
+La sicurezza della supply chain software riguarda la protezione contro minacce che possono infiltrarsi attraverso componenti, librerie, tool e processi utilizzati per costruire, distribuire e mantenere il software. L’obiettivo è garantire l’integrità, autenticità e sicurezza di tutto ciò che contribuisce alla produzione del software.
+
+Cause
+
+    Uso di componenti di terze parti vulnerabili o compromessi.
+
+    Mancanza di verifiche sull’origine e integrità dei pacchetti e librerie.
+
+    Processi di build e distribuzione non sicuri o poco tracciati.
+
+    Accessi non autorizzati o scarsi controlli sui tool e ambienti di sviluppo.
+
+Soluzioni e prevenzione
+
+    Utilizzare strumenti di scansione automatica per individuare vulnerabilità nelle dipendenze.
+
+    Verificare firme digitali e checksum per assicurare integrità e autenticità.
+
+    Applicare politiche di controllo accessi rigorose sugli ambienti di build e deploy.
+
+    Automatizzare e tracciare l’intero processo di build per garantire trasparenza.
+
+    Aggiornare regolarmente componenti e monitorare le fonti ufficiali per patch di sicurezza.
+
+    Educare team e sviluppatori sulle best practice di sicurezza della supply chain.

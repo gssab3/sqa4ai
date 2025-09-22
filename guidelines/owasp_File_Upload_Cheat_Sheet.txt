@@ -1,0 +1,26 @@
+Introduzione
+Le funzionalità di upload file rappresentano una superficie di attacco critica, spesso sfruttata per eseguire codice malevolo, sovraccaricare il sistema o ottenere accessi non autorizzati. Una gestione sicura del caricamento è essenziale per evitare vulnerabilità.
+
+Cause tipiche di vulnerabilità
+
+    Mancata validazione o filtraggio dei file caricati (es. tipi di file, dimensioni).
+
+    Permessi errati sulle cartelle o file caricati, permettendo accessi indesiderati.
+
+    Esecuzione di codice malevolo tramite file upload (es. script in upload).
+
+    Mancanza di controllo sulle dimensioni o frequenza dei file caricati, con rischio di denial of service.
+
+Soluzioni e prevenzione
+
+    Limitare i tipi di file accettati e convalidare il contenuto (non solo estensione).
+
+    Impostare permessi di scrittura e lettura restrittivi sulle cartelle di upload.
+
+    Archiviare i file caricati in posizioni isolate e non eseguibili.
+
+    Applicare controlli sulle dimensioni massime e frequenza dei caricamenti.
+
+    Utilizzare scansioni antivirus e strumenti di verifica per i file caricati.
+
+    Implementare autenticazione e autorizzazione per l’accesso alle funzionalità di upload.

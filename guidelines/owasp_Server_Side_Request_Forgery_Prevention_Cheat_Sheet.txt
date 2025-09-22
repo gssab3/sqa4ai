@@ -1,0 +1,22 @@
+Introduzione
+La Server-Side Request Forgery (SSRF) è un attacco in cui un attacker induce un server vulnerabile a effettuare richieste HTTP verso risorse interne o esterne a cui normalmente non avrebbe accesso. Questo tipo di attacco sfrutta il fatto che il server funge da intermediario, potenzialmente bypassando firewall o controlli di accesso.
+
+Cause
+
+    Mancata validazione o sanificazione degli input che definiscono URL o risorse da contattare.
+
+    Assenza di restrizioni sulle destinazioni delle richieste effettuate dal server.
+
+    Configurazioni errate che permettono accesso a risorse interne non protette.
+
+Soluzioni e prevenzione
+
+    Validare e filtrare rigorosamente gli input che definiscono indirizzi o URL da chiamare.
+
+    Limitare le richieste in uscita a una lista bianca di domini o IP noti e affidabili.
+
+    Implementare controlli di rete per bloccare richieste a indirizzi interni sensibili (es. localhost, metadata service).
+
+    Usare meccanismi di autenticazione e autorizzazione anche per le richieste server-side.
+
+    Monitorare e loggare tutte le richieste esterne per individuare comportamenti anomali.

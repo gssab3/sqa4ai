@@ -1,0 +1,22 @@
+Introduzione
+LDAP Injection è una vulnerabilità che si verifica quando input non validati o malformati vengono usati in query LDAP, permettendo a un attaccante di manipolare o bypassare i controlli di accesso. Questo cheat sheet offre linee guida per prevenire LDAP Injection proteggendo le query LDAP da input malevoli.
+
+Cause tipiche di problemi
+
+    Mancanza di validazione e sanitizzazione dell’input usato per costruire query LDAP.
+
+    Concatenazione diretta di input dell’utente in filtri LDAP senza escape.
+
+    Uso di query LDAP dinamiche senza parametri sicuri o binding.
+
+Soluzioni e prevenzione
+
+    Validare rigorosamente gli input che saranno usati nelle query LDAP.
+
+    Utilizzare funzioni di escaping specifiche per LDAP per neutralizzare caratteri speciali.
+
+    Preferire l’uso di query parametrizzate o prepared statements LDAP, se supportati.
+
+    Limitare i privilegi dell’account usato per eseguire query LDAP.
+
+    Monitorare e loggare l’attività LDAP sospetta.

@@ -1,0 +1,24 @@
+Introduzione
+L’SQL Injection è una vulnerabilità che consente a un attacker di manipolare query SQL inviando input malevoli, compromettendo così l’integrità, la riservatezza e la disponibilità dei dati memorizzati. È una delle vulnerabilità più critiche per le applicazioni web che interagiscono con database relazionali.
+
+Cause
+
+    Inserimento diretto di input utente non sanitizzati nelle query SQL.
+
+    Mancato uso di query parametrizzate o prepared statements.
+
+    Assenza di validazione e filtraggio degli input.
+
+    Codice legacy che concatena stringhe per costruire query.
+
+Soluzioni e prevenzione
+
+    Utilizzare sempre query parametrizzate (prepared statements) con binding dei parametri.
+
+    Validare e sanificare gli input utente in base al contesto di utilizzo.
+
+    Limitare i privilegi del database assegnati all’applicazione.
+
+    Utilizzare ORM (Object-Relational Mapping) che prevengono in modo nativo l’injection.
+
+    Applicare controlli di logging e monitoraggio per rilevare attività sospette.

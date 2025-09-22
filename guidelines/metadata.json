@@ -1,0 +1,482 @@
+[
+    {
+        "filename": "owasp_Abuse_Case_Cheat_Sheet.txt",
+        "category": "Threat Modeling",
+        "owasptop10": ["A01:2021-Broken Access Control", "A04:2021-Insecure Design"]
+    },
+    {
+        "filename": "owasp_AJAX_Security_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasptop10": ["A07:2021-Identification and Authentication Failures", "A08:2021-Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Attack_Surface_Analysis_Cheat_Sheet.txt",
+        "category": "Threat Modeling",
+        "owasptop10": ["A06:2021-Vulnerable and Outdated Components", "A09:2021-Security Logging and Monitoring Failures"]
+    },
+    {
+        "filename": "owasp_Athentication_Cheat_Sheet.txt",
+        "category": "Access Management",
+        "owasptop10": ["A07:2021-Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_Authorization_Cheat_Sheet.txt",
+        "category": "Access Management",
+        "owasptop10": ["A01:2021-Broken Access Control"]
+    },
+    {
+        "filename": "owasp_Authorization_Testing_Automation_Cheat_Sheet.txt",
+        "category": "Security Testing",
+        "owasptop10": ["A01:2021-Broken Access Control"]
+    },
+    {
+        "filename": "owasp_Automotive_Security.txt",
+        "category": "Embedded Systems Security",
+        "owasptop10": ["A08:2021-Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Bean_Validation_Cheat_Sheet.txt",
+        "category": "Input Validation",
+        "owasptop10": ["A03:2021-Injection"]
+    },
+    {
+        "filename": "owasp_Browser_Extension_Vulnerabilities_Cheat_Sheet.txt",
+        "category": "Client-Side Security",
+        "owasptop10": ["A02:2021-Cryptographic Failures", "A08:2021-Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_C-Based_Toolchain_Hardening_Cheat_Sheet.txt",
+        "category": "Secure Coding",
+        "owasptop10": ["A09:2021-Security Logging and Monitoring Failures", "A08:2021-Software and Data Integrity Failures"]  
+    },
+    {
+        "filename": "owasp_Choosing_and_Using_Security_Questions_Cheat_Sheet.txt",
+        "category": "Authentication",
+        "owasptop10": ["A07:2021-Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_CI_CD_Security_Cheat_Sheet.txt",
+        "category": "Secure Development Practices",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Clickjacking_Defense_Cheat_Sheet.txt",
+        "category": "Client-Side Security",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Content_Security_Policy_Cheat_Sheet.txt",
+        "category": "Client-Side Security",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Cookie_Theft_Mitigation_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures", "A01:2021 – Broken Access Control", "A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Credential_Stuffing_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures", "A01:2021 – Broken Access Control"]
+    },
+    {
+        "filename": "owasp_Cryptographic_Storage_Cheat_Sheet.txt",
+        "category": "Data Protection",
+        "owasptop10": ["A02:2021-Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Cross_Site_Request_Forgery_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasptop10": ["A01:2021-Broken Access Control"]
+    },
+    {
+        "filename": "owasp_Cross_Site_Scripting_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasptop10": ["A03:2021-Injection"]
+    },
+    {
+        "filename": "owasp_Database_Security_Cheat_Sheet.txt",
+        "category": "Data Protection",
+        "owasptop10": ["A03:2021-Injection", "A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Denial_of_Service_Cheat_Sheet.txt",
+        "category": "Availability",
+        "owasptop10": ["A06:2021-Vulnerable and Outdated Components"]
+    },
+    {
+        "filename": "owasp_Deserialization_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Django_REST_Framework_Cheat_Sheet.txt",
+        "category": "Framework Security",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Django_Security_Cheat_Sheet.txt",
+        "category": "Framework Security",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Docker_Security_Cheat_Sheet.txt",
+        "category": "Container Security",
+        "owasptop10": ["A06:2021-Vulnerable and Outdated Components"]
+    },
+    {
+        "filename": "owasp_DOM_based_XSS_Prevention_Cheat_Sheet.txt",
+        "category": "Cross-Site Scripting",
+        "owasptop10": ["A03:2021-Cross-Site Scripting (XSS)"]
+    },
+    {
+        "filename": "owasp_DOM_Clobbering_Prevention_Cheat_Sheet.txt",
+        "category": "Client-Side Security",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_DotNet_Security_Cheat_Sheet.txt",            
+        "category": "Framework Security",
+        "owasptop10": ["A05:2021-Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Drone_Security_Cheat_Sheet.txt",
+        "category": "IoT / Embedded Security",
+        "owasptop10": ["A06:2021-Vulnerable and Outdated Components"]
+    },
+    {
+        "filename": "owasp_Error_Handling_Cheat_Sheet.txt",
+        "category": "Secure Coding Practices",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_File_Upload_Cheat_Sheet.txt",
+        "category": "Web Application Security - Input Handling",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Forgot_Password_Cheat_Sheet.txt",
+        "category": "Web Application Security - Authentication",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_GraphQL_Cheat_Sheet.txt",
+        "category": "API Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_HTML5_Security_Cheat_Sheet.txt",
+        "category": "Web Application Security - Client-Side",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_HTTP_Headers_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A06:2021 – Vulnerable and Outdated Components"]
+    },
+    {
+        "filename": "owasp_HTTP_Strict_Transport_Security_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A02:2021 – Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Infrastructure_as_Code_Security_Cheat_Sheet.txt",
+        "category": "Cloud Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Injection_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Injection_Prevention_in_Java_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Input_Validation_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control"]
+    },
+    {
+        "filename": "owasp_JAAS_Cheat_Sheet.txt",
+        "category": "Java Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_Java_Security_Cheat_Sheet.txt",
+        "category": "Java Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_JSON_Web_Token_for_Java_Cheat_Sheet.txt",
+        "category": "Java Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures", "A02:2021 – Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Key_Management_Cheat_Sheet.txt",
+        "category": "Cryptography",
+        "owasp_top_10": ["A02:2021 – Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Kubernetes_Security_Cheat_Sheet.txt",
+        "category": "Cloud Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Laravel_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_LDAP_Injection_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Legacy_Application_Management_Cheat_Sheet.txt",
+        "category": "Software Maintenance Security",
+        "owasp_top_10": ["A06:2021 – Vulnerable and Outdated Components", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_LLM_Prompt_Injection_Prevention_Cheat_Sheet.txt",
+        "category": "AI Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Logging_Cheat_Sheet.txt",
+        "category": "Operational Security",
+        "owasp_top_10": ["A09:2021 – Security Logging and Monitoring Failures"]
+    },
+    {
+        "filename": "owasp_Logging_Vocabulary_Cheat_Sheet.txt",
+        "category": "Operational Security",
+        "owasp_top_10": ["A09:2021 – Security Logging and Monitoring Failures"]
+    },
+    {
+        "filename": "owasp_Mass_Assignment_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control"]
+    },
+    {
+        "filename": "owasp_Microservices_based_Security_Arch_Doc_Cheat_Sheet.txt",
+        "category": "Architecture Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Microservices_Security_Cheat_Sheet.txt",
+        "category": "Architecture Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Mobile_Application_Security_Cheat_Sheet.txt",
+        "category": "Mobile Security",
+        "owasp_top_10": ["A04:2021 – Insecure Design", "A07:2021 – Identification and Authentication Failures", "A02:2021 – Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Multifactor_Authentication_Cheat_Sheet.txt",
+        "category": "Authentication Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_Network_Segmentation_Cheat_Sheet.txt",
+        "category": "Infrastructure Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration"]
+    },
+    {
+         "filename": "owasp_NodeJS_Docker_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A06:2021 – Vulnerable and Outdated Components"]
+    },
+    {
+        "filename": "owasp_NodeJS_Security_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_NPM_Security_Cheat_Sheet.txt",
+        "category": "Software Supply Chain Security",
+        "owasp_top_10": ["A06:2021 – Vulnerable and Outdated Components", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_OAuth2_Cheat_Sheet.txt",
+        "category": "Authentication Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control", "A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_OS_Command_Injection_Defense_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Password_Storage_Cheat_Sheet.txt",
+        "category": "Authentication Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_PHP_Configuration_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Pinning_Cheat_Sheet.txt",
+        "category": "Network Security",
+        "owasp_top_10": ["A02:2021 – Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Prototype_Pollution_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Query_Parameterization_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_REST_Assessment_Cheat_Sheet.txt",
+        "category": "API Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_REST_Security_Cheat_Sheet.txt",
+        "category": "API Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control", "A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Ruby_on_Rails_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_SAML_Security_Cheat_Sheet.txt",
+        "category": "Authentication Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures", "A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Secrets_Management_Cheat_Sheet.txt",
+        "category": "Infrastructure Security",
+        "owasp_top_10": ["A02:2021 – Cryptographic Failures", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Secure_Cloud_Architecture_Cheat_Sheet.txt",
+        "category": "Cloud Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Secure_Product_Design_Cheat_Sheet.txt",
+        "category": "Software Design Security",
+        "owasp_top_10": ["A04:2021 – Insecure Design"]
+    },
+    {
+        "filename": "owasp_Securing_Cascading_Style_Sheets_Cheat_Sheet.txt",
+        "category": "Client Side Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Server_Side_Request_Forgery_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A10:2021 – Server-Side Request Forgery (SSRF)"]
+    },
+    {
+        "filename": "owasp_Session_Management_Cheat_Sheet.txt",
+        "category": "Authentication Security",
+        "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_Software_Supply_Chain_Security_Cheat_Sheet.txt",
+        "category": "Software Supply Chain Security",
+        "owasp_top_10": ["A06:2021 – Vulnerable and Outdated Components", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_SQL_Injection_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Symfony_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+         "filename": "owasp_Third_Party_Javascript_Management_Cheat_Sheet.txt",
+        "category": "Client Side Security",
+        "owasp_top_10": ["A08:2021 – Software and Data Integrity Failures", "A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_Threat_Modeling_Cheat_Sheet.txt",
+        "category": "Secure Design",
+        "owasp_top_10": ["A04:2021 – Insecure Design"]
+    },
+    {
+        "filename": "owasp_Transaction_Authorization_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control"]
+    },
+    {
+        "filename": "owasp_Transport_Layer_Security_Cheat_Sheet.txt",
+        "category": "Network Security",
+        "owasp_top_10": ["A02:2021 – Cryptographic Failures"]
+    },
+    {
+        "filename": "owasp_Unvalidated_Redirects_and_Forwards_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control"]
+    },
+    {
+        "filename": "owasp_User_Privacy_Protection_Cheat_Sheet.txt",
+        "category": "Privacy Security",
+        "owasp_top_10": ["A09:2021 – Security Logging and Monitoring Failures", "A07:2021 – Identification and Authentication Failures"]
+    },
+    {
+        "filename": "owasp_Virtual_Patching_Cheat_Sheet.txt",
+        "category": "Infrastructure Security",
+        "owasp_top_10": ["A06:2021 – Vulnerable and Outdated Components", "A08:2021 – Software and Data Integrity Failures"]
+    },
+    {
+        "filename": "owasp_Vulnerability_Disclosure_Cheat_Sheet.txt",
+        "category": "Security Process",
+        "owasp_top_10": ["A09:2021 – Security Logging and Monitoring Failures"]
+    },
+    {
+        "filename": "owasp_Vulnerable_Dependency_Management_Cheat_Sheet.txt",
+        "category": "Software Supply Chain Security",
+        "owasp_top_10": ["A06:2021 – Vulnerable and Outdated Components"]
+    },
+    {
+        "filename": "owasp_Web_Service_Security_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration", "A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_XML_External_Entity_Prevention_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_XML_Security_Cheat_Sheet.txt",
+        "category": "Web Application Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration"]
+    },
+    {
+         "filename": "owasp_XS_Leaks_Cheat_Sheet.txt",
+        "category": "Client Side Security",
+        "owasp_top_10": ["A05:2021 – Security Misconfiguration"]
+    },
+    {
+        "filename": "owasp_XSS_Filter_Evasion_Cheat_Sheet.txt",
+        "category": "Client Side Security",
+        "owasp_top_10": ["A03:2021 – Injection"]
+    },
+    {
+        "filename": "owasp_Zero_Trust_Architecture_Cheat_Sheet.txt",
+        "category": "Network Security",
+        "owasp_top_10": ["A01:2021 – Broken Access Control", "A02:2021 – Cryptographic Failures"]
+    }
+]

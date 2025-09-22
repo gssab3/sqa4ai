@@ -1,0 +1,28 @@
+Introduzione
+Kubernetes è una piattaforma open-source per orchestrare container, usata per gestire applicazioni distribuite in ambienti cloud e on-premise. La sicurezza di Kubernetes è fondamentale per proteggere cluster, nodi e workload da accessi non autorizzati, compromissioni e configurazioni errate. Questo cheat sheet fornisce linee guida per gestire e ridurre la superficie di attacco nel contesto Kubernetes.
+
+Cause tipiche di problemi
+
+    Configurazioni di accesso troppo permissive ai nodi o cluster (ad es. RBAC troppo ampio).
+
+    Comunicazioni non cifrate tra componenti del cluster.
+
+    Mancanza di isolamento tra container o namespace.
+
+    Uso di immagini container non verificate o vulnerabili.
+
+    Mancanza di monitoraggio e logging degli eventi di sicurezza.
+
+Soluzioni e prevenzione
+
+    Applicare il principio del minimo privilegio tramite RBAC e controlli di accesso granulare.
+
+    Cifrare le comunicazioni interne (TLS tra API server e nodi).
+
+    Usare network policies per isolare traffico tra pod e namespace.
+
+    Eseguire scansioni di sicurezza su immagini container e usare solo immagini firmate.
+
+    Implementare monitoraggio continuo e logging degli eventi di sicurezza.
+
+    Aggiornare regolarmente Kubernetes e i suoi componenti per correggere vulnerabilità note.

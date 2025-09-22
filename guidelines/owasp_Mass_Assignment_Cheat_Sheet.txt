@@ -1,0 +1,22 @@
+Introduzione
+Il Mass Assignment è una vulnerabilità che si verifica quando un’applicazione consente l’assegnazione diretta di dati da input utente a modelli o oggetti senza un’adeguata filtratura, permettendo potenzialmente modifiche non autorizzate di campi sensibili o riservati.
+
+Cause tipiche di problemi
+
+    Binding automatico di input utente a oggetti senza whitelist o blacklist dei campi modificabili.
+
+    Mancanza di controlli a livello di codice per differenziare dati modificabili da dati sensibili.
+
+    Assunzione errata che il frontend controlli quali dati vengono inviati.
+
+Soluzioni e prevenzione
+
+    Utilizzare whitelist per specificare esplicitamente quali campi possono essere assegnati da input esterni.
+
+    Implementare controlli a livello di business logic per validare le modifiche sui dati.
+
+    Limitare i dati che il frontend può inviare e validare anche lato server.
+
+    Usare framework o librerie che supportano meccanismi sicuri di assegnazione controllata.
+
+    Effettuare test di sicurezza per individuare possibili mass assignment.

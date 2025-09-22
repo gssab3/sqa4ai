@@ -1,0 +1,26 @@
+Introduzione
+La gestione della sessione è fondamentale per mantenere l’autenticità e integrità dell’interazione tra utente e applicazione, prevenendo furto o abuso delle sessioni. Un sistema di session management sicuro protegge da attacchi come session fixation, hijacking e timeout inappropriati.
+
+Cause
+
+    Identificatori di sessione prevedibili o esposti.
+
+    Mancata invalidazione della sessione dopo logout o timeout.
+
+    Assenza di protezione dei cookie di sessione (es. HttpOnly, Secure).
+
+    Sessioni prolungate senza controlli di rinnovo o inattività.
+
+Soluzioni e prevenzione
+
+    Generare identificatori di sessione lunghi, casuali e unici.
+
+    Utilizzare cookie con flag HttpOnly e Secure per proteggere i token di sessione.
+
+    Invalida la sessione dopo logout o periodi di inattività.
+
+    Implementare meccanismi di rinnovo e rigenerazione del token di sessione.
+
+    Limitare l’accesso tramite meccanismi come SameSite cookie e restrizioni di dominio.
+
+    Monitorare attività sospette e implementare blocchi o alert in caso di comportamenti anomali.

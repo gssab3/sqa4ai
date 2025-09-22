@@ -1,0 +1,22 @@
+Introduzione
+Il linguaggio Java, largamente utilizzato per applicazioni enterprise, è vulnerabile a diversi tipi di injection se non si adottano le giuste pratiche di programmazione. L’obiettivo è prevenire injection in query SQL, comandi di sistema, e altre interazioni dinamiche.
+
+Cause tipiche di problemi
+
+    Uso di stringhe concatenate direttamente con input utente in query SQL o comandi.
+
+    Mancata validazione o escape di input utilizzato in metodi riflessivi o esecuzione dinamica di codice.
+
+    Dipendenza da librerie o API che non gestiscono in modo sicuro l’input esterno.
+
+Soluzioni e prevenzione
+
+    Preferire l’uso di PreparedStatement per query SQL, evitando concatenazioni di stringhe.
+
+    Utilizzare librerie di validazione e sanitizzazione per tutti i dati in ingresso.
+
+    Limitare e controllare l’uso di funzioni che eseguono codice dinamico o riflessivo.
+
+    Mantenere aggiornate le dipendenze e utilizzare strumenti di analisi statica specifici per Java.
+
+    Applicare controlli di accesso e monitoraggio per rilevare attività anomale.

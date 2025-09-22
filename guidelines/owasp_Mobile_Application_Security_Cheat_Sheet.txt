@@ -1,0 +1,32 @@
+Introduzione
+Questo cheat sheet tratta le principali considerazioni di sicurezza nello sviluppo e gestione di applicazioni mobili. Le app mobili sono soggette a rischi specifici legati all’ambiente mobile, all’accesso ai dati sensibili, e all’interazione con reti spesso insicure.
+
+Cause e problematiche comuni
+
+    Archiviazione non sicura di dati sensibili sul dispositivo.
+
+    Comunicazioni non cifrate o debolmente protette con server backend.
+
+    Permessi eccessivi o non corretti concessi all’app.
+
+    Vulnerabilità nelle librerie e componenti di terze parti.
+
+    Attacchi di reverse engineering o manipolazione del codice dell’app.
+
+    Mancanza di controlli di integrità e autenticazione forte.
+
+Soluzioni e prevenzione
+
+    Utilizzare storage cifrato per dati sensibili e limitare i dati memorizzati localmente.
+
+    Garantire che tutte le comunicazioni di rete siano protette con TLS aggiornato.
+
+    Applicare il principio del minimo privilegio sui permessi dell’app.
+
+    Verificare e aggiornare regolarmente le librerie di terze parti per evitare vulnerabilità note.
+
+    Integrare controlli di integrità per rilevare modifiche o manomissioni dell’app.
+
+    Implementare meccanismi di autenticazione robusti, preferibilmente multifattoriali.
+
+    Monitorare l’app per comportamenti anomali e attacchi runtime.

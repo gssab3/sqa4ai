@@ -1,0 +1,28 @@
+Introduzione
+Le domande di sicurezza sono un metodo comune per l’autenticazione o il recupero dell’accesso agli account, ma spesso sono poco sicure se scelte o implementate male. Questo cheat sheet fornisce linee guida per la scelta e l’uso corretto di queste domande, minimizzando rischi di compromissione tramite risposte facilmente reperibili o intuibili.
+
+Problemi e Cause Tipiche
+
+    Domande troppo semplici o comuni, con risposte facilmente reperibili online o socialmente ingegnerizzabili (es. nome della madre, città natale).
+
+    Mancanza di varietà nelle domande che porta a risposte prevedibili.
+
+    Mancanza di opzioni per personalizzare domande, costringendo a scelte insicure.
+
+    Scarsa protezione delle risposte memorizzate, spesso in chiaro o con crittografia debole.
+
+    Uso esclusivo delle domande di sicurezza come unico meccanismo di recupero, senza backup o autenticazione multifattore.
+
+Cosa Fare / Come Prevenire
+
+    Scegliere domande con risposte non facilmente reperibili pubblicamente e che richiedano conoscenze personali difficili da indovinare.
+
+    Fornire una lista varia di domande e permettere all’utente di crearne di personalizzate.
+
+    Proteggere le risposte memorizzate usando tecniche di hashing e salting, come per le password.
+
+    Integrare le domande di sicurezza con metodi di autenticazione multifattore o alternative più sicure per il recupero account.
+
+    Informare gli utenti sui rischi associati e consigliare pratiche di scelta consapevole delle risposte.
+
+    Monitorare e aggiornare periodicamente le domande e le politiche di sicurezza correlate.
