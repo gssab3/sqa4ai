@@ -5,3 +5,4 @@ langchain-huggingface
 sentence-transformers
 faiss-gpu (cpu sul portatile)
 openai
+reportlab

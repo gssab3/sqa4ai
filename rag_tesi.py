@@ -10,6 +10,15 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 
+from rag_utils import (
+    parse_gen1, parse_gen2,
+    conteggi_per_categoria,
+    unisci_testi_senza_categoria,
+    ricomponi_testo_numerato_solo_contenuto,
+)
+
+from pdf_utils import export_requisiti_pdf
+
 # Carica le variabili d'ambiente
 load_dotenv()
 OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
@@ -109,6 +118,7 @@ A0x
 Invio
 A0x+1 (o "Privacy" se sono finiti i top10 e iniziano le linee guida di privacy, così per avere un nome della categoria)
 e così via.
+La categoria è assegnata ad ogni requisito ma si generano 3 requisiti per ogni Top10 Owasp.
 RAD:
 {rad}
 """
@@ -123,7 +133,7 @@ print(response)
 
 
 # -------------------
-# ORA ANALISI E CICLO
+# ORA ANALISI
 # -------------------
 
 # Parsing dei requisiti con regex (esempio: "1. Testo requisito - Categoria")
@@ -149,7 +159,7 @@ for cat, count in conteggi.items():
 print(contatore, sum(contatore))
 
 # Identificare categorie scoperte (2 requisiti)
-categorie_mancanti = [cat for cat, count in conteggi.items() if count <= 2]
+categorie_mancanti = [cat for cat, count in conteggi.items() if count <= 0]
 
 if categorie_mancanti:
     print("\nCategorie con pochi o nessun requisito iniziale:", categorie_mancanti, "\n\n\n\n")
@@ -182,3 +192,52 @@ response1 = qa.run(extra_prompt)
 # Stampa
 print("\nRisposta Generata:\n")
 print(response1)
+
+#-----------------------#
+# ANALISI E STATISTICHE #
+#-----------------------#
+
+
+# 1) Parsing 1^ generazione
+items1, bycat1 = parse_gen1(response)
+
+# 2) Conteggi 1^ gen e categorie mancanti (soglia consigliata: <= 0)
+conteggi1 = conteggi_per_categoria(bycat1)
+categorie_mancanti = [cat for cat, count in conteggi1.items() if count <= 0]
+
+# 3) Parsing 2^ generazione passando le categorie valide (le mancanti)
+#    (così gli header "### **Categoria**" e le righe numerate 1./2./3. vengono riconosciuti)
+items2, bycat2 = parse_gen2(response1, categorie_mancanti)
+
+# 4) Stampe di controllo
+print("[CHECK] Requisiti estratti - 1^ generazione:", len(items1))
+print("[CHECK] Requisiti estratti - 2^ generazione:", len(items2))
+
+conteggi2 = conteggi_per_categoria(bycat2)
+
+# Preparazione dell’insieme completo di categorie per la somma
+tutte_le_categorie = sorted(set(list(conteggi1.keys()) + list(conteggi2.keys())))
+
+# Conteggi 1^ gen sugli stessi nomi
+print("\n[CHECK] Conteggi per categoria - 1^ gen (tutte):")
+for c in tutte_le_categorie:
+    print(f" - {c}: {conteggi1.get(c, 0)}")
+
+# Somma 1^+2^ sugli stessi nomi
+print("\n[CHECK] Conteggi totali per categoria (somma 1^+2^):")
+for c in tutte_le_categorie:
+    print(f" - {c}: {conteggi1.get(c, 0) + conteggi2.get(c, 0)}")
+
+# 5) Output unico di soli testi (1^ poi 2^)
+lista_finale_testi = unisci_testi_senza_categoria(items1, items2)
+testo_unico_numerato = ricomponi_testo_numerato_solo_contenuto(lista_finale_testi)
+print("\n[CHECK] Prime 5 righe del testo unico (solo contenuto):\n", "\n".join(testo_unico_numerato.splitlines()))
+
+#-----------------#
+# GENERAZIONE PDF #
+#-----------------#
+
+
+output_pdf = "requisiti_llm.pdf"
+export_requisiti_pdf(output_pdf, testo_unico_numerato)
+print(f"PDF creato: {output_pdf}")
