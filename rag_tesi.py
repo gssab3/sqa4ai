@@ -210,18 +210,13 @@ categorie_mancanti = [cat for cat, count in conteggi1.items() if count <= 0]
 items2, bycat2 = parse_gen2(response1, categorie_mancanti)
 
 # 4) Stampe di controllo
-print("[CHECK] Requisiti estratti - 1^ generazione:", len(items1))
-print("[CHECK] Requisiti estratti - 2^ generazione:", len(items2))
+print("Requisiti estratti - 1^ generazione:", len(items1))
+print("Requisiti estratti - 2^ generazione:", len(items2))
 
 conteggi2 = conteggi_per_categoria(bycat2)
 
 # Preparazione dell’insieme completo di categorie per la somma
 tutte_le_categorie = sorted(set(list(conteggi1.keys()) + list(conteggi2.keys())))
-
-# Conteggi 1^ gen sugli stessi nomi
-print("\n[CHECK] Conteggi per categoria - 1^ gen (tutte):")
-for c in tutte_le_categorie:
-    print(f" - {c}: {conteggi1.get(c, 0)}")
 
 # Somma 1^+2^ sugli stessi nomi
 print("\n[CHECK] Conteggi totali per categoria (somma 1^+2^):")
@@ -231,7 +226,7 @@ for c in tutte_le_categorie:
 # 5) Output unico di soli testi (1^ poi 2^)
 lista_finale_testi = unisci_testi_senza_categoria(items1, items2)
 testo_unico_numerato = ricomponi_testo_numerato_solo_contenuto(lista_finale_testi)
-print("\n[CHECK] Prime 5 righe del testo unico (solo contenuto):\n", "\n".join(testo_unico_numerato.splitlines()))
+print("\nContenuto del pdf generato:\n", "\n".join(testo_unico_numerato.splitlines()))
 
 #-----------------#
 # GENERAZIONE PDF #
