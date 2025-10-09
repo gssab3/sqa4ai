@@ -281,7 +281,7 @@
     },
     {
         "filename": "owasp_Multifactor_Authentication_Cheat_Sheet.txt",
-        "category": "Authentication Security",
+        "category": "Authentication",
         "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
     },
     {
@@ -306,7 +306,7 @@
     },
     {
         "filename": "owasp_OAuth2_Cheat_Sheet.txt",
-        "category": "Authentication Security",
+        "category": "Authentication",
         "owasp_top_10": ["A01:2021 – Broken Access Control", "A07:2021 – Identification and Authentication Failures"]
     },
     {
@@ -316,7 +316,7 @@
     },
     {
         "filename": "owasp_Password_Storage_Cheat_Sheet.txt",
-        "category": "Authentication Security",
+        "category": "Authentication",
         "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
     },
     {
@@ -356,7 +356,7 @@
     },
     {
         "filename": "owasp_SAML_Security_Cheat_Sheet.txt",
-        "category": "Authentication Security",
+        "category": "Authentication",
         "owasp_top_10": ["A07:2021 – Identification and Authentication Failures", "A05:2021 – Security Misconfiguration"]
     },
     {
@@ -386,7 +386,7 @@
     },
     {
         "filename": "owasp_Session_Management_Cheat_Sheet.txt",
-        "category": "Authentication Security",
+        "category": "Authentication",
         "owasp_top_10": ["A07:2021 – Identification and Authentication Failures"]
     },
     {
