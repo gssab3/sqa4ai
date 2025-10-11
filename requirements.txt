@@ -1,8 +1,9 @@
-installare venv
+# consigliato usare un venv dedicato per installare queste dipendenze ed eseguire il modello
 langchain
 langchain-community
 langchain-huggingface
 sentence-transformers
-faiss-gpu (cpu sul portatile)
 openai
 reportlab
+# scegliere solo una delle due FAISS tra faiss-gpu e faiss-cpu
+faiss-cpu # invece, installare faiss-gpu per PC con CUDA
