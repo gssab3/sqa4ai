@@ -1,26 +1,27 @@
-Introduzione
-La sicurezza della supply chain software riguarda la protezione contro minacce che possono infiltrarsi attraverso componenti, librerie, tool e processi utilizzati per costruire, distribuire e mantenere il software. L’obiettivo è garantire l’integrità, autenticità e sicurezza di tutto ciò che contribuisce alla produzione del software.
+Introduction
 
-Cause
+Software supply chain security concerns protection against threats that can infiltrate components, libraries, tools, and processes used to build, distribute, and maintain software. The goal is to ensure the integrity, authenticity, and security of everything that contributes to software production.
 
-    Uso di componenti di terze parti vulnerabili o compromessi.
+Causes
 
-    Mancanza di verifiche sull’origine e integrità dei pacchetti e librerie.
+    Use of vulnerable or compromised third-party components.
 
-    Processi di build e distribuzione non sicuri o poco tracciati.
+    Lack of verification of the origin and integrity of packages and libraries.
 
-    Accessi non autorizzati o scarsi controlli sui tool e ambienti di sviluppo.
+    Insecure or poorly tracked build and distribution processes.
 
-Soluzioni e prevenzione
+    Unauthorized access or poor controls over development tools and environments.
 
-    Utilizzare strumenti di scansione automatica per individuare vulnerabilità nelle dipendenze.
+Solutions and Prevention
 
-    Verificare firme digitali e checksum per assicurare integrità e autenticità.
+    Use automated scanning tools to identify vulnerabilities in dependencies.
 
-    Applicare politiche di controllo accessi rigorose sugli ambienti di build e deploy.
+    Verify digital signatures and checksums to ensure integrity and authenticity.
 
-    Automatizzare e tracciare l’intero processo di build per garantire trasparenza.
+    Enforce strict access control policies on build and deployment environments.
 
-    Aggiornare regolarmente componenti e monitorare le fonti ufficiali per patch di sicurezza.
+    Automate and track the entire build process to ensure transparency.
 
-    Educare team e sviluppatori sulle best practice di sicurezza della supply chain.
+    Regularly update components and monitor official sources for security patches.
+
+    Educate teams and developers on supply chain security best practices.

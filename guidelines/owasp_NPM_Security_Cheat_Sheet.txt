@@ -1,28 +1,29 @@
-Introduzione
-Questo cheat sheet si concentra sulla sicurezza nell’uso di npm, il package manager più usato per JavaScript/Node.js, evidenziando rischi legati a dipendenze, supply chain e gestione dei pacchetti.
+Introduction
 
-Cause e problematiche
+This cheat sheet focuses on security when using npm, the most widely used package manager for JavaScript/Node.js, highlighting risks related to dependencies, supply chain, and package management.
 
-    Uso di pacchetti non sicuri o compromessi contenenti malware o codice malevolo.
+Causes and Issues
 
-    Dipendenze con vulnerabilità note o non aggiornate.
+    Use of unsafe or compromised packages containing malware or malicious code.
 
-    Possibilità di attacchi supply chain (ad esempio pacchetti “typosquatting” o pacchetti malevoli pubblicati).
+    Dependencies with known or outdated vulnerabilities.
 
-    Mancanza di verifica della provenienza e integrità dei pacchetti.
+    Possibility of supply chain attacks (e.g., "typosquatting" packages or malicious packages being published).
 
-    Configurazioni errate nei file di progetto che possono esporre dati sensibili.
+    Lack of verification of package provenance and integrity.
 
-Soluzioni e prevenzione
+    Misconfigurations in project files that can expose sensitive data.
 
-    Usare pacchetti da fonti affidabili e verificare l’autorevolezza.
+Solutions and Prevention
 
-    Mantenere aggiornate le dipendenze e monitorare vulnerabilità tramite strumenti automatici (es. npm audit).
+    Use packages from trusted sources and verify their authoritativeness.
 
-    Usare strumenti di scansione per controllare la sicurezza delle dipendenze e la loro integrità.
+    Keep dependencies up to date and monitor for vulnerabilities using automated tools (e.g., npm audit).
 
-    Evitare di includere file sensibili o segreti nei pacchetti o nei repository pubblici.
+    Use scanning tools to check the security and integrity of dependencies.
 
-    Configurare correttamente il file package.json per limitare i rischi e ridurre la superficie di attacco.
+    Avoid including sensitive or secret files in packages or public repositories.
 
-    Educare gli sviluppatori sul rischio della supply chain e sulle best practice npm.
+    Correctly configure the package.json file to limit risks and reduce the attack surface.
+
+    Educate developers on supply chain risk and npm best practices.

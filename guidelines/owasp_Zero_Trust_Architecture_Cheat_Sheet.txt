@@ -1,19 +1,19 @@
-L’architettura Zero Trust è un modello di sicurezza che assume che nessuna entità, interna o esterna alla rete aziendale, sia affidabile di default, e quindi richiede verifiche continue di identità e autorizzazioni per ogni accesso.
+Zero Trust architecture is a security model that assumes that no entity, internal or external to the corporate network, is trusted by default, and therefore requires continuous identity and authorization verification for every access.
 
-Cosa fare / Cause di rischio
+What to do / Risk sources
 
-    Modelli di sicurezza tradizionali basati su perimetri di rete fidati che possono essere compromessi.
+    Traditional security models based on trusted network perimeters that can be compromised.
 
-    Mancanza di segmentazione e controllo granulare degli accessi.
+    Lack of segmentation and granular access control.
 
-    Assenza di monitoraggio continuo delle attività.
+    Lack of continuous activity monitoring.
 
-Soluzioni e prevenzione
+Solutions and prevention
 
-    Implementare autenticazione forte e continua, anche per risorse interne.
+    Implement strong and continuous authentication, even for internal resources.
 
-    Segmentare la rete e limitare gli accessi secondo il principio del minimo privilegio.
+    Segment the network and limit access according to the principle of least privilege.
 
-    Monitorare e analizzare costantemente il comportamento degli utenti e dei dispositivi.
+    Continuously monitor and analyze user and device behavior.
 
-    Automatizzare risposte a minacce e anomalie.
+    Automate responses to threats and anomalies.

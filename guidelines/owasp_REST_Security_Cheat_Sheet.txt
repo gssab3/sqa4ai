@@ -1,26 +1,27 @@
-Introduzione
-Questo cheat sheet fornisce linee guida per progettare e implementare API REST sicure, garantendo che le comunicazioni e le risorse siano protette da attacchi comuni e vulnerabilità specifiche.
+Introduction
 
-Cause
+The REST Security Cheat Sheet provides guidelines for designing and implementing secure REST APIs, ensuring that communications and resources are protected from common attacks and specific vulnerabilities.
 
-    Assenza o errata gestione di autenticazione e sessioni.
+Causes
 
-    Mancanza di autorizzazioni granulari e controllo degli accessi.
+    Lack of or incorrect authentication and session management.
 
-    Vulnerabilità legate a input non validati, come injection e XSS.
+    Lack of granular authorization and access control.
 
-    Comunicazioni non cifrate o esposte a intercettazioni.
+    Vulnerabilities related to unvalidated input, such as injection and XSS.
 
-Soluzioni e prevenzione
+    Communications that are unencrypted or exposed to interception.
 
-    Implementare autenticazione robusta (OAuth, JWT, API Keys).
+Solutions and Prevention
 
-    Applicare autorizzazioni a livello di risorsa e azione.
+    Implement strong authentication (OAuth, JWT, API Keys).
 
-    Usare HTTPS per tutte le comunicazioni.
+    Enforce resource- and action-level authorization.
 
-    Validare, sanificare e parametrizzare tutti gli input.
+    Use HTTPS for all communications.
 
-    Impostare limiti di rate e monitoraggio delle chiamate API.
+    Validate, sanitize, and parameterize all inputs.
 
-    Gestire correttamente errori e log senza esporre dati sensibili.
+    Set rate limits and monitoring of API calls.
+
+    Properly handle errors and logs without exposing sensitive data.

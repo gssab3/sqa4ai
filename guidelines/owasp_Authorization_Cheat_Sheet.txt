@@ -1,36 +1,37 @@
-Introduzione
-L’autorizzazione è il processo che determina i permessi di un utente o di un’entità all’interno di un sistema dopo che la sua identità è stata autenticata. Serve a garantire che gli utenti possano accedere solo alle risorse e azioni per cui hanno i diritti appropriati, evitando accessi non autorizzati che potrebbero compromettere la sicurezza o la riservatezza dei dati. Un sistema di autorizzazione efficace è fondamentale per mantenere il principio del minimo privilegio e proteggere risorse critiche.
+Introduction
 
-Problemi e Cause Tipiche
+Authorization is the process of determining the permissions of a user or entity within a system after their identity has been authenticated. It ensures that users can access only the resources and actions for which they have the appropriate rights, preventing unauthorized access that could compromise the security or confidentiality of data. An effective authorization system is essential to maintaining the principle of least privilege and protecting critical resources.
 
-    Controlli di accesso insufficienti o mancanti, che permettono agli utenti di accedere a risorse o funzionalità non autorizzate.
+Typical Problems and Causes
 
-    Controlli di autorizzazione applicati in modo incoerente o solo sul client, facilmente aggirabili.
+    Insufficient or missing access controls, allowing users to access unauthorized resources or functionality.
 
-    Uso errato o assenza di separazione tra autenticazione e autorizzazione.
+    Authorization controls applied inconsistently or only on the client, easily circumvented.
 
-    Ruoli troppo permissivi o mal definiti, che assegnano più privilegi del necessario.
+    Incorrect use or lack of separation between authentication and authorization.
 
-    Mancanza di validazione dinamica dell’autorizzazione per operazioni critiche, con permessi hard-coded o statici.
+    Overly permissive or poorly defined roles, assigning more privileges than necessary.
 
-    Assenza di logging e monitoraggio degli accessi, che impedisce di rilevare abusi o accessi indebiti.
+    Lack of dynamic authorization validation for critical operations, with hard-coded or static permissions.
 
-    Vulnerabilità note come Broken Access Control (OWASP Top 10 A01) presenti nel sistema.
+    Lack of access logging and monitoring, which prevents detection of abuse or unauthorized access.
 
-Cosa Fare / Come Prevenire
+    Known vulnerabilities such as Broken Access Control (OWASP Top 10 A01) exist in the system.
 
-    Applicare sempre controlli di autorizzazione sul server, mai solo sul client.
+What to Do / How to Prevent
 
-    Implementare un modello di controllo degli accessi basato su ruoli (RBAC), attributi (ABAC) o policy, ben definito e aggiornato.
+    Always apply authorization controls on the server, never just the client.
 
-    Separare chiaramente i processi di autenticazione da quelli di autorizzazione.
+    Implement a well-defined and updated role-based access control (RBAC), attribute-based access control (ABAC), or policy-based access control model.
 
-    Verificare le autorizzazioni per ogni richiesta e per ogni azione critica, con validazioni dinamiche.
+    Clearly separate authentication from authorization processes.
 
-    Minimizzare i privilegi assegnati agli utenti, aderendo al principio del minimo privilegio.
+    Verify authorizations for every request and critical action, with dynamic validations.
 
-    Integrare logging dettagliato e monitoraggio degli accessi per individuare e rispondere a potenziali abusi.
+    Minimize privileges assigned to users, adhering to the principle of least privilege.
 
-    Eseguire regolari revisioni e audit dei permessi e dei ruoli assegnati.
+    Integrate detailed logging and access monitoring to identify and respond to potential abuse.
 
-    Utilizzare test automatici e manuali per rilevare problemi di autorizzazione, inclusi test di fuzzing e pen testing mirati.
+    Perform regular reviews and audits of assigned permissions and roles.
+
+    Use automated and manual testing to detect authorization issues, including fuzzing and targeted pen testing.

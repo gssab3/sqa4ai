@@ -1,26 +1,27 @@
-Introduzione
-Il Prompt Injection è una vulnerabilità specifica nell’uso di modelli linguistici (LLM) dove un attaccante inserisce comandi o contenuti malevoli all’interno del prompt, manipolando il comportamento del modello e potenzialmente ottenendo risposte non sicure o errate. Questo cheat sheet descrive le problematiche e le contromisure per mitigare questi rischi.
+Introduction
 
-Cause tipiche di problemi
+Prompt injection is a specific vulnerability in language modeling (LLM) where an attacker inserts malicious commands or content into the prompt, manipulating the model's behavior and potentially resulting in unsafe or incorrect responses. This cheat sheet describes the issues and countermeasures to mitigate these risks.
 
-    Inserimento non filtrato o non controllato di input utente nei prompt LLM.
+Typical Problem Causes
 
-    Mancanza di isolamento tra dati di contesto e comandi generali.
+    Unfiltered or uncontrolled insertion of user input into LLM prompts.
 
-    Prompt troppo generici o con possibilità di interpretare istruzioni nascoste o ambigue.
+    Lack of isolation between context data and general commands.
 
-    Assenza di validazione o sanitizzazione degli input concatenati nel prompt.
+    Prompts that are too general or that allow hidden or ambiguous instructions to be interpreted.
 
-Soluzioni e prevenzione
+    Lack of validation or sanitization of input chained into the prompt.
 
-    Sanitizzare e validare accuratamente tutti i dati inseriti nei prompt.
+Solutions and Prevention
 
-    Separare chiaramente i dati utente dai comandi di sistema nel prompt (es. usare template rigidi).
+    Thoroughly sanitize and validate all data entered into prompts.
 
-    Limitare il contesto fornito al modello per minimizzare le superfici di attacco.
+    Clearly separate user data from system commands in the prompt (e.g., use strict templates).
 
-    Monitorare e loggare i prompt e le risposte per identificare tentativi di injection.
+    Limit the context provided to the model to minimize the attack surface.
 
-    Utilizzare tecniche di prompt engineering per ridurre ambiguità e interpretazioni indesiderate.
+    Monitor and log prompts and responses to identify injection attempts.
 
-    Implementare meccanismi di filtraggio e controllo sulle risposte generate.
+    Use prompt engineering techniques to reduce ambiguity and unwanted interpretations.
+
+    Implement filtering and control mechanisms for generated responses.

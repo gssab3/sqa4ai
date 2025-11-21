@@ -1,38 +1,38 @@
-Introduzione
+Introduction
 
-L’Attack Surface Analysis è un processo pratico e mirato che aiuta sviluppatori e specialisti di sicurezza a identificare, comprendere e gestire le aree esposte di un’applicazione suscettibili ad attacchi esterni. L’obiettivo è minimizzare i rischi legati alle superfici d’attacco, monitorare come queste cambiano nel tempo, e applicare protezioni adeguate per difendere i punti vulnerabili.
-Cosa analizzare (Definizione della Superficie di Attacco)
+Attack Surface Analysis is a practical and targeted process that helps developers and security specialists identify, understand, and manage the exposed areas of an application susceptible to external attacks. The goal is to minimize the risks associated with attack surfaces, monitor how they change over time, and apply appropriate protections to defend against vulnerable points.
+What to Analyze (Attack Surface Definition)
 
-L’attack surface comprende:
+The attack surface includes:
 
-    Tutti i canali di ingresso e uscita dati/comandi dall’applicazione.
+    All data/command input and output channels from the application.
 
-    Il codice e i meccanismi di difesa che proteggono questi canali (es. autenticazione, autorizzazione, logging, validazione dati).
+    The code and defense mechanisms that protect these channels (e.g., authentication, authorization, logging, data validation).
 
-    I dati sensibili e critici gestiti dall’applicazione (segreti, chiavi, dati personali, proprietà intellettuale).
+    Sensitive and critical data managed by the application (secrets, keys, personal data, intellectual property).
 
-    Il codice che garantisce la protezione di tali dati (es. crittografia, auditing, controlli di integrità).
+    The code that ensures the protection of such data (e.g., encryption, auditing, integrity checks).
 
-Problemi e Rischi Tipici
+Typical Issues and Risks
 
-    Superficie d’attacco troppo ampia e non controllata, che aumenta la probabilità di exploit.
+    Excessively large and uncontrolled attack surface, which increases the likelihood of exploits.
 
-    Modifiche non monitorate alla superficie d’attacco che possono introdurre nuovi rischi.
+    Unmonitored changes to the attack surface that can introduce new risks.
 
-    Mancanza di consapevolezza da parte degli sviluppatori sulle parti critiche da difendere.
+    Lack of developer awareness of critical areas to defend.
 
-    Protezioni insufficienti o mal configurate su punti di ingresso e dati sensibili.
+    Insufficient or misconfigured protections on entry points and sensitive data.
 
-Cosa Fare / Come Prevenire
+What to Do / How to Prevent
 
-    Mappare e documentare l’attack surface: identificare tutti i punti di ingresso/uscita, funzionalità esposte, e dati sensibili.
+    Map and document the attack surface: identify all entry/exit points, exposed functionality, and sensitive data.
 
-    Monitorare e aggiornare costantemente l’attack surface: ogni modifica deve essere valutata per il potenziale impatto sulla sicurezza.
+    Continuously monitor and update the attack surface: every change must be assessed for its potential security impact.
 
-    Applicare difese multiple (defense-in-depth) nelle aree critiche.
+    Apply multiple defenses (defense-in-depth) to critical areas.
 
-    Coinvolgere sviluppatori e security specialist nel monitoraggio continuo durante sviluppo e manutenzione.
+    Involve developers and security specialists in continuous monitoring during development and maintenance.
 
-    Concentrarsi sulla protezione dei dati sensibili e sui controlli di accesso.
+    Focus on protecting sensitive data and access controls.
 
-    Eseguire analisi di rischio e testing mirati sulle aree identificate come più esposte o critiche.
+    Conduct risk analyses and targeted testing on areas identified as most exposed or critical.

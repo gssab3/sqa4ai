@@ -1,24 +1,25 @@
-Introduzione
-JAAS (Java Authentication and Authorization Service) è il framework di Java per gestire autenticazione e autorizzazione in modo modulare e flessibile. Permette di integrare diversi meccanismi di sicurezza senza modificare il codice dell’applicazione, supportando login, controllo degli accessi e gestione dei permessi.
+Introduction
 
-Cause tipiche di problemi
+JAAS (Java Authentication and Authorization Service) is the Java framework for managing authentication and authorization in a modular and flexible way. It allows you to integrate various security mechanisms without changing the application code, supporting login, access control, and permission management.
 
-    Configurazioni errate o incomplete del sistema di login.
+    Typical Causes of Problems
 
-    Mancanza di separazione chiara tra autenticazione e autorizzazione.
+    Incorrect or incomplete login system configurations.
 
-    Gestione impropria di permessi e ruoli.
+    Lack of clear separation between authentication and authorization.
 
-    Assenza di auditing o logging dettagliato sulle operazioni di sicurezza.
+    Improper management of permissions and roles.
 
-Soluzioni e prevenzione
+    Lack of detailed auditing or logging of security operations.
 
-    Usare le policy JAAS per definire chiaramente permessi e ruoli.
+Solutions and Prevention
 
-    Implementare moduli di login robusti e personalizzati per esigenze specifiche.
+    Use JAAS policies to clearly define permissions and roles.
 
-    Separare logicamente i processi di autenticazione da quelli di autorizzazione.
+    Implement robust and customized login modules for specific needs.
 
-    Abilitare logging e auditing dettagliato per monitorare gli accessi e modifiche di permessi.
+    Logically separate authentication from authorization processes.
 
-    Testare e validare le configurazioni JAAS regolarmente per prevenire errori di sicurezza.
+    Enable detailed logging and auditing to monitor access and permission changes.
+
+    Test and validate JAAS configurations regularly to prevent security errors.

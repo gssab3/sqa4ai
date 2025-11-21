@@ -1,24 +1,25 @@
-Introduzione
-Le vulnerabilità di injection si verificano quando dati non affidabili vengono interpretati come codice o comandi, permettendo a un attaccante di manipolare l’esecuzione del sistema. Questo tipo di vulnerabilità è tra le più comuni e critiche in applicazioni web e software.
+Introduction
 
-Cause tipiche di problemi
+Injection vulnerabilities occur when untrusted data is interpreted as code or commands, allowing an attacker to manipulate system execution. This type of vulnerability is among the most common and critical in web applications and software.
 
-    Mancata o insufficiente validazione e sanitizzazione dei dati di input.
+Typical Causes of Problems
 
-    Uso diretto di input utente in query SQL, comandi di sistema, o linguaggi di scripting senza protezioni.
+    Lack of or insufficient validation and sanitization of input data.
 
-    Costruzione dinamica di comandi o query senza meccanismi di escaping o parametri.
+    Direct use of user input in SQL queries, system commands, or unprotected scripting languages.
 
-    Assenza di controlli di accesso su operazioni critiche.
+    Dynamic construction of commands or queries without escaping mechanisms or parameters.
 
-Soluzioni e prevenzione
+    Lack of access controls on critical operations.
 
-    Utilizzare query parametrizzate o prepared statements per tutte le interazioni con il database.
+Solutions and Prevention
 
-    Validare e sanificare rigorosamente tutti i dati in ingresso, preferibilmente con whitelist.
+    Use parameterized queries or prepared statements for all database interactions.
 
-    Evitare la concatenazione dinamica di comandi o query con input non controllato.
+    Rigorously validate and sanitize all input data, preferably with whitelists.
 
-    Applicare il principio del minimo privilegio per gli account di accesso a database e sistemi.
+    Avoid dynamically chaining commands or queries with uncontrolled input.
 
-    Effettuare un’analisi di sicurezza durante lo sviluppo e utilizzare strumenti di scanning per rilevare possibili injection.
+    Apply the principle of least privilege for database and system access accounts.
+
+    Conduct a security analysis during development and use scanning tools to detect potential injections.

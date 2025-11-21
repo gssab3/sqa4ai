@@ -1,36 +1,39 @@
-Introduzione: UniClass è un ambiente digitale open-source 
-facilmente accessibile a tutti, in grado di rispondere a ogni 
-esigenza. 
-Questo applicativo non si limita a migliorare l’esperienza degli 
-studenti universitari, ma semplifica anche le interazioni dei 
-docenti con il sistema e con gli studenti stessi. UniClass 
-permette la reperibilità in tempo reale di informazioni sulla 
-quotidianità degli studenti e del personale in ateneo, come 
-visualizzazione degli orari delle lezioni, calendarizzazione di 
-quest'ultime e garantire interoperabilità tra lo studente e il 
-docente per semplificare le loro interazioni e l'andamento dei 
-corsi. 
-Descrizione del Problema: Le funzionalità offerte dagli attuali 
-strumenti sono spesso troppo simili e si sovrappongono tra loro. 
-Ad esempio, per sapere se un’aula è libera o occupata, uno 
-studente deve utilizzare più applicazioni differenti su più 
-piattaforme. Non solo le applicazioni sono dispersive e molto 
-simili tra loro, creando confusione negli utenti, ma gli studenti, 
-nella maggior parte dei casi, si trovano in difficoltà per la 
-mancata calendarizzazione dei corsi da seguire: uno studente 
-che deve seguire un corso del secondo anno e, subito dopo, del 
-terzo sarà costretto a sprecare troppo tempo in una ricerca che 
-diventerà frustrante e ripetitiva.
-Questo sistema è rivolto principalmente agli studenti universitari 
-e al personale docente. Esistono diverse tipologie di utenti per le 
-interazioni con il sistema o con altri tipi di utenti o 
-semplicemente per la gestione delle risorse digitale disponibili in 
-piattaforma riguardanti l'organizzazione d'ateneo. 
-Ciò di cui non si occuperà UniClass sarà la gestione finanziaria, 
-l'iscrizione dello studente e gestioni amministrative riguardanti i 
-ruoli del personale universitario. 
-Obiettivi: 
-- Fornire una piattaforma centralizzata per visualizzare le aule libere e gli orari delle lezioni. 
-- Migliorare la navigazione del campus tramite mappe dettagliate. 
-- Garantire comunicazione tra studente e docente 
-- Ridurre il tempo e lo sforzo necessari per trovare informazioni rilevanti. 
+Introduction: UniClass is an open-source digital environment
+easily accessible to everyone, capable of meeting every
+need.
+This application not only improves the experience of university
+students, but also simplifies the interactions of
+instructors with the system and with the students themselves. UniClass
+enables real-time access to information on the
+daily lives of students and university staff, such as
+viewing class schedules and scheduling
+classes, and ensures interoperability between students and
+instructors to simplify their interactions and the progress of
+courses.
+Problem Description: The features offered by current
+tools are often too similar and overlap.
+For example, to find out whether a classroom is free or occupied, a
+student must use multiple different applications on multiple
+platforms. Not only are the applications scattered and very
+similar, creating confusion for users, but students,
+in most cases, find themselves in difficulty due to the
+lack of course scheduling: a student
+who has to take a second-year course and, immediately after, a third-year
+course will be forced to waste too much time searching, which will
+become frustrating and repetitive.
+This system is aimed primarily at university students
+and faculty. Different types of users exist for
+interactions with the system or with other users, or
+simply for managing the digital resources available on the
+platform regarding university organization.
+
+UniClass will not handle financial management,
+student enrollment, and administrative management regarding
+university staff roles.
+
+Objectives:
+- Provide a centralized platform for viewing available classrooms and class schedules.
+- Improve campus navigation through detailed maps.
+
+- Ensure communication between students and instructors
+- Reduce the time and effort required to find relevant information.

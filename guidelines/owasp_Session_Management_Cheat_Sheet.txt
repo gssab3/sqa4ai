@@ -1,26 +1,27 @@
-Introduzione
-La gestione della sessione è fondamentale per mantenere l’autenticità e integrità dell’interazione tra utente e applicazione, prevenendo furto o abuso delle sessioni. Un sistema di session management sicuro protegge da attacchi come session fixation, hijacking e timeout inappropriati.
+Introduction
 
-Cause
+Session management is essential for maintaining the authenticity and integrity of user-application interactions, preventing session theft or abuse. A secure session management system protects against attacks such as session fixation, hijacking, and inappropriate timeouts.
 
-    Identificatori di sessione prevedibili o esposti.
+Causes
 
-    Mancata invalidazione della sessione dopo logout o timeout.
+    Predictable or exposed session identifiers.
 
-    Assenza di protezione dei cookie di sessione (es. HttpOnly, Secure).
+    Failure to invalidate the session after logout or timeout.
 
-    Sessioni prolungate senza controlli di rinnovo o inattività.
+    Lack of session cookie protection (e.g., HttpOnly, Secure).
 
-Soluzioni e prevenzione
+    Long sessions without renewal or inactivity checks.
 
-    Generare identificatori di sessione lunghi, casuali e unici.
+Solutions and Prevention
 
-    Utilizzare cookie con flag HttpOnly e Secure per proteggere i token di sessione.
+    Generate long, random, and unique session identifiers.
 
-    Invalida la sessione dopo logout o periodi di inattività.
+    Use cookies with the HttpOnly and Secure flags to protect session tokens.
 
-    Implementare meccanismi di rinnovo e rigenerazione del token di sessione.
+    Invalidate the session after logout or periods of inactivity.
 
-    Limitare l’accesso tramite meccanismi come SameSite cookie e restrizioni di dominio.
+    Implement mechanisms for session token renewal and regeneration.
 
-    Monitorare attività sospette e implementare blocchi o alert in caso di comportamenti anomali.
+    Restrict access using mechanisms such as SameSite cookies and domain restrictions.
+
+    Monitor suspicious activity and implement blocks or alerts in case of anomalous behavior.

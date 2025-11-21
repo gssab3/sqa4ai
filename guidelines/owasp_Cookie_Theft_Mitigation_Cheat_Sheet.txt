@@ -1,24 +1,21 @@
-Introduzione
-Il furto di cookie di sessione può permettere a un attaccante di impersonare la sessione di un utente, anche se l’autenticazione originaria è robusta (es. MFA). Questo Cheat Sheet fornisce strategie per rilevare e mitigare tali furti, aumentando la sicurezza delle sessioni utente.
-OWASP Cheat Sheet Series
+Introduction
 
-Problemi / Cause
+Session cookie theft can allow an attacker to impersonate a user's session, even if the original authentication is robust (e.g., MFA). This Cheat Sheet provides strategies to detect and mitigate such theft, increasing the security of user sessions.
 
-    I cookie possono essere utilizzati da macchine o contesti diversi rispetto a quelli originali; ciò indica un possibile furto.
+Issues / Causes
 
-    I controlli basati su attributi anch’essi usati dinamicamente (IP, User-Agent, orario, lingua) possono generare falsi positivi o negativi se interpretati rigidamente.
+    Cookies may be used by machines or in contexts other than the original ones, indicating possible theft.
+
+    Checks based on attributes that are also used dynamically (IP, User-Agent, time, language) can generate false positives or negatives if interpreted strictly.
+
     OWASP Cheat Sheet Series
 
-Cosa Fare / Come Prevenire
+What to Do / How to Prevent
 
-    Memorizzare al momento della creazione della sessione informazioni contestuali (IP, User-Agent, lingua, data) e confrontarle ad ogni richiesta.
-    OWASP Cheat Sheet Series
+    Store contextual information (IP, User-Agent, language, date) when creating the session and compare it with each request.
 
-    In caso di cambi contestuali sospetti, applicare misure come:
+    In case of suspicious context changes, apply measures such as:
+        Forced relogin (invalidate the session, require re-authentication).
+        CAPTCHA as an alternative verification method, useful in the presence of bots or suspicious but legitimate scenarios.
 
-        Rilogin forzato (invalidare la sessione, richiedere ri-autenticazione).
-
-        CAPTCHA come verifica alternativa, utile in presenza di bot o scenari sospetti ma ad uso legittimo.
-        OWASP Cheat Sheet Series
-
-    Device Bound Session Credentials: soluzione prospettica basata su cookie vincolati alla chiave privata interna del browser (ancora in draft) per impedire utilizzo dei cookie rubati.
+    Device Bound Session Credentials: A prospective solution based on cookies linked to the browser's internal private key (still in draft) to prevent the use of stolen cookies.

@@ -1,28 +1,29 @@
-Introduzione
-Le applicazioni legacy rappresentano spesso un rischio di sicurezza a causa di tecnologie obsolete, mancanza di aggiornamenti e incompatibilità con pratiche moderne. Questo cheat sheet offre strategie per gestire e mitigare i rischi associati alle applicazioni legacy durante la loro manutenzione o migrazione.
+Introduction
 
-Cause tipiche di problemi
+Legacy applications often pose a security risk due to outdated technologies, lack of updates, and incompatibility with modern practices. This cheat sheet offers strategies to manage and mitigate the risks associated with legacy applications during maintenance or migration.
 
-    Uso di librerie e framework non aggiornati e vulnerabili.
+Typical Causes of Problems
 
-    Mancanza di patch di sicurezza e aggiornamenti.
+    Use of outdated and vulnerable libraries and frameworks.
 
-    Codice non documentato o poco chiaro che rende difficile la manutenzione.
+    Lack of security patches and updates.
 
-    Difficoltà di integrazione con nuovi sistemi di sicurezza.
+    Undocumented or unclear code that makes maintenance difficult.
 
-    Assenza di controlli moderni di autenticazione e autorizzazione.
+    Difficulty integrating with new security systems.
 
-Soluzioni e prevenzione
+    Lack of modern authentication and authorization controls.
 
-    Effettuare una valutazione completa dei rischi e delle vulnerabilità dell’applicazione legacy.
+Remediation and Prevention
 
-    Applicare patch e aggiornamenti di sicurezza ove possibile.
+    Conduct a comprehensive risk and vulnerability assessment of the legacy application.
 
-    Isolare l’applicazione legacy in reti o ambienti protetti.
+    Apply security patches and updates where possible.
 
-    Pianificare la migrazione verso soluzioni più moderne e sicure.
+    Isolate the legacy application in secure networks or environments.
 
-    Implementare controlli di sicurezza aggiuntivi a livello di rete o proxy.
+    Plan the migration to more modern and secure solutions.
 
-    Documentare e migliorare progressivamente il codice e i processi.
+    Implement additional security controls at the network or proxy level.
+
+    Document and progressively improve code and processes.

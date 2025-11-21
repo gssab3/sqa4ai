@@ -1,24 +1,25 @@
-Introduzione
-Il Threat Modeling è un processo sistematico volto a identificare, comprendere e gestire le minacce alla sicurezza di un’applicazione o sistema fin dalle prime fasi di progettazione. Aiuta a prevenire vulnerabilità riducendo la superficie di attacco e anticipando possibili rischi.
+Introduction
 
-Cosa fare / Cause di rischio
+Threat modeling is a systematic process aimed at identifying, understanding, and managing security threats to an application or system from the early design stages. It helps prevent vulnerabilities by reducing the attack surface and anticipating potential risks.
 
-    Mancata identificazione delle potenziali minacce durante la progettazione.
+What to do / Risk causes
 
-    Non considerare tutti i componenti e le interazioni del sistema, comprese dipendenze esterne.
+    Failure to identify potential threats during design.
 
-    Scarsa comprensione del contesto di utilizzo e delle motivazioni degli attaccanti.
+    Failure to consider all system components and interactions, including external dependencies.
 
-    Assenza di un processo di aggiornamento continuo del modello in seguito a modifiche.
+    Poor understanding of the context of use and attacker motivations.
 
-Soluzioni e prevenzione
+    Lack of a process for continuously updating the model following changes.
 
-    Utilizzare metodi strutturati come STRIDE, PASTA o Attack Trees per classificare le minacce.
+Solutions and prevention
 
-    Definire chiaramente asset, attori, flussi di dati e punti di ingresso.
+    Use structured methods such as STRIDE, PASTA, or Attack Trees to classify threats.
 
-    Coinvolgere team multidisciplinari per avere una visione completa delle vulnerabilità.
+    Clearly define assets, actors, data flows, and entry points.
 
-    Aggiornare il modello regolarmente con l’evoluzione del sistema e del contesto di minaccia.
+    Engage multidisciplinary teams to gain a comprehensive view of vulnerabilities.
 
-    Prioritizzare le minacce in base al rischio (impatto e probabilità) per indirizzare gli sforzi di mitigazione.
+    Update the model regularly as the system and threat context evolve.
+
+    Prioritize threats based on risk (impact and likelihood) to guide mitigation efforts.

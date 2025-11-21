@@ -1,24 +1,25 @@
-Introduzione
-La Transaction Authorization riguarda il controllo rigoroso e sicuro delle operazioni che comportano modifiche di stato o transazioni finanziarie, assicurando che solo utenti e processi autorizzati possano eseguire azioni sensibili.
+Introduction
 
-Cosa fare / Cause di rischio
+Transaction Authorization involves the rigorous and secure control of operations involving status changes or financial transactions, ensuring that only authorized users and processes can perform sensitive actions.
 
-    Autorizzazioni insufficienti o errate che permettono azioni non consentite.
+What to do / Risk sources
 
-    Mancata verifica contestuale (es. controlli a più fattori o limiti di importo).
+    Insufficient or incorrect authorizations that allow prohibited actions.
 
-    Mancanza di logging e audit delle transazioni autorizzate.
+    Lack of contextual verification (e.g., multi-factor checks or amount limits).
 
-    Vulnerabilità legate a sessioni e gestione di token di autorizzazione.
+    Lack of logging and auditing of authorized transactions.
 
-Soluzioni e prevenzione
+    Vulnerabilities related to sessions and authorization token management.
 
-    Applicare principi di autorizzazione basati su ruoli (RBAC) o attributi (ABAC).
+Solutions and Prevention
 
-    Implementare controlli di autorizzazione a livello di singola transazione.
+    Apply role-based authorization (RBAC) or attribute-based authorization (ABAC) principles.
 
-    Richiedere conferme o autenticazioni aggiuntive per azioni ad alto rischio (multifactor authentication).
+    Implement authorization controls at the individual transaction level.
 
-    Registrare tutte le transazioni con dettagli sufficienti per audit e rilevamento frodi.
+    Require confirmations or additional authentication for high-risk actions (multi-factor authentication).
 
-    Proteggere i token di autorizzazione e le sessioni da furto o manipolazione.
+    Log all transactions with sufficient detail for auditing and fraud detection.
+
+    Protect authorization tokens and sessions from theft or manipulation.

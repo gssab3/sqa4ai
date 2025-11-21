@@ -1,36 +1,37 @@
-Introduzione
-Le estensioni del browser sono componenti software che estendono le funzionalità dei browser web. Pur essendo molto utili, rappresentano un vettore di attacco potenzialmente critico perché hanno accesso a dati sensibili dell’utente, possono manipolare il contenuto delle pagine web e interagire con altre risorse di sistema. La sicurezza delle estensioni è fondamentale per proteggere la privacy e la sicurezza degli utenti e prevenire abusi, come il furto di dati, l’esecuzione di codice malevolo o attacchi di phishing.
+Introduction
 
-Problemi e Cause Tipiche
+Browser extensions are software components that extend the functionality of web browsers. While very useful, they represent a potentially critical attack vector because they have access to sensitive user data, can manipulate web page content, and interact with other system resources. Extension security is essential to protect user privacy and security and prevent abuse, such as data theft, malicious code execution, or phishing attacks.
 
-    Permessi eccessivi o troppo generosi concessi alle estensioni, che espongono dati o funzioni sensibili.
+Typical Problems and Causes
 
-    Mancanza di controllo sull’origine e l’integrità del codice delle estensioni (codice malevolo o compromesso).
+    Excessive or overly generous permissions granted to extensions, exposing sensitive data or functions.
 
-    Vulnerabilità nei meccanismi di comunicazione tra l’estensione e la pagina web o i server backend (es. man-in-the-middle, injection).
+    Lack of control over the origin and integrity of extension code (malicious or compromised code).
 
-    Uso improprio di API critiche, che può portare a escalation di privilegi o accesso non autorizzato.
+    Vulnerabilities in the communication mechanisms between the extension and the web page or backend servers (e.g., man-in-the-middle, injection).
 
-    Cattiva gestione dei dati sensibili, come credenziali o token di sessione, memorizzati o trasmessi senza protezioni.
+    Improper use of critical APIs, which can lead to privilege escalation or unauthorized access.
 
-    Assenza di meccanismi di aggiornamento sicuri, lasciando estensioni vulnerabili a lungo.
+    Mishandling of sensitive data, such as credentials or session tokens, stored or transmitted without protection.
 
-    Scarsa validazione degli input provenienti dalle pagine web o dagli utenti, esponendo a Cross-Site Scripting (XSS) o altre vulnerabilità.
+    Lack of secure update mechanisms, leaving extensions vulnerable for a long time.
 
-Cosa Fare / Come Prevenire
+    Poor validation of input from web pages or users, exposing them to Cross-Site Scripting (XSS) or other vulnerabilities.
 
-    Limitare i permessi dell’estensione al minimo indispensabile per le funzionalità richieste.
+What to Do / How to Prevent
 
-    Effettuare una rigorosa revisione del codice e usare firme digitali per garantire l’integrità del software.
+    Limit extension permissions to the bare minimum required for the required functionality.
 
-    Proteggere le comunicazioni tramite protocolli sicuri (HTTPS, message passing sicuro).
+    Conduct rigorous code review and use digital signatures to ensure software integrity.
 
-    Usare API sicure e seguire le best practice per la gestione delle autorizzazioni.
+    Protect communications using secure protocols (HTTPS, secure message passing).
 
-    Crittografare e proteggere dati sensibili in modo appropriato, evitando di memorizzarli in chiaro.
+    Use secure APIs and follow best practices for permission management.
 
-    Implementare aggiornamenti automatici e firmati per correggere tempestivamente vulnerabilità.
+    Appropriately encrypt and protect sensitive data, avoiding storing it in clear text.
 
-    Validare e sanitizzare sempre gli input provenienti da pagine web o utenti per prevenire attacchi XSS e injection.
+    Implement automatic, signed updates to promptly fix vulnerabilities.
 
-    Informare gli utenti chiaramente sui permessi richiesti dall’estensione e motivarne l’uso.
+    Always validate and sanitize input from web pages or users to prevent XSS and injection attacks.
+
+    Clearly inform users about the permissions required by the extension and justify their use.

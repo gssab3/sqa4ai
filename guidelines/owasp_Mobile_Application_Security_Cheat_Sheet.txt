@@ -1,32 +1,34 @@
-Introduzione
-Questo cheat sheet tratta le principali considerazioni di sicurezza nello sviluppo e gestione di applicazioni mobili. Le app mobili sono soggette a rischi specifici legati all’ambiente mobile, all’accesso ai dati sensibili, e all’interazione con reti spesso insicure.
+Mobile Application Security
+Introduction
 
-Cause e problematiche comuni
+This cheat sheet covers the key security considerations in developing and managing mobile applications. Mobile apps are subject to specific risks related to the mobile environment, access to sensitive data, and interaction with often insecure networks.
 
-    Archiviazione non sicura di dati sensibili sul dispositivo.
+Common Causes and Issues
 
-    Comunicazioni non cifrate o debolmente protette con server backend.
+    Insecure storage of sensitive data on the device.
 
-    Permessi eccessivi o non corretti concessi all’app.
+    Unencrypted or weakly protected communications with backend servers.
 
-    Vulnerabilità nelle librerie e componenti di terze parti.
+    Excessive or incorrect permissions granted to the app.
 
-    Attacchi di reverse engineering o manipolazione del codice dell’app.
+    Vulnerabilities in third-party libraries and components.
 
-    Mancanza di controlli di integrità e autenticazione forte.
+    Reverse engineering attacks or manipulation of app code.
 
-Soluzioni e prevenzione
+    Lack of integrity checks and strong authentication.
 
-    Utilizzare storage cifrato per dati sensibili e limitare i dati memorizzati localmente.
+Solutions and Prevention
 
-    Garantire che tutte le comunicazioni di rete siano protette con TLS aggiornato.
+    Use encrypted storage for sensitive data and limit locally stored data.
 
-    Applicare il principio del minimo privilegio sui permessi dell’app.
+    Ensure all network communications are protected with up-to-date TLS.
 
-    Verificare e aggiornare regolarmente le librerie di terze parti per evitare vulnerabilità note.
+    Apply the principle of least privilege to app permissions.
 
-    Integrare controlli di integrità per rilevare modifiche o manomissioni dell’app.
+    Regularly test and update third-party libraries to avoid known vulnerabilities.
 
-    Implementare meccanismi di autenticazione robusti, preferibilmente multifattoriali.
+    Integrate integrity checks to detect app modifications or tampering.
 
-    Monitorare l’app per comportamenti anomali e attacchi runtime.
+    Implement robust authentication mechanisms, preferably multifactor.
+
+    Monitor the app for anomalous behavior and runtime attacks.

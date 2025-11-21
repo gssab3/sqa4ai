@@ -1,24 +1,25 @@
-Introduzione
-L’attacco CSRF induce un browser autenticato a inviare richieste indesiderate a un’applicazione, sfruttando la fiducia del sito nell’identità dell’utente. Questo può comportare operazioni non autorizzate (es. cambio password, acquisto, elevazione privilegi).
+Introduction
 
-Problemi / Cause Tipiche
+A CSRF attack tricks an authenticated browser into sending unwanted requests to an application, exploiting the site's trust in the user's identity. This can lead to unauthorized operations (e.g., changing a password, purchasing a product, or elevating privileges).
 
-    Browser che inviano automaticamente cookie di sessione, rendendo indistinguibili le richieste legittime da quelle forgiate.
+Typical Problems / Causes
 
-    Se l’applicazione si basa solo su cookie per l’autenticazione, è vulnerabile a CSRF.
+    Browsers that automatically send session cookies, making legitimate requests indistinguishable from forged ones.
 
-Cosa fare / Come prevenire
+    If the application relies only on cookies for authentication, it is vulnerable to CSRF.
 
-    Verificare se il framework utilizzato offre protezioni CSRF integrate; preferirle.
+What to do / How to prevent
 
-    Implementare Synchronizer Token Pattern: generare un token univoco, inviarlo nei form e validarlo in ogni richiesta.
+    Check whether the framework used offers built-in CSRF protection; prefer them.
 
-    Alternative:
+    Implement the Synchronizer Token Pattern: generate a unique token, send it to forms, and validate it for each request.
 
-        Double Submit Cookie: inserire il token sia in cookie sia in campo hidden del form e verificare la corrispondenza.
+Alternatives:
 
-        Cookie-to-Header Token: il client JavaScript legge il token da cookie e lo invia in header personalizzato.
+    Double Submit Cookie: insert the token in both the cookie and the hidden field of the form and verify the match.
 
-    Aggiungere l’attributo SameSite ai cookie (es. Strict o Lax) per limitare l’invio in contesti cross-site.
+    Cookie-to-Header Token: the JavaScript client reads the token from the cookie and sends it in a custom header.
 
-    Evitare l’uso di metodi GET per operazioni state-changing; utilizzare sempre token CSRF per richieste sensibili.
+    Add the SameSite attribute to cookies (e.g., Strict or Lax) to limit sending in cross-site contexts.
+
+    Avoid using GET methods for state-changing operations; always use CSRF tokens for sensitive requests.

@@ -1,28 +1,29 @@
-Introduzione
-Il cheat sheet fornisce linee guida per scrivere e gestire applicazioni Node.js sicure, affrontando le vulnerabilità più comuni e le strategie per prevenire attacchi.
+Introduction
 
-Cause e problematiche
+NodeJS Security sheet provides guidelines for writing and managing secure Node.js applications, addressing common vulnerabilities and strategies for preventing attacks.
 
-    Input non validati che possono portare a injection o XSS.
+Causes and Issues
 
-    Gestione impropria di autenticazione, sessioni e autorizzazioni.
+    Unvalidated inputs that can lead to injections or XSS.
 
-    Uso di moduli o dipendenze con vulnerabilità note.
+    Improper handling of authentication, sessions, and authorizations.
 
-    Esposizione di dati sensibili nei log o tramite API non protette.
+    Use of modules or dependencies with known vulnerabilities.
 
-    Mancanza di protezioni contro attacchi DoS o abuso delle risorse.
+    Exposure of sensitive data in logs or through unprotected APIs.
 
-Soluzioni e prevenzione
+    Lack of protection against DoS attacks or resource abuse.
 
-    Validare e sanificare tutti i dati in ingresso, usando librerie affidabili.
+Solutions and Prevention
 
-    Implementare meccanismi robusti di autenticazione e autorizzazione.
+    Validate and sanitize all incoming data using trusted libraries.
 
-    Mantenere aggiornate tutte le dipendenze e rimuovere moduli non necessari.
+    Implement robust authentication and authorization mechanisms.
 
-    Limitare l’esposizione dei dati sensibili e cifrare dati sensibili a riposo e in transito.
+    Keep all dependencies up to date and remove unnecessary modules.
 
-    Applicare rate limiting, caching e altre tecniche per mitigare DoS.
+    Limit the exposure of sensitive data and encrypt sensitive data at rest and in transit.
 
-    Monitorare e loggare eventi di sicurezza per individuare anomalie precocemente.
+    Apply rate limiting, caching, and other techniques to mitigate DoS.
+
+    Monitor and log security events to detect anomalies early.

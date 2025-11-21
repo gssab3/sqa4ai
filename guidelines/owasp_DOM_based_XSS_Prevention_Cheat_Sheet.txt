@@ -1,26 +1,27 @@
-Introduzione
-La vulnerabilità DOM Based Cross-Site Scripting (XSS) si verifica quando un'applicazione web manipola dati non fidati nel DOM (Document Object Model) del browser senza un'adeguata validazione o sanificazione, permettendo a un attaccante di eseguire codice JavaScript malevolo nel contesto della pagina. Questo tipo di XSS è particolarmente insidioso perché il codice dannoso non viene processato dal server, ma direttamente dal browser, rendendo la difesa più complessa.
+Introduction
 
-Cause tipiche
+A DOM-Based Cross-Site Scripting (XSS) vulnerability occurs when a web application manipulates untrusted data in the browser's Document Object Model (DOM) without adequate validation or sanitization, allowing an attacker to execute malicious JavaScript code in the context of the page. This type of XSS is particularly insidious because the malicious code is processed directly by the browser, not the server, making defense more complex.
 
-    Inserimento di dati non sanitizzati in elementi del DOM tramite JavaScript (es. innerHTML, document.write).
+Typical Causes
 
-    Manipolazione diretta di URL, fragment identifiers (#), o dati provenienti da storage locale senza controllo.
+    Inserting unsanitized data into DOM elements via JavaScript (e.g., innerHTML, document.write).
 
-    Uso di funzioni che interpretano stringhe come codice (es. eval) o manipolano il DOM senza sanificazione.
+    Direct manipulation of URLs, fragment identifiers (#), or data from local storage without control.
 
-    Mancanza di una chiara separazione tra dati e codice nel frontend.
+    Use of functions that interpret strings as code (e.g., eval) or manipulate the DOM without sanitization.
 
-Soluzioni e prevenzione
+    Lack of clear separation between data and code in the frontend.
 
-    Evitare di usare innerHTML e simili per inserire dati dinamici, preferendo metodi più sicuri come textContent o setAttribute.
+Solutions and Prevention
 
-    Sanificare e validare rigorosamente tutti i dati provenienti da input utente o da fonti non affidabili prima di inserirli nel DOM.
+    Avoid using innerHTML and similar methods to insert dynamic data, preferring safer methods such as textContent or setAttribute.
 
-    Utilizzare librerie di sicurezza per la gestione di contenuti dinamici e l’escape di caratteri speciali.
+    Rigorously sanitize and validate all data from user input or untrusted sources before inserting it into the DOM.
 
-    Applicare Content Security Policy (CSP) per limitare l’esecuzione di script non autorizzati.
+    Use security libraries to manage dynamic content and escape special characters.
 
-    Evitare l’uso di funzioni pericolose come eval, setTimeout con stringhe, e document.write.
+    Enforce Content Security Policies (CSPs) to limit the execution of unauthorized scripts.
 
-    Tenere aggiornata la libreria e i framework per beneficiare di patch di sicurezza.
+    Avoid the use of dangerous functions such as eval, setTimeout with strings, and document.write.
+
+    Keep your library and frameworks up to date to benefit from security patches.

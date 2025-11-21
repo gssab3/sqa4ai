@@ -1,26 +1,27 @@
-Introduzione
-Il cheat sheet spiega l’importanza e l’implementazione di sistemi di autenticazione multifattoriale (MFA) per migliorare la sicurezza degli accessi, riducendo il rischio di compromissione derivante da password deboli o rubate.
+Introduction
 
-Cause e problematiche
+This cheat sheet explains the importance and implementation of multifactor authentication (MFA) systems to improve login security, reducing the risk of compromise resulting from weak or stolen passwords.
 
-    Dipendenza esclusiva da password vulnerabili a phishing, brute force, o riutilizzo.
+Causes and Issues
 
-    Accessi non autorizzati a sistemi critici a causa di credenziali compromesse.
+    Exclusive reliance on passwords vulnerable to phishing, brute force, or reuse.
 
-    Difficoltà di implementazione di MFA senza degradare l’esperienza utente.
+    Unauthorized access to critical systems due to compromised credentials.
 
-    Mancanza di supporto o integrazione di MFA nelle applicazioni legacy.
+    Difficulty implementing MFA without degrading the user experience.
 
-Soluzioni e prevenzione
+    Lack of support for or integration of MFA in legacy applications.
 
-    Integrare almeno due fattori indipendenti per l’autenticazione: qualcosa che l’utente conosce (password), possiede (token, smartphone), o è (biometria).
+Solutions and Prevention
 
-    Preferire metodi MFA resistenti al phishing, come app di autenticazione o chiavi hardware.
+    Integrate at least two independent factors for authentication: something the user knows (password), has (token, smartphone), or is (biometrics).
 
-    Offrire opzioni flessibili per l’utente, bilanciando sicurezza e usabilità.
+    Prefer phishing-resistant MFA methods, such as authenticator apps or hardware keys.
 
-    Implementare MFA su tutte le funzionalità e dati critici, specialmente per accessi remoti o privilegiati.
+    Offer flexible user options, balancing security and usability.
 
-    Educare gli utenti sull’importanza e l’uso corretto dell’autenticazione multifattoriale.
+    Implement MFA for all critical features and data, especially for remote or privileged access.
 
-    Monitorare e aggiornare regolarmente le tecnologie e policy MFA per mantenere efficacia.
+    Educate users on the importance and proper use of multifactor authentication.
+
+    Regularly monitor and update MFA technologies and policies to maintain effectiveness.

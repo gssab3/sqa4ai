@@ -1,39 +1,39 @@
-Introduzione
+Introduction
 
-L’Authentication è il processo mediante il quale un sistema verifica l’identità di un utente o di un sistema prima di concedere l’accesso. Una solida autenticazione è essenziale per proteggere risorse sensibili e prevenire accessi non autorizzati, che potrebbero compromettere la sicurezza e la privacy. Le tecniche di autenticazione includono l’uso di password, token, certificati digitali, e metodi biometrici. Inoltre, è importante considerare l’interazione con la gestione delle sessioni e l’autorizzazione.
+Authentication is the process by which a system verifies the identity of a user or system before granting access. Strong authentication is essential to protect sensitive resources and prevent unauthorized access, which could compromise security and privacy. Authentication techniques include the use of passwords, tokens, digital certificates, and biometric methods. It is also important to consider the interaction with session management and authorization.
 
-Problemi e Cause Tipiche
+Typical Problems and Causes
 
-    Password deboli o facilmente indovinabili, senza policy di complessità o di scadenza, che favoriscono attacchi di forza bruta o credential stuffing.
+    Weak or easily guessable passwords, with no complexity or expiration policy, which facilitate brute-force or credential stuffing attacks.
 
-    Mancata protezione delle credenziali durante la trasmissione (assenza di HTTPS) o la memorizzazione (password salvate in chiaro o con hashing insicuro come MD5 o SHA1).
+    Lack of credential protection during transmission (lack of HTTPS) or storage (passwords stored in clear text or with insecure hashing such as MD5 or SHA1).
 
-    Assenza o cattiva implementazione del Multi-Factor Authentication (MFA), che espone il sistema a compromissioni con un solo fattore (es. password).
+    Lack or poor implementation of Multi-Factor Authentication (MFA), which exposes the system to compromise with a single factor (e.g., password).
 
-    Vulnerabilità legate alla gestione delle sessioni, come session fixation, session hijacking o mancanza di scadenza automatica delle sessioni.
+    Session management vulnerabilities, such as session fixation, session hijacking, or lack of automatic session expiration.
 
-    Meccanismi di recupero password non sicuri, ad esempio reset tramite domande facilmente indovinabili o link non temporizzati.
+    Insecure password recovery mechanisms, such as resets using easily guessable questions or untimed links.
 
-    Implementazioni custom non testate, che possono introdurre vulnerabilità non previste (es. errori di logica o bypass).
+    Untested custom implementations, which can introduce unforeseen vulnerabilities (e.g., logic errors or bypasses).
 
-    Mancanza di monitoraggio e logging degli eventi di autenticazione, che riduce la capacità di rilevare attacchi in corso.
+    Lack of monitoring and logging of authentication events, which reduces the ability to detect ongoing attacks.
 
-Cosa Fare / Come Prevenire
+What to Do / How to Prevent
 
-    Applicare policy di password forti, richiedendo lunghezza minima, complessità (caratteri speciali, numeri, lettere maiuscole e minuscole) e periodicità nel cambio password, bilanciando usabilità e sicurezza.
+    Enforce strong password policies, requiring minimum length, complexity (special characters, numbers, uppercase and lowercase letters), and password change frequency, balancing usability and security.
 
-    Proteggere le credenziali con hashing robusti e salting, utilizzando algoritmi moderni come bcrypt, Argon2 o PBKDF2 per memorizzare le password in modo sicuro.
+    Protect credentials with robust hashing and salting, using modern algorithms such as bcrypt, Argon2, or PBKDF2 to store passwords securely.
 
-    Forzare l’uso di HTTPS/TLS per la trasmissione di dati di autenticazione, prevenendo intercettazioni (MITM).
+    Force the use of HTTPS/TLS for authentication data transmission, preventing interception (MITM).
 
-    Implementare l’autenticazione multi-fattore (MFA), preferibilmente combinando qualcosa che l’utente conosce (password) con qualcosa che possiede (token OTP) o è (biometria).
+    Implement multi-factor authentication (MFA), preferably combining something the user knows (password) with something they have (OTP token) or are (biometrics).
 
-    Limitare i tentativi di login con meccanismi di blocco temporaneo o CAPTCHA per mitigare attacchi brute force.
+    Limit login attempts with temporary lock mechanisms or CAPTCHAs to mitigate brute force attacks.
 
-    Gestire in modo sicuro le sessioni, con timeout automatici, invalidazione dopo logout, rigenerazione dell’ID sessione dopo login e protezione da fixation/hijacking.
+    Securely manage sessions, with automatic timeouts, invalidation after logout, regeneration of the session ID after login, and protection from fixation/hijacking.
 
-    Realizzare procedure sicure per il recupero e reset della password, con link temporizzati, verifica dell’identità e monitoraggio delle attività sospette.
+    Implement secure password recovery and reset procedures, with timed links, identity verification, and monitoring of suspicious activity.
 
-    Registrare e monitorare gli eventi di autenticazione per rilevare e reagire rapidamente a tentativi sospetti o anomalie.
+    Log and monitor authentication events to detect and quickly respond to suspicious attempts or anomalies.
 
-    Testare regolarmente la sicurezza del sistema di autenticazione, anche tramite penetration testing e revisione del codice.
+    Regularly test the security of the authentication system, including through penetration testing and code review.

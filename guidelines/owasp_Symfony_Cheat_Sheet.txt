@@ -1,24 +1,23 @@
-Introduzione
-Symfony è un framework PHP popolare per lo sviluppo di applicazioni web robuste e scalabili. La sicurezza in Symfony si basa su funzionalità integrate per gestire autenticazione, autorizzazione, validazione e protezione da vulnerabilità comuni.
+Introduction
 
-Categorie di sicurezza trattate
+Symfony is a popular PHP framework for developing robust and scalable web applications. Security in Symfony relies on built-in features to manage authentication, authorization, validation, and protection from common vulnerabilities.
 
-    Gestione dell’autenticazione e autorizzazione con il componente Security.
+    Manage authentication and authorization with the Security component.
 
-    Protezione CSRF per form e richieste HTTP.
+    CSRF protection for forms and HTTP requests.
 
-    Validazione e sanitizzazione degli input tramite Validator e Form components.
+    Validate and sanitize input using the Validator and Form components.
 
-    Protezione contro vulnerabilità come XSS, SQL Injection e Session Fixation.
+    Protect against vulnerabilities such as XSS, SQL Injection, and Session Fixation.
 
-Soluzioni e prevenzione
+Solutions and Prevention
 
-    Configurare il firewall e le regole di accesso tramite il Security Bundle.
+    Configure the firewall and access rules using the Security Bundle.
 
-    Usare token CSRF per tutte le operazioni state-changing.
+    Use CSRF tokens for all state-changing operations.
 
-    Validare input rigorosamente con i constraint di Symfony Validator.
+    Validate input rigorously with Symfony Validator constraints.
 
-    Aggiornare regolarmente Symfony e dipendenze per mantenere la sicurezza.
+    Update Symfony and its dependencies regularly to maintain security.
 
-    Impostare correttamente la gestione delle sessioni e cookie (HttpOnly, Secure).
+    Set up session and cookie management correctly (HttpOnly, Secure).

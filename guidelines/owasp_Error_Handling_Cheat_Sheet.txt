@@ -1,24 +1,25 @@
-Introduzione
-La gestione degli errori è fondamentale per mantenere la stabilità, la sicurezza e l’affidabilità di un’applicazione. Un corretto trattamento degli errori evita la divulgazione di informazioni sensibili agli utenti finali o potenziali attaccanti e consente un controllo efficace degli eventi anomali.
+Introduction
 
-Cause tipiche di problemi
+Error handling is essential for maintaining the stability, security, and reliability of an application. Proper error handling prevents the disclosure of sensitive information to end users or potential attackers and allows for effective control of anomalous events.
 
-    Messaggi di errore troppo dettagliati o contenenti informazioni sensibili (es. stack trace, dati interni).
+Typical Causes of Problems
 
-    Mancanza di logging appropriato che impedisce il tracciamento degli errori.
+    Error messages that are too detailed or contain sensitive information (e.g., stack trace, internal data).
 
-    Gestione inadeguata degli errori che porta a crash o comportamenti imprevisti.
+    Lack of appropriate logging that prevents error tracking.
 
-    Esposizione di vulnerabilità tramite errori non gestiti (es. rivelazione di dettagli di configurazione).
+    Inadequate error handling that leads to crashes or unexpected behavior.
 
-Soluzioni e prevenzione
+    Exposing vulnerabilities through unhandled errors (e.g., disclosure of configuration details).
 
-    Fornire messaggi di errore generici agli utenti, mantenendo dettagli tecnici solo nei log interni.
+Solutions and Prevention
 
-    Implementare un sistema di logging centralizzato e sicuro per tracciare errori e anomalie.
+    Provide generic error messages to users, keeping technical details only in internal logs.
 
-    Gestire tutte le eccezioni possibili per prevenire crash o vulnerabilità.
+    Implement a centralized and secure logging system to track errors and anomalies.
 
-    Validare e sanificare input per evitare errori derivanti da dati non corretti.
+    Handle all possible exceptions to prevent crashes or vulnerabilities.
 
-    Testare la robustezza del sistema con simulazioni di errori e casi limite.
+    Validate and sanitize inputs to prevent errors resulting from incorrect data.
+
+    Test system robustness with error simulations and edge cases.

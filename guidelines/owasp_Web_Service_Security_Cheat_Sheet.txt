@@ -1,28 +1,29 @@
-Introduzione
-La sicurezza dei web service riguarda la protezione delle API e dei servizi esposti su rete, che spesso sono vettori critici di comunicazione e dati tra sistemi distribuiti.
+Introduction
 
-Cosa fare / Cause di rischio
+Web services security concerns the protection of APIs and services exposed over the network, which are often critical communication and data vectors between distributed systems.
 
-    Mancanza di autenticazione e autorizzazione adeguate sulle API.
+What to do / Risk factors
 
-    Comunicazioni non cifrate che espongono dati sensibili.
+    Lack of adequate authentication and authorization on APIs.
 
-    Input non validato che può causare injection o altri attacchi.
+    Unencrypted communications that expose sensitive data.
 
-    Esposizione eccessiva di endpoint o funzionalità non necessarie.
+    Unvalidated input that can lead to injection or other attacks.
 
-    Gestione inadeguata degli errori che può rivelare informazioni sensibili.
+    Excessive exposure of unnecessary endpoints or functionality.
 
-Soluzioni e prevenzione
+    Inadequate error handling that can reveal sensitive information.
 
-    Implementare autenticazione forte e autorizzazione granulare sulle API.
+Solutions and Prevention
 
-    Usare HTTPS per tutte le comunicazioni tra client e web service.
+    Implement strong authentication and granular authorization on APIs.
 
-    Validare rigorosamente tutti i dati in ingresso.
+    Use HTTPS for all communications between clients and web services.
 
-    Limitare l’esposizione degli endpoint solo a quelli strettamente necessari.
+    Rigorously validate all incoming data.
 
-    Gestire gli errori in modo sicuro senza esporre informazioni interne.
+    Limit endpoint exposure to only those strictly necessary.
 
-    Applicare rate limiting e monitoraggio per prevenire abusi.
+    Handle errors securely without exposing internal information.
+
+    Apply rate limiting and monitoring to prevent abuse.

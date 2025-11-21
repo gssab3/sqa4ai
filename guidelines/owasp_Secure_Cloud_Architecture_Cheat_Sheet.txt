@@ -1,28 +1,29 @@
-Introduzione
-La sicurezza dell’architettura cloud riguarda la protezione di infrastrutture, piattaforme e servizi distribuiti in ambienti cloud pubblici, privati o ibridi. Il focus è su come progettare, implementare e gestire risorse cloud per mitigare rischi specifici di questi ambienti, mantenendo confidenzialità, integrità e disponibilità.
+Introduction
 
-Cause
+Cloud architecture security concerns the protection of infrastructure, platforms, and services distributed across public, private, or hybrid cloud environments. The focus is on how to design, implement, and manage cloud resources to mitigate risks specific to these environments, while maintaining confidentiality, integrity, and availability.
 
-    Configurazioni errate o errata gestione dei permessi sulle risorse cloud.
+Causes
 
-    Mancanza di visibilità o controllo sull’accesso e l’uso delle risorse distribuite.
+    Misconfigurations or improper permission management of cloud resources.
 
-    Insufficiente segmentazione e isolamento tra componenti e servizi.
+    Lack of visibility or control over access to and use of distributed resources.
 
-    Mancanza di monitoraggio e gestione centralizzata degli eventi di sicurezza.
+    Insufficient segmentation and isolation between components and services.
 
-    Esposizione involontaria di dati sensibili o segreti.
+    Lack of centralized monitoring and management of security events.
 
-Soluzioni e prevenzione
+    Inadvertent exposure of sensitive or secret data.
 
-    Adottare principi di sicurezza come il principio del minimo privilegio e segmentazione di rete.
+Solutions and Prevention
 
-    Usare strumenti di gestione delle configurazioni e monitoraggio per individuare anomalie.
+    Adopt security principles such as the principle of least privilege and network segmentation.
 
-    Crittografare dati in transito e a riposo, anche nelle risorse cloud.
+    Use configuration management and monitoring tools to detect anomalies.
 
-    Integrare automazione e infrastruttura come codice per applicare policy di sicurezza coerenti.
+    Encrypt data in transit and at rest, including in cloud resources.
 
-    Implementare meccanismi di autenticazione forte e gestione sicura delle identità (IAM).
+    Integrate automation and infrastructure as code to enforce consistent security policies.
 
-    Eseguire regolari audit e penetration test specifici per ambienti cloud.
+    Implement strong authentication and secure identity management (IAM) mechanisms.
+
+    Conduct regular audits and penetration tests specific to cloud environments.

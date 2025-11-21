@@ -1,20 +1,21 @@
-Introduzione
-Il Logging Vocabulary definisce i termini chiave e i concetti utilizzati nella gestione e nell’analisi dei log di sistema. Comprendere questo vocabolario aiuta a standardizzare la comunicazione tra team di sviluppo, sicurezza e operation, facilitando la corretta interpretazione e uso dei dati di log.
+Introduction
 
-Cosa contiene
+The Logging Vocabulary defines key terms and concepts used in managing and analyzing system logs. Understanding this vocabulary helps standardize communication between development, security, and operations teams, facilitating the correct interpretation and use of log data.
 
-    Definizioni di termini comuni come evento, log entry, livello di log (INFO, WARN, ERROR), timestamp, correlazione, audit trail, ecc.
+What's in it?
 
-    Spiegazioni sulle diverse categorie di log (es. applicazione, sistema, sicurezza).
+    Definitions of common terms such as event, log entry, log level (INFO, WARN, ERROR), timestamp, correlation, audit trail, etc.
 
-    Concetti relativi a integrità, riservatezza e disponibilità dei dati di log.
+    Explanations of different log categories (e.g., application, system, security).
 
-    Differenza tra logging sincrono e asincrono, e i loro impatti sulle performance e sicurezza.
+    Concepts related to log data integrity, confidentiality, and availability.
 
-Come usare
+    The difference between synchronous and asynchronous logging, and their impact on performance and security.
 
-    Applicare terminologia coerente nella documentazione e negli strumenti di logging.
+How to use it
 
-    Facilitare la formazione e la comunicazione tra i team tecnici.
+    Apply consistent terminology in documentation and logging tools.
 
-    Usare il vocabolario come base per definire policy e procedure di logging.
+    Facilitate training and communication between technical teams.
+
+    Use the vocabulary as a basis for defining logging policies and procedures.

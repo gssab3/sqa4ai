@@ -1,24 +1,25 @@
-Introduzione
-La gestione delle dipendenze vulnerabili riguarda l’identificazione, l’aggiornamento e il controllo delle librerie e componenti terzi utilizzati in un’applicazione, per evitare l’introduzione di vulnerabilità note tramite software esterno.
+Introduction
 
-Cosa fare / Cause di rischio
+Vulnerable dependency management involves identifying, updating, and monitoring third-party libraries and components used in an application to prevent the introduction of known vulnerabilities through external software.
 
-    Utilizzo di librerie obsolete o non aggiornate contenenti vulnerabilità conosciute.
+What to do / Risk factors
 
-    Dipendenze transitivamente vulnerabili non monitorate.
+    Use of obsolete or outdated libraries containing known vulnerabilities.
 
-    Mancanza di processi automatizzati per il controllo delle versioni e aggiornamenti.
+    Unmonitored transitively vulnerable dependencies.
 
-    Incorporazione di componenti non affidabili o non verificati.
+    Lack of automated processes for version control and updates.
 
-Soluzioni e prevenzione
+    Incorporation of untrusted or unverified components.
 
-    Adottare strumenti automatizzati per il monitoraggio delle dipendenze e per la scansione delle vulnerabilità (es. SCA - Software Composition Analysis).
+Solutions and prevention
 
-    Mantenere aggiornate tutte le librerie e framework con le ultime patch di sicurezza.
+    Adopt automated tools for dependency monitoring and vulnerability scanning (e.g., SCA - Software Composition Analysis).
 
-    Valutare e approvare ogni dipendenza prima dell’uso in produzione.
+    Keep all libraries and frameworks updated with the latest security patches.
 
-    Minimizzare il numero di dipendenze esterne per ridurre la superficie d’attacco.
+    Evaluate and approve each dependency before use in production.
 
-    Stabilire politiche di gestione del ciclo di vita delle dipendenze.
+    Minimize the number of external dependencies to reduce the attack surface.
+
+    Establish dependency lifecycle management policies.

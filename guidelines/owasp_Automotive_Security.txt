@@ -1,36 +1,37 @@
-Introduzione
-La sicurezza automotive riguarda la protezione dei sistemi elettronici e software all’interno dei veicoli moderni, che sono sempre più connessi e complessi. Questi sistemi includono infotainment, controllo motore, frenata, e comunicazioni tra veicoli e infrastrutture. L’obiettivo è prevenire accessi non autorizzati, manipolazioni e attacchi che possano compromettere la sicurezza, la privacy o il funzionamento del veicolo, proteggendo passeggeri, dati e infrastrutture.
+Introduction
 
-Problemi e Cause Tipiche
+    Automotive security concerns the protection of electronic systems and software within modern vehicles, which are increasingly connected and complex. These systems include infotainment, engine control, braking, and communications between vehicles and infrastructure. The goal is to prevent unauthorized access, manipulation, and attacks that could compromise the safety, privacy, or operation of the vehicle, protecting passengers, data, and infrastructure.
 
-    Superficie di attacco ampia a causa di molteplici interfacce (wireless, CAN bus, Bluetooth, ecc.).
+Typical Problems and Causes
 
-    Mancanza di autenticazione e autorizzazione adeguate nei sistemi di controllo e comunicazione.
+    Large attack surface due to multiple interfaces (wireless, CAN bus, Bluetooth, etc.).
 
-    Vulnerabilità nel firmware e software embedded, spesso non aggiornati.
+    Lack of adequate authentication and authorization in control and communication systems.
 
-    Assenza di crittografia o protocolli insicuri nelle comunicazioni tra componenti.
+    Vulnerabilities in firmware and embedded software, which are often out of date.
 
-    Possibilità di attacchi fisici o tramite interfacce di diagnostica non protette.
+    Lack of encryption or insecure protocols in communications between components.
 
-    Gestione inadeguata delle chiavi crittografiche e dei certificati digitali.
+    Possibility of physical attacks or attacks via unprotected diagnostic interfaces.
 
-    Scarso controllo degli accessi interni ai sistemi, facilitando attacchi laterali o escalation di privilegi.
+    Inadequate management of cryptographic keys and digital certificates.
 
-Cosa Fare / Come Prevenire
+    Poor control of internal access to systems, facilitating lateral attacks or privilege escalation.
 
-    Applicare una difesa in profondità, includendo autenticazione forte e autorizzazioni per ogni componente.
+What to Do / How to Prevent
 
-    Implementare aggiornamenti firmware sicuri e regolari (OTA) per correggere vulnerabilità.
+    Apply defense-in-depth, including strong authentication and authorization for every component.
 
-    Utilizzare crittografia robusta per tutte le comunicazioni e dati sensibili.
+    Implement regular, secure firmware updates (OTA) to fix vulnerabilities.
 
-    Segmentare le reti interne del veicolo per limitare la propagazione di attacchi.
+    Use strong encryption for all communications and sensitive data.
 
-    Proteggere fisicamente le interfacce di diagnostica e manutenzione.
+    Segment internal vehicle networks to limit the propagation of attacks.
 
-    Gestire in modo sicuro chiavi e certificati, con rotazioni e revoche tempestive.
+    Physically protect diagnostic and maintenance interfaces.
 
-    Effettuare analisi continua della superficie di attacco durante lo sviluppo e il ciclo di vita del veicolo.
+    Securely manage keys and certificates, with timely rotation and revocation.
 
-    Integrare test di sicurezza specifici per automotive in ogni fase del processo di sviluppo.
+    Conduct continuous analysis of the attack surface throughout development and the vehicle lifecycle.
+
+    Integrate automotive-specific security testing into every phase of the development process.

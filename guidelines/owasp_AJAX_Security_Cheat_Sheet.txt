@@ -1,25 +1,25 @@
-Introduzione
+Introduction
 
-AJAX (Asynchronous JavaScript and XML) è una tecnologia che consente di aggiornare le pagine web in modo asincrono, migliorando l'interattività dell'utente. Tuttavia, l'uso di AJAX introduce specifiche vulnerabilità, come l'esposizione a Cross-Site Scripting (XSS) e Cross-Site Request Forgery (CSRF), che possono compromettere la sicurezza delle applicazioni web. È fondamentale adottare pratiche di sicurezza adeguate per mitigare questi rischi.
+AJAX (Asynchronous JavaScript and XML) is a technology that allows web pages to be updated asynchronously, improving user interactivity. However, the use of AJAX introduces specific vulnerabilities, such as exposure to Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF), which can compromise the security of web applications. It is essential to adopt appropriate security practices to mitigate these risks.
 
-Cause comuni
+Common Causes
 
-    Uso improprio di metodi JavaScript: l'uso di .innerHTML o eval() può introdurre vulnerabilità XSS.
+    Improper Use of JavaScript Methods: Using .innerHTML or eval() can introduce XSS vulnerabilities.
 
-    Mancanza di validazione e codifica dell'output: non validare e codificare correttamente i dati in ingresso e in uscita può permettere l'iniezione di script dannosi.
+    Lack of Output Validation and Encoding: Failure to properly validate and encode input and output data can allow the injection of malicious scripts.
 
-    Gestione inadeguata delle sessioni: la mancanza di protezioni contro CSRF e la gestione non sicura dei cookie possono esporre l'applicazione a attacchi.
+    Inadequate Session Management: Lack of CSRF protection and insecure cookie handling can expose the application to attacks.
 
-    Dipendenze da script di terze parti: l'inclusione di librerie JavaScript non sicure può introdurre vulnerabilità.
+    Dependencies on Third-Party Scripts: Including insecure JavaScript libraries can introduce vulnerabilities.
 
-Soluzioni per la prevenzione
+Prevention Solutions
 
-    Codifica dell'output: utilizzare metodi come .textContent o .innerText al posto di .innerHTML per prevenire l'iniezione di codice dannoso.
+    Output Encoding: Use methods such as .textContent or .innerText instead of .innerHTML to prevent malicious code injection.
 
-    Validazione e codifica dell'input: implementare una validazione rigorosa dei dati in ingresso e codificare correttamente l'output per prevenire XSS.
+    Input Validation and Encoding: Implement rigorous validation of input data and properly encode output to prevent XSS.
 
-    Protezione contro CSRF: utilizzare token CSRF per proteggere le richieste sensibili e garantire che le azioni siano intenzionali.
+    CSRF Protection: Use CSRF tokens to protect sensitive requests and ensure that actions are intentional.
 
-    Gestione sicura delle sessioni: impostare correttamente gli attributi dei cookie, come HttpOnly e Secure, per proteggere le informazioni di sessione.
+    Secure Session Management: Properly set cookie attributes, such as HttpOnly and Secure, to protect session information.
 
-    Revisione delle dipendenze: verificare la sicurezza delle librerie di terze parti e mantenerle aggiornate per evitare vulnerabilità note.
+    Dependency Review: Verify the security of third-party libraries and keep them updated to avoid known vulnerabilities.

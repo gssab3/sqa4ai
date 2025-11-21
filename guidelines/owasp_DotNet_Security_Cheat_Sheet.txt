@@ -1,26 +1,27 @@
-Introduzione
-La sicurezza nelle applicazioni .NET è cruciale per proteggere dati, autenticità e integrità dei sistemi. Questo cheat sheet fornisce linee guida e best practice specifiche per lo sviluppo sicuro in ambiente .NET, coprendo aspetti quali gestione di identità, protezione dei dati, configurazioni sicure e prevenzione delle vulnerabilità comuni.
+Introduction
 
-Cause tipiche di vulnerabilità
+Security in .NET applications is crucial to protecting data, authenticity, and system integrity. This cheat sheet provides specific guidelines and best practices for secure development in a .NET environment, covering aspects such as identity management, data protection, secure configurations, and prevention of common vulnerabilities.
 
-    Errata gestione dell’autenticazione e dell’autorizzazione, portando a accessi non autorizzati.
+Typical Causes of Vulnerabilities
 
-    Uso improprio o mancanza di cifratura per dati sensibili sia a riposo sia in transito.
+    Incorrect management of authentication and authorization, leading to unauthorized access.
 
-    Configurazioni di sicurezza deboli o di default (es. gestione errata di certificati, sessioni o permessi).
+    Improper use or lack of encryption for sensitive data both at rest and in transit.
 
-    Vulnerabilità comuni come injection, Cross-Site Scripting, e vulnerabilità nel framework stesso non patchate.
+    Weak or default security configurations (e.g., incorrect management of certificates, sessions, or permissions).
 
-Soluzioni e prevenzione
+    Common vulnerabilities such as injection, cross-site scripting, and unpatched vulnerabilities in the framework itself.
 
-    Implementare l’autenticazione e autorizzazione usando meccanismi integrati di .NET (es. ASP.NET Identity).
+Solutions and Prevention
 
-    Utilizzare crittografia forte per proteggere dati sensibili, incluse password, chiavi e dati in transito (SSL/TLS).
+    Implement authentication and authorization using built-in .NET mechanisms (e.g., ASP.NET Identity).
 
-    Applicare principi di least privilege per utenti, ruoli e servizi.
+    Use strong cryptography to protect sensitive data, including passwords, keys, and data in transit (SSL/TLS).
 
-    Mantenere aggiornate le librerie e framework .NET, applicando patch di sicurezza regolarmente.
+    Apply least privilege principles for users, roles, and services.
 
-    Usare tecniche di validazione e sanificazione degli input per prevenire injection.
+    Keep .NET libraries and frameworks up to date, applying security patches regularly.
 
-    Configurare correttamente le opzioni di sicurezza, come Cross-Origin Resource Sharing (CORS), Content Security Policy e gestione delle sessioni.
+    Use input validation and sanitization techniques to prevent injections.
+
+    Properly configure security options, such as Cross-Origin Resource Sharing (CORS), Content Security Policy, and session management.

@@ -1,28 +1,29 @@
-Introduzione
-Con l’aumento dell’uso dei droni in ambito civile e industriale, la sicurezza di questi dispositivi è diventata una priorità per prevenire attacchi che possono compromettere la privacy, l’integrità e la sicurezza operativa. Questo cheat sheet affronta i rischi e le contromisure specifiche per la sicurezza dei droni, sia a livello hardware che software.
+Introduction
 
-Cause tipiche di vulnerabilità
+With the increased use of drones in civil and industrial settings, the security of these devices has become a priority to prevent attacks that could compromise privacy, integrity, and operational safety. This cheat sheet addresses specific drone security risks and countermeasures, both at the hardware and software levels.
 
-    Comunicazioni non protette o facilmente intercettabili tra drone e controller, esponendo a spoofing o hijacking.
+Typical Causes of Vulnerabilities
 
-    Firmware non aggiornato o vulnerabile che può essere manipolato.
+    Unprotected or easily intercepted communications between the drone and controller, exposing them to spoofing or hijacking.
 
-    Mancanza di autenticazione tra i componenti del drone e i sistemi di controllo.
+    Outdated or vulnerable firmware that can be manipulated.
 
-    Accesso fisico non autorizzato che consente modifiche o furto di dati.
+    Lack of authentication between drone components and control systems.
 
-    Assenza di monitoraggio o logging adeguati degli eventi di sicurezza.
+    Unauthorized physical access that allows modification or data theft.
 
-Soluzioni e prevenzione
+    Lack of adequate monitoring or logging of security events.
 
-    Utilizzare protocolli di comunicazione cifrati e autenticati tra drone e controller.
+Solutions and Prevention
 
-    Mantenere aggiornato il firmware e applicare patch di sicurezza tempestivamente.
+    Use encrypted and authenticated communication protocols between the drone and controller.
 
-    Implementare meccanismi di autenticazione forte per tutti i componenti e utenti.
+    Keep firmware updated and apply security patches promptly.
 
-    Proteggere fisicamente i droni e i sistemi di gestione da accessi non autorizzati.
+    Implement strong authentication mechanisms for all components and users.
 
-    Abilitare logging dettagliato e monitoraggio per rilevare attività sospette.
+    Physically protect drones and management systems from unauthorized access.
 
-    Effettuare analisi del rischio specifiche per l’ambiente operativo e adottare misure di difesa multilivello.
+    Enable detailed logging and monitoring to detect suspicious activity.
+
+    Conduct risk analyses specific to the operating environment and implement multi-layered defense measures.

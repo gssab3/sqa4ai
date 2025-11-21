@@ -1,24 +1,25 @@
-Introduzione
-La validazione dell’input è il processo fondamentale per garantire che i dati forniti dagli utenti siano corretti, completi e sicuri prima di essere elaborati dal sistema. Una valida strategia di validazione aiuta a prevenire numerosi tipi di vulnerabilità, inclusi injection, XSS e problemi di logica applicativa.
+Introduction
 
-Cause tipiche di problemi
+Input validation is the fundamental process for ensuring that user-supplied data is correct, complete, and secure before being processed by the system. A robust validation strategy helps prevent numerous types of vulnerabilities, including injection, XSS, and application logic issues.
 
-    Mancata o insufficiente verifica dei dati in ingresso.
+Typical Causes of Problems
 
-    Validazione solo lato client, facilmente aggirabile.
+    Lack of or insufficient verification of input data.
 
-    Assunzione errata sui formati o sui limiti dei dati.
+    Client-side validation only, easily circumvented.
 
-    Permettere dati con caratteri pericolosi o input non attesi.
+    Incorrect assumptions about data formats or boundaries.
 
-Soluzioni e prevenzione
+    Allowing data with dangerous characters or unexpected input.
 
-    Implementare validazione lato server come principale linea di difesa.
+Solutions and Prevention
 
-    Usare whitelist per definire esattamente cosa è accettabile (es. formato, lunghezza, tipo).
+    Implement server-side validation as the primary line of defense.
 
-    Evitare blacklist, che sono spesso incomplete.
+    Use whitelists to define exactly what is acceptable (e.g., format, length, type).
 
-    Validare e sanificare ogni dato proveniente da fonti esterne, incluse API e file.
+    Avoid blacklists, which are often incomplete.
 
-    Gestire in modo robusto gli errori di validazione, evitando leak di informazioni.
+    Validate and sanitize all data from external sources, including APIs and files.
+
+    Robustly handle validation errors, preventing information leaks.

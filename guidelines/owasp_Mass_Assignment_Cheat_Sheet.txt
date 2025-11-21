@@ -1,22 +1,23 @@
-Introduzione
-Il Mass Assignment è una vulnerabilità che si verifica quando un’applicazione consente l’assegnazione diretta di dati da input utente a modelli o oggetti senza un’adeguata filtratura, permettendo potenzialmente modifiche non autorizzate di campi sensibili o riservati.
+Introduction
 
-Cause tipiche di problemi
+Mass Assignment is a vulnerability that occurs when an application allows data from user input to be directly assigned to models or objects without adequate filtering, potentially allowing unauthorized modifications of sensitive or confidential fields.
 
-    Binding automatico di input utente a oggetti senza whitelist o blacklist dei campi modificabili.
+Typical Causes of Problems
 
-    Mancanza di controlli a livello di codice per differenziare dati modificabili da dati sensibili.
+    Automatically binding user input to objects without whitelisting or blacklisting mutable fields.
 
-    Assunzione errata che il frontend controlli quali dati vengono inviati.
+    Lack of code-level checks to differentiate mutable data from sensitive data.
 
-Soluzioni e prevenzione
+    Incorrect assumption that the frontend controls which data is sent.
 
-    Utilizzare whitelist per specificare esplicitamente quali campi possono essere assegnati da input esterni.
+Resolve and Prevent
 
-    Implementare controlli a livello di business logic per validare le modifiche sui dati.
+    Use whitelists to explicitly specify which fields can be assigned from external inputs.
 
-    Limitare i dati che il frontend può inviare e validare anche lato server.
+    Implement business logic-level checks to validate data changes.
 
-    Usare framework o librerie che supportano meccanismi sicuri di assegnazione controllata.
+    Limit the data the frontend can send and also validate it on the server side.
 
-    Effettuare test di sicurezza per individuare possibili mass assignment.
+    Use frameworks or libraries that support secure, controlled assignment mechanisms.
+
+    Conduct security tests to identify potential mass assignments.

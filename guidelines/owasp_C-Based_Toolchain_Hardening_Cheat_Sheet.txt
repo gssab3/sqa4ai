@@ -1,28 +1,29 @@
-Introduzione
-Questo cheat sheet si focalizza sulle tecniche per rafforzare la catena di strumenti (toolchain) utilizzata nello sviluppo di software in linguaggio C, con l’obiettivo di ridurre le vulnerabilità introdotte da compilatori, linker e altri strumenti. La toolchain hardening aiuta a prevenire exploit sfruttando debolezze nel codice compilato, offrendo protezioni a livello di binario e runtime.
+Introduction
 
-Problemi e Cause Tipiche
+This cheat sheet focuses on techniques for hardening the toolchain used in C language software development, with the goal of reducing vulnerabilities introduced by compilers, linkers, and other tools. Toolchain hardening helps prevent exploits by exploiting weaknesses in the compiled code, providing protections at the binary and runtime levels.
 
-    Codice compilato con opzioni di sicurezza insufficienti che facilita exploit come buffer overflow, format string attack, o uso di puntatori invalidi.
+Typical Problems and Causes
 
-    Mancanza di controlli a livello di linker e loader che permettono manipolazioni come code injection o hijacking del flusso di esecuzione.
+    Code compiled with insufficient security options, facilitating exploits such as buffer overflows, format string attacks, or the use of invalid pointers.
 
-    Assenza di mitigazioni a livello di memoria come Address Space Layout Randomization (ASLR) o stack canaries.
+    Lack of linker and loader-level checks, allowing manipulations such as code injection or execution flow hijacking.
 
-    Toolchain obsolete o non aggiornate che non supportano le ultime protezioni di sicurezza.
+    Lack of memory-level mitigations such as Address Space Layout Randomization (ASLR) or stack canaries.
 
-    Dipendenza da librerie non sicure o vulnerabili.
+    Outdated or outdated toolchains that do not support the latest security protections.
 
-Cosa Fare / Come Prevenire
+    Dependence on insecure or vulnerable libraries.
 
-    Usare flag di compilazione per abilitare mitigazioni di sicurezza, come -fstack-protector, -D_FORTIFY_SOURCE=2, e -Wformat.
+What to Do / How to Prevent
 
-    Abilitare ASLR e protezioni contro l’esecuzione di codice in aree di memoria non previste (NX bit).
+    Use compile-time flags to enable security mitigations, such as -fstack-protector, -D_FORTIFY_SOURCE=2, and -Wformat.
 
-    Integrare tecniche di link-time optimization (LTO) per migliorare l’analisi e la sicurezza del codice.
+    Enable ASLR and protections against code execution in unexpected memory areas (NX bit).
 
-    Aggiornare costantemente toolchain e librerie usate, preferendo versioni sicure e supportate.
+    Integrate link-time optimization (LTO) techniques to improve code analysis and security.
 
-    Effettuare analisi statica e dinamica del codice per identificare potenziali vulnerabilità.
+    Continuously update toolchains and libraries used, favoring secure and supported versions.
 
-    Applicare pratiche di coding sicuro e revisione del codice in combinazione con la toolchain hardening.
+    Conduct static and dynamic code analysis to identify potential vulnerabilities.
+
+    Apply secure coding practices and code review in combination with toolchain hardening.

@@ -1,26 +1,27 @@
-Introduzione
-La segmentazione della rete è una pratica di sicurezza che suddivide una rete in sottoreti più piccole per limitare l’accesso e contenere potenziali compromissioni. Serve a minimizzare la superficie di attacco e proteggere risorse critiche isolandole.
+Introduction
 
-Cause e problematiche
+Network segmentation is a security practice that divides a network into smaller subnetworks to limit access and mitigate potential compromises. It serves to minimize the attack surface and protect critical resources by isolating them.
 
-    Reti piatte e non segmentate permettono a un attaccante di muoversi liberamente una volta entrato.
+Causes and Problems
 
-    Mancanza di controllo granulare degli accessi tra diverse zone di rete.
+    Flat, non-segmented networks allow an attacker to move freely once inside.
 
-    Disposizione errata o assente di firewall e controlli di accesso tra segmenti.
+    Lack of granular access control between different network zones.
 
-    Difficoltà nel monitorare e gestire i flussi di traffico tra servizi e utenti.
+    Incorrect or absent deployment of firewalls and access controls between segments.
 
-Soluzioni e prevenzione
+    Difficulty monitoring and managing traffic flows between services and users.
 
-    Suddividere la rete in segmenti logici basati su funzioni, livelli di rischio o tipi di dati.
+Solutions and Prevention
 
-    Implementare firewall e sistemi di controllo degli accessi tra segmenti di rete.
+    Dividing the network into logical segments based on functions, risk levels, or data types.
 
-    Usare VLAN, subnetting e tecnologie di micro-segmentazione per isolamento dettagliato.
+    Implement firewalls and access control systems between network segments.
 
-    Applicare il principio del minimo privilegio nel traffico di rete e nelle comunicazioni tra segmenti.
+    Use VLANs, subnetting, and micro-segmentation technologies for fine-grained isolation.
 
-    Monitorare costantemente i flussi di traffico per rilevare anomalie o accessi non autorizzati.
+    Apply the principle of least privilege to network traffic and communications between segments.
 
-    Integrare segmentazione con politiche di sicurezza complessive, includendo autenticazione e cifratura.
+    Continuously monitor traffic flows to detect anomalies or unauthorized access.
+
+    Integrate segmentation with comprehensive security policies, including authentication and encryption.

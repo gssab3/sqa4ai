@@ -1,26 +1,27 @@
-Introduzione
-Il cheat sheet affronta la sicurezza nel contesto di SAML (Security Assertion Markup Language), un protocollo di Single Sign-On (SSO) largamente utilizzato per l’autenticazione federata tra provider di identità e servizi. Garantire la sicurezza in SAML è cruciale per evitare furti di identità e accessi non autorizzati.
+Introduction
 
-Cause
+The SAML Cheat Sheet addresses security in the context of SAML (Security Assertion Markup Language), a widely used Single Sign-On (SSO) protocol for federated authentication between identity providers and services. Ensuring SAML security is crucial to preventing identity theft and unauthorized access.
 
-    Implementazioni errate di SAML che permettono attacchi di replay, spoofing o man-in-the-middle.
+Causes
 
-    Gestione insufficiente delle firme digitali e della crittografia nelle assertion SAML.
+    Incorrect SAML implementations that allow replay, spoofing, or man-in-the-middle attacks.
 
-    Configurazioni sbagliate di metadata tra identity provider e service provider.
+    Insufficient management of digital signatures and encryption in SAML assertions.
 
-    Mancata verifica dell’audience, timestamp o condizioni di validità delle assertion.
+    Incorrect metadata configurations between identity providers and service providers.
 
-Soluzioni e prevenzione
+    Failure to verify the audience, timestamp, or validity conditions of assertions.
 
-    Utilizzare firme digitali e crittografia per proteggere assertion e messaggi SAML.
+Solutions and Prevention
 
-    Validare sempre audience, issuer, timestamp e condizioni di validità.
+    Use digital signatures and encryption to protect assertions and SAML messages.
 
-    Configurare correttamente i metadata tra identity provider e service provider, aggiornandoli regolarmente.
+    Always validate the audience, issuer, timestamp, and validity conditions.
 
-    Proteggere i canali di comunicazione tramite HTTPS/TLS.
+    Properly configure metadata between identity providers and service providers, updating it regularly.
 
-    Monitorare e loggare accessi e tentativi di autenticazione sospetti.
+    Secure communication channels using HTTPS/TLS.
 
-    Seguire le best practice di implementazione specifiche del framework o libreria SAML utilizzata.
+    Monitor and log suspicious logins and authentication attempts.
+
+    Follow the implementation best practices specific to the SAML framework or library used.

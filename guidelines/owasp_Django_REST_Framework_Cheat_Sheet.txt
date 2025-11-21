@@ -1,28 +1,29 @@
-Introduzione
-Questo cheat sheet si focalizza sulle migliori pratiche di sicurezza per applicazioni basate su Django REST Framework (DRF), un toolkit popolare per costruire API REST in Django. L’obiettivo è proteggere le API da attacchi comuni e vulnerabilità, assicurando integrità, riservatezza e disponibilità dei dati esposti tramite API.
+Introduction
 
-Problemi / Cause Tipiche
+This cheat sheet focuses on security best practices for applications based on the Django REST Framework (DRF), a popular toolkit for building REST APIs in Django. The goal is to protect APIs from common attacks and vulnerabilities, ensuring the integrity, confidentiality, and availability of data exposed via APIs.
 
-    Mancanza di autenticazione e autorizzazione adeguate sugli endpoint API.
+Typical Issues / Causes
 
-    Permessi troppo permissivi o mal configurati che espongono dati o funzioni sensibili.
+    Lack of adequate authentication and authorization on API endpoints.
 
-    Mancata validazione dei dati in input, che può causare injection o esecuzione di codice malevolo.
+    Overly permissive or misconfigured permissions that expose sensitive data or functions.
 
-    Esposizione di informazioni sensibili nelle risposte o nei messaggi di errore.
+    Lack of input data validation, which can lead to malicious code injection or execution.
 
-    Cross-Origin Resource Sharing (CORS) mal configurato, che può permettere richieste da origini non fidate.
+    Exposure of sensitive information in responses or error messages.
 
-Cosa fare / Come prevenire
+    Misconfigured Cross-Origin Resource Sharing (CORS), which can allow requests from untrusted origins.
 
-    Implementare meccanismi robusti di autenticazione (token, OAuth, JWT) e autorizzazione granulari.
+What to Do / How to Prevent
 
-    Utilizzare permessi basati sui ruoli e limitare l’accesso agli endpoint sensibili.
+    Implement robust authentication (token, OAuth, JWT) and granular authorization mechanisms.
 
-    Validare accuratamente tutti i dati in ingresso con serializer e campi Django REST.
+    Use role-based permissions and limit access to sensitive endpoints.
 
-    Configurare correttamente CORS e limitare le origini autorizzate.
+    Thoroughly validate all incoming data with Django REST serializers and fields.
 
-    Nascondere o limitare informazioni sensibili nei messaggi di errore.
+    Properly configure CORS and limit authorized origins.
 
-    Applicare meccanismi di logging e monitoraggio per rilevare attività sospette.
+    Hide or restrict sensitive information in error messages.
+
+    Apply logging and monitoring mechanisms to detect suspicious activity.

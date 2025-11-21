@@ -1,28 +1,29 @@
-Introduzione
-Questo cheat sheet affronta le best practice di sicurezza per eseguire applicazioni Node.js all’interno di container Docker, evidenziando rischi specifici legati a questa combinazione e come mitigarli.
+Introduction
 
-Cause e problematiche
+NodeJS Docker Cheat Sheet addresses security best practices for running Node.js applications within Docker containers, highlighting specific risks associated with this combination and how to mitigate them.
 
-    Configurazioni errate dei container che espongono servizi o dati sensibili.
+Causes and Issues
 
-    Immagini Docker non sicure o non aggiornate contenenti vulnerabilità note.
+    Container misconfigurations that expose sensitive services or data.
 
-    Mancanza di isolamento tra container o privilegi eccessivi assegnati ai container.
+    Insecure or out-of-date Docker images containing known vulnerabilities.
 
-    Scarsa gestione delle variabili d’ambiente, che possono contenere segreti.
+    Lack of isolation between containers or excessive privileges assigned to containers.
 
-    Vulnerabilità nel codice Node.js che possono essere amplificate in ambiente containerizzato.
+    Poor management of environment variables, which may contain secrets.
 
-Soluzioni e prevenzione
+    Vulnerabilities in Node.js code that can be amplified in a containerized environment.
 
-    Utilizzare immagini Docker ufficiali e mantenere aggiornate le dipendenze.
+Solutions and Prevention
 
-    Limitare i privilegi dei container (ad esempio, non eseguire come root).
+    Use official Docker images and keep dependencies up to date.
 
-    Gestire e criptare correttamente i segreti e le variabili d’ambiente.
+    Restrict container privileges (for example, don't run as root).
 
-    Applicare pratiche di sicurezza nel codice Node.js: validazione input, gestione degli errori, ecc.
+    Properly manage and encrypt secrets and environment variables.
 
-    Configurare il networking Docker per isolare i container e minimizzare esposizione.
+    Apply security practices in Node.js code: input validation, error handling, etc.
 
-    Usare strumenti di scansione automatica delle immagini per vulnerabilità e configurazioni errate.
+    Configure Docker networking to isolate containers and minimize exposure.
+
+    Use automated image scanning tools for vulnerabilities and misconfigurations.

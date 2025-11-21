@@ -1,22 +1,23 @@
-Introduzione
-Il Pinning è una tecnica di sicurezza che aiuta a prevenire attacchi man-in-the-middle (MITM) vincolando un’applicazione a fidarsi solo di un set specifico di certificati o chiavi pubbliche durante le connessioni TLS.
+Introduction
 
-Cause
+Pinning is a security technique that helps prevent man-in-the-middle (MITM) attacks by forcing an application to trust only a specific set of certificates or public keys during TLS connections.
 
-    Attacchi MITM sfruttano certificati fraudolenti o compromessi se il client accetta qualsiasi certificato firmato da un’autorità attendibile.
+Causes
 
-    Dipendenza eccessiva dalla catena di certificati CA senza verifiche più stringenti.
+    MITM attacks exploit fraudulent or compromised certificates if the client accepts any certificate signed by a trusted authority.
 
-    Assenza di meccanismi di verifica che blocchino certificati non previsti.
+    Excessive reliance on the CA certificate chain without more stringent verification.
 
-Soluzioni e prevenzione
+    Lack of verification mechanisms to block unexpected certificates.
 
-    Implementare il Public Key Pinning (PKP) o certificato pinning nelle applicazioni client.
+Solutions and Prevention
 
-    Definire e mantenere una lista di hash di certificati o chiavi pubbliche attendibili.
+    Implement Public Key Pinning (PKP) or certificate pinning in client applications.
 
-    Gestire con attenzione il ciclo di vita dei pin per evitare problemi di accesso (ad esempio, pin temporanei, fallback).
+    Define and maintain a list of trusted certificate or public key hashes.
 
-    Monitorare e aggiornare regolarmente i pin per allinearsi alle nuove chiavi o certificati.
+    Carefully manage the PIN lifecycle to avoid access issues (e.g., temporary PINs, fallbacks).
 
-    Testare approfonditamente l’implementazione per evitare blocchi legittimi.
+    Regularly monitor and update PINs to align with new keys or certificates.
+
+    Thoroughly test the implementation to avoid legitimate blocking.

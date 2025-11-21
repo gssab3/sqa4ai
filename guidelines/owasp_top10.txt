@@ -1,44 +1,43 @@
-I 10 rischi più importanti della sicurezza in campo software sono i seguenti (non in ordine):
+The 10 most significant software security risks are as follows (in no particular order):
 
 1. Broken Access Control
-ogni informazione dovrebbe essere disponibile solo per un gruppo specifico di utenti in base al livello di privilegi che sono che gli è stato concesso.
-Il broken access control può portare a scenari in cui gli utenti possono accedere alle informazioni a cui non dovrebbero accedere.
-Ad esempio, se un utente qualunque può accedere alla pagina di admin anche se non è un amministratore, il suo ruolo non è stato validato correttamente. Questo rischio per la sicurezza può essere mitigato implementando un sistema di controllo degli accessi basato sulla proprietà dei record.
+All information should be available only to a specific group of users based on their granted privilege level.
+Broken access control can lead to scenarios where users can access information they shouldn't have.
+For example, if any user can access the admin page even if they are not an administrator, their role has not been properly validated. This security risk can be mitigated by implementing an access control system based on record ownership.
 
 2. Cryptographic Failures
-precedentemente noti come Sensitive Data Exposure (esposizione dei dati sensibili), si concentrano su fallimenti relativi alla crittografia.
-Invece di attaccare direttamente un sistema, gli hacker cercano spesso di rubare i dati mentre sono in transito dal browser dell’utente.
-Per prevenire tali attacchi, è necessario creare un canale di comunicazione sicuro. Per le applicazioni web-based, una soluzione rapida per affrontare questo problema è applicare il protocollo TLS su tutte le pagine.
-Senza di esso, un hacker può monitorare il traffico di rete, declassare la connessione da HTTPS a HTTP e acquisire tutte le informazioni passate in testo chiaro: dati utente, password, cookie di sessione ecc.
+Formerly known as Sensitive Data Exposure, these focus on cryptographic failures.
+Rather than directly attacking a system, hackers often try to steal data while it is in transit from the user's browser.
+To prevent such attacks, it is necessary to create a secure communication channel. For web-based applications, a quick solution to this problem is to apply TLS on all pages.
+Without it, a hacker can monitor network traffic, downgrade the connection from HTTPS to HTTP, and capture all information passed in clear text: user data, passwords, session cookies, etc.
 
 3. Injection
-Per Injection si includono SQL Injection, OS Command Injection, Iniezioni LDAP, code Injection.
-Le iniezioni sono una categoria di vulnerabilità di sicurezza che si verificano quando un'applicazione invia dati non attendibili a un interprete come parte di un comando o di una query. Queste vulnerabilità possono consentire a un aggressore di eseguire comandi non autorizzati o di accedere a dati non autorizzati. Ecco una spiegazione di ciascuna delle iniezioni menzionate e come prevenirle:
-SQL Injection: Si verifica quando un aggressore è in grado di inserire un codice SQL dannoso in una query. Questo può permettere all'aggressore di manipolare il database, accedere a dati sensibili, modificare o cancellare dati. Per prevenire bisogna utilizzare query parametrizzate o prepared statements, validare e sanificare tutti gli input degli utenti e utilizzare il principio del minimo privilegio per limitare l'accesso al database.
-OS Command Injection: Si verifica quando un'applicazione passa input non attendibili a un interprete di comandi del sistema operativo. Questo può permettere a un aggressore di eseguire comandi arbitrari sul sistema operativo. Per prevenire bisogna evitare di utilizzare funzioni che eseguono comandi di sistema con input non attendibili, validare e sanificare tutti gli input degli utenti, utilizzare librerie sicure che limitano l'esecuzione di comandi di sistema.
-LDAP Injection: Si verifica quando un'applicazione costruisce query LDAP (Lightweight Directory Access Protocol) utilizzando input non attendibili. Questo può permettere a un aggressore di manipolare le query LDAP per accedere a informazioni non autorizzate. Per prevenire bisogna utilizzare query LDAP parametrizzate, validare e sanificare tutti gli input degli utenti, limitare i privilegi di accesso al server LDAP.
-Code Injection: Si verifica quando un aggressore è in grado di inserire codice dannoso in un'applicazione che viene poi eseguito dall'applicazione stessa. Questo può includere l'iniezione di codice in linguaggi di scripting come JavaScript, PHP, Python, ecc. Per prevenire bisogna validare e sanificare tutti gli input degli utenti, utilizzare sandbox per eseguire codice attendibile e limitare i privilegi di esecuzione di codice
+Injection includes SQL injection, OS command injection, LDAP injection, and code injection.
+Injections are a category of security vulnerabilities that occur when an application sends untrusted data to an interpreter as part of a command or query. These vulnerabilities can allow an attacker to execute unauthorized commands or access unauthorized data. Here's an explanation of each of the injections mentioned and how to prevent them:
+SQL Injection: Occurs when an attacker is able to insert malicious SQL code into a query. This can allow the attacker to manipulate the database, access sensitive data, modify, or delete data. To prevent this, use parameterized queries or prepared statements, validate and sanitize all user input, and use the principle of least privilege to limit database access.
+OS Command Injection: Occurs when an application passes untrusted input to an operating system command interpreter. This can allow an attacker to execute arbitrary commands on the operating system. To prevent this, avoid using functions that execute system commands with untrusted input, validate and sanitize all user input, and use secure libraries that restrict the execution of system commands.
+LDAP Injection: Occurs when an application constructs Lightweight Directory Access Protocol (LDAP) queries using untrusted input. This can allow an attacker to manipulate LDAP queries to access unauthorized information. To prevent this, use parameterized LDAP queries, validate and sanitize all user input, and limit access privileges to the LDAP server.
+Code Injection: Occurs when an attacker is able to insert malicious code into an application that is then executed by the application itself. This can include code injection into scripting languages such as JavaScript, PHP, Python, etc. To prevent this, it is necessary to validate and sanitize all user input, use sandboxes to execute trusted code, and limit code execution privileges.
 
 4. Insecure Design
-Un design insicuro di un applicativo si riferisce ad una struttura che di per sé non ha implementato alcun controllo di sicurezza e manca di efficace scrittura del codice. Un fattore che contribuisce alla reiterazione di questo problema di sicurezza è la completa mancanza di un profilo di rischio aziendale o al sistema che viene sviluppato.
+An insecure application design refers to a structure that inherently lacks any security controls and lacks effective code writing. A factor that contributes to the recurrence of this security issue is the complete lack of a risk profile for the business or the system being developed.
 
-5. Configurazione errata della sicurezza
-i malintenzionati sono consapevoli delle lacune di sicurezza e di come queste possono essere sfruttate a livello tecnico. Gran parte degli attacchi e delle violazioni sono rese possibili attraverso la presenza di configurazioni errate o obsolete tra cui evidenziamo ad esempio le più frequenti sono porte di rete aperte non necessarie, account con credenziali di accesso di default, errori che restituiscono informazioni sull'applicazione (quindi bisogna patchare per rimuovere funzionalità superflue, file inutilizzati e codice non necessario)
+5. Security Misconfiguration
+Attackers are aware of security vulnerabilities and how they can be exploited at a technical level. Most attacks and breaches are made possible by incorrect or obsolete configurations. Examples include unnecessary open network ports, accounts with default login credentials, and errors that return information about the application (which requires patching to remove unnecessary functionality, unused files, and unnecessary code).
 
-6. Componenti vulnerabili e obsoleti
-Si tratta probabilmente della vulnerabilità più complessa da analizzare e rilevare: un problema che tuttavia è noto all’intera community informatica mondiale. Per questo motivo, agli sviluppatori viene sconsigliato di sviluppare codice partendo da componenti già di per sé vulnerabili e obsoleti. Esistono strumenti automatizzati che vi avvisano quando è presente un’aggiornamento più recente di una componente.
+6. Vulnerable and Obsolete Components
+This is probably the most complex vulnerability to analyze and detect, yet it is a problem known to the entire global IT community. For this reason, developers are advised against developing code based on components that are already vulnerable and obsolete. There are automated tools that alert you when a more recent update to a component is available.
 
-7. Errori di Identificazione ed Autenticazione
-nota anche come Broken Authentication in questo caso l’errore fa riferimento ad un processo di autenticazione nel quale manca la conferma dell’identità dell’utente. Infatti, l’attaccante in questo caso riesce ad ottenere l’accesso e assumere l’identità di un altro utente.
-Tra le tipologie di attacchi che sfruttano questa vulnerabilità ritroviamo il credential stuffing, ad esempio.
+7. Identification and Authentication Errors
+Also known as Broken Authentication, this error refers to an authentication process that fails to confirm the user's identity. In this case, the attacker gains access and impersonates another user.
 
-8. Errori di Integrità dei dati
-Si riferisce esattamente alle falle di sicurezza che non proteggono dalle violazioni dell’integrità. La situazione più frequente viene determinata dalla presenza di plug-in obsoleti, librerie e moduli da fonti non attendibili.
+Any type of attack that exploits this vulnerability includes credential stuffing, for example.
 
-9. Guasti di registrazione e Monitoraggio della sicurezza
-si tratta di una falla di sicurezza che si riscontra quando nei sistemi mancano i processi di incident response
+8. Data Integrity Errors
+This refers specifically to security flaws that do not protect against integrity breaches. The most common situation is caused by the presence of outdated plug-ins, libraries, and modules from untrusted sources.
 
-10. Falsificazione delle richieste lato server
-la falsificazione della richiesta sul lato server si riferisce ai dati che mostrano un tasso di incidenza relativamente basso ma che hanno valutazioni superiori alla media per gli Exploit e il potenziale di impatto.
+9. Logging and Security Monitoring Failures
+This is a security flaw found when systems lack incident response processes.
 
-
+10. Server-Side Request Forgery
+Server-side request forgery refers to data that shows a relatively low incidence rate but has above-average scores for exploits and impact potential.

@@ -1,28 +1,29 @@
-Introduzione
-Kubernetes è una piattaforma open-source per orchestrare container, usata per gestire applicazioni distribuite in ambienti cloud e on-premise. La sicurezza di Kubernetes è fondamentale per proteggere cluster, nodi e workload da accessi non autorizzati, compromissioni e configurazioni errate. Questo cheat sheet fornisce linee guida per gestire e ridurre la superficie di attacco nel contesto Kubernetes.
+Introduction
 
-Cause tipiche di problemi
+Kubernetes is an open-source container orchestration platform used to manage distributed applications in cloud and on-premises environments. Kubernetes security is critical to protecting clusters, nodes, and workloads from unauthorized access, compromise, and misconfiguration. This cheat sheet provides guidelines for managing and reducing the attack surface in Kubernetes.
 
-    Configurazioni di accesso troppo permissive ai nodi o cluster (ad es. RBAC troppo ampio).
+Typical Causes of Problems
 
-    Comunicazioni non cifrate tra componenti del cluster.
+    Overly permissive access configurations to nodes or clusters (e.g., overly broad RBAC).
 
-    Mancanza di isolamento tra container o namespace.
+    Unencrypted communications between cluster components.
 
-    Uso di immagini container non verificate o vulnerabili.
+    Lack of isolation between containers or namespaces.
 
-    Mancanza di monitoraggio e logging degli eventi di sicurezza.
+    Use of unverified or vulnerable container images.
 
-Soluzioni e prevenzione
+    Lack of monitoring and logging of security events.
 
-    Applicare il principio del minimo privilegio tramite RBAC e controlli di accesso granulare.
+Solutions and Prevention
 
-    Cifrare le comunicazioni interne (TLS tra API server e nodi).
+    Apply the principle of least privilege through RBAC and fine-grained access controls.
 
-    Usare network policies per isolare traffico tra pod e namespace.
+    Encrypt internal communications (TLS between API servers and nodes).
 
-    Eseguire scansioni di sicurezza su immagini container e usare solo immagini firmate.
+    Use network policies to isolate traffic between pods and namespaces.
 
-    Implementare monitoraggio continuo e logging degli eventi di sicurezza.
+    Run security scans on container images and use only signed images.
 
-    Aggiornare regolarmente Kubernetes e i suoi componenti per correggere vulnerabilità note.
+    Implement continuous monitoring and logging of security events.
+
+    Regularly update Kubernetes and its components to fix known vulnerabilities.

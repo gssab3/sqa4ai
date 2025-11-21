@@ -1,16 +1,17 @@
-Introduzione
-Gli HTTP headers sono componenti essenziali delle comunicazioni web che permettono di trasmettere informazioni di controllo tra client e server. La configurazione corretta degli headers di sicurezza è cruciale per proteggere le applicazioni da molteplici tipi di attacchi.
+Introduction
 
-Cause tipiche di problemi
+HTTP headers are essential components of web communications, allowing control information to be transmitted between client and server. Properly configuring security headers is crucial to protecting applications from multiple types of attacks.
 
-    Mancanza o errata configurazione di headers di sicurezza, che lascia la porta aperta a exploit come Cross-Site Scripting (XSS), Clickjacking, e altre vulnerabilità di tipo client-side.
+Typical Causes of Problems
 
-    Headers mancanti o con valori default insicuri possono permettere il furto di dati o manipolazioni non autorizzate delle risposte HTTP.
+    Missing or incorrectly configuring security headers leaves the door open to exploits such as Cross-Site Scripting (XSS), Clickjacking, and other client-side vulnerabilities.
 
-Soluzioni e prevenzione
+    Missing headers or headers with insecure default values can allow data theft or unauthorized manipulation of HTTP responses.
 
-    Implementare headers di sicurezza fondamentali come Content-Security-Policy (CSP), X-Content-Type-Options, X-Frame-Options, Referrer-Policy, e Strict-Transport-Security (HSTS).
+Solutions and Prevention
 
-    Personalizzare e aggiornare regolarmente i valori degli headers in base alle specifiche esigenze e al contesto applicativo.
+    Implement fundamental security headers such as Content-Security-Policy (CSP), X-Content-Type-Options, X-Frame-Options, Referrer-Policy, and Strict-Transport-Security (HSTS).
 
-    Monitorare l’efficacia della configurazione tramite test di sicurezza e strumenti di scansione automatizzati.
+    Customize and regularly update header values based on specific needs and application context.
+
+    Monitor configuration effectiveness through security tests and automated scanning tools.

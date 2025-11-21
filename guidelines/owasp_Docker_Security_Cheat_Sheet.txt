@@ -1,30 +1,31 @@
-Introduzione
-Questo cheat sheet fornisce linee guida per migliorare la sicurezza delle applicazioni containerizzate con Docker. Poiché Docker isola processi e ambienti, è fondamentale gestire correttamente le immagini, i container e l’ambiente di esecuzione per prevenire attacchi e compromissioni.
+Introduction
 
-Problemi / Cause Tipiche
+This cheat sheet provides guidelines for improving the security of containerized applications with Docker. Because Docker isolates processes and environments, it is essential to properly manage images, containers, and the execution environment to prevent attacks and compromises.
 
-    Uso di immagini Docker non verificate o con vulnerabilità note.
+Typical Issues / Causes
 
-    Esecuzione di container con privilegi elevati o come root, aumentando il rischio di escalation.
+    Using unverified Docker images or those with known vulnerabilities.
 
-    Configurazioni errate della rete che espongono servizi sensibili.
+    Running containers with elevated privileges or as root, increasing the risk of escalation.
 
-    Mancata gestione delle credenziali e segreti all’interno dei container.
+    Network misconfigurations that expose sensitive services.
 
-    Assenza di aggiornamenti regolari di immagini e runtime Docker.
+    Failure to manage credentials and secrets within containers.
 
-Cosa fare / Come prevenire
+    Lack of regular updates to Docker images and runtimes.
 
-    Utilizzare immagini ufficiali o verificate, preferibilmente minimali e aggiornate.
+What to Do / How to Prevent
 
-    Limitare i privilegi dei container, evitando di eseguire processi come root.
+    Use official or verified images, preferably minimal and up-to-date.
 
-    Applicare policy di rete restrittive e segmentare i container.
+    Limit container privileges, avoiding running processes as root.
 
-    Gestire segreti e credenziali in modo sicuro, ad esempio con Docker secrets o strumenti esterni.
+    Apply restrictive network policies and segment containers.
 
-    Aggiornare regolarmente il motore Docker, le immagini e i container.
+    Manage secrets and credentials securely, for example, with Docker secrets or external tools.
 
-    Monitorare attività sospette e configurare correttamente i log.
+    Regularly update the Docker engine, images, and containers.
 
-    Applicare controlli di integrità e firme per le immagini Docker.
+    Monitor for suspicious activity and configure logs correctly.
+
+    Apply integrity checks and signatures for Docker images.

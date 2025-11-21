@@ -1,26 +1,27 @@
-Introduzione
-La gestione delle chiavi crittografiche è un elemento cruciale per la sicurezza di sistemi crittografici. Questo cheat sheet fornisce linee guida su come generare, archiviare, distribuire, ruotare e revocare chiavi in modo sicuro, minimizzando rischi di compromissione.
+Introduction
 
-Cause tipiche di problemi
+Cryptographic key management is a crucial element of cryptographic system security. This cheat sheet provides guidelines on how to securely generate, store, distribute, rotate, and revoke keys, minimizing the risk of compromise.
 
-    Conservazione non sicura delle chiavi (ad esempio hardcoding o archiviazione in chiaro).
+Typical Causes of Problems
 
-    Mancanza di rotazione periodica delle chiavi crittografiche.
+    Insecure key storage (e.g., hardcoding or storing in plaintext).
 
-    Distribuzione insicura delle chiavi agli endpoint.
+    Lack of periodic cryptographic key rotation.
 
-    Assenza di controllo e auditing sull’uso delle chiavi.
+    Insecure key distribution to endpoints.
 
-Soluzioni e prevenzione
+    Lack of control and auditing of key use.
 
-    Usare moduli hardware sicuri (HSM) o sistemi dedicati per archiviazione chiavi.
+Solutions and Prevention
 
-    Implementare politiche di rotazione regolare delle chiavi e gestione del ciclo di vita.
+    Use secure hardware modules (HSMs) or dedicated systems for key storage.
 
-    Utilizzare protocolli sicuri per la distribuzione delle chiavi (es. TLS).
+    Implement regular key rotation and lifecycle management policies.
 
-    Mantenere un controllo rigoroso sugli accessi e log delle operazioni con chiavi.
+    Use secure key distribution protocols (e.g., TLS).
 
-    Separare ruoli e responsabilità per la gestione delle chiavi (principio di separazione dei compiti).
+    Maintain strict access control and logs of key operations.
 
-    Automatizzare la gestione delle chiavi ove possibile per ridurre errori umani.
+    Separate roles and responsibilities for key management (separation of duties principle).
+
+    Automate key management where possible to reduce human error.

@@ -1,26 +1,27 @@
-Introduzione
-HTML5 introduce nuove funzionalità per il web moderno, migliorando l’esperienza utente, ma porta anche nuovi rischi di sicurezza se non gestite correttamente. È fondamentale comprendere come le nuove API e tecnologie HTML5 possono essere sfruttate da attaccanti per compromettere la sicurezza dell’applicazione.
+Introduction
 
-Cause tipiche di problemi
+HTML5 introduces new features for the modern web, improving the user experience, but it also brings new security risks if not managed properly. It is essential to understand how new HTML5 APIs and technologies can be exploited by attackers to compromise application security.
 
-    Uso improprio di API HTML5 come localStorage, sessionStorage, IndexedDB, che possono esporre dati sensibili se non protetti adeguatamente.
+Typical Causes of Problems
 
-    Mancanza di controllo sull’origine dei dati caricati tramite Web Workers, WebSockets o Cross-Origin Resource Sharing (CORS), favorendo attacchi di tipo Cross-Site Scripting (XSS) o Cross-Site Request Forgery (CSRF).
+    Improper use of HTML5 APIs such as localStorage, sessionStorage, and IndexedDB, which can expose sensitive data if not properly protected.
 
-    Vulnerabilità legate a funzionalità multimediali, geolocalizzazione e notifiche, che possono essere sfruttate per ottenere informazioni sull’utente o per eseguire azioni non autorizzate.
+    Lack of control over the origin of data loaded via Web Workers, WebSockets, or Cross-Origin Resource Sharing (CORS), facilitating Cross-Site Scripting (XSS) or Cross-Site Request Forgery (CSRF) attacks.
 
-    Insufficiente validazione e sanitizzazione dei dati immessi dall’utente tramite nuovi input HTML5.
+    Vulnerabilities related to multimedia, geolocation, and notifications, which can be exploited to obtain user information or perform unauthorized actions.
 
-Soluzioni e prevenzione
+    Insufficient validation and sanitization of user input via new HTML5 inputs.
 
-    Limitare l’uso di storage lato client a dati non sensibili e implementare crittografia ove necessario.
+Solutions and Prevention
 
-    Applicare politiche CORS restrittive e validare sempre le origini delle richieste esterne.
+    Limit the use of client-side storage to non-sensitive data and implement encryption where necessary.
 
-    Utilizzare Content Security Policy (CSP) per ridurre i rischi di XSS.
+    Enforce restrictive CORS policies and always validate the origins of external requests.
 
-    Validare e sanitizzare tutti i dati provenienti da input HTML5, inclusi quelli provenienti da nuovi tipi di input e API.
+    Use Content Security Policy (CSP) to reduce XSS risks.
 
-    Gestire attentamente i permessi per API sensibili come geolocalizzazione e notifiche, richiedendo sempre consenso esplicito dell’utente.
+    Validate and sanitize all data from HTML5 inputs, including those from new input types and APIs.
 
-    Monitorare e aggiornare costantemente le librerie e i framework per evitare vulnerabilità note.
+    Carefully manage permissions for sensitive APIs such as geolocation and notifications, always requiring explicit user consent.
+
+    Continuously monitor and update libraries and frameworks to avoid known vulnerabilities.

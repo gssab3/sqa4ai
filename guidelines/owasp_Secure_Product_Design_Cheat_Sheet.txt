@@ -1,24 +1,25 @@
-Introduzione
-Il design sicuro di un prodotto si concentra sull’integrazione della sicurezza fin dalle prime fasi di sviluppo, assicurando che il prodotto sia costruito per prevenire vulnerabilità e resistere ad attacchi durante tutto il ciclo di vita.
+Introduction
 
-Cause
+Secure product design focuses on integrating security from the earliest stages of development, ensuring that the product is built to prevent vulnerabilities and resist attacks throughout its lifecycle.
 
-    Mancata considerazione della sicurezza nelle fasi iniziali di progettazione.
+Causes
 
-    Scarsa definizione dei requisiti di sicurezza.
+    Failure to consider security in the early design stages.
 
-    Uso di componenti o librerie vulnerabili senza controlli.
+    Poorly defined security requirements.
 
-    Assenza di processi di revisione e test di sicurezza continui.
+    Use of vulnerable components or libraries without controls.
 
-Soluzioni e prevenzione
+    Lack of continuous security review and testing processes.
 
-    Integrare la sicurezza come requisito funzionale fin dall’inizio.
+Solutions and Prevention
 
-    Applicare threat modeling per identificare rischi e contromisure.
+    Integrate security as a functional requirement from the beginning.
 
-    Adottare pratiche di sviluppo sicuro, come la gestione delle dipendenze e code review.
+    Apply threat modeling to identify risks and countermeasures.
 
-    Implementare test di sicurezza automatici e manuali lungo tutto il ciclo di vita.
+    Adopt secure development practices, such as dependency management and code reviews.
 
-    Promuovere la formazione e la consapevolezza della sicurezza nel team di sviluppo.
+    Implement automated and manual security testing throughout the lifecycle.
+
+    Promote security training and awareness within the development team.

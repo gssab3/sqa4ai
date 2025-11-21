@@ -1,26 +1,27 @@
-Introduzione
-La configurazione sicura di PHP è cruciale per prevenire vulnerabilità derivanti da impostazioni predefinite o errate. Questo cheat sheet guida gli sviluppatori e amministratori a configurare PHP in modo da ridurre i rischi di sicurezza.
+Introduction
 
-Cause
+Secure PHP configuration is crucial to prevent vulnerabilities resulting from default or incorrect settings. This cheat sheet guides developers and administrators through configuring PHP to reduce security risks.
 
-    Configurazioni di default permissive che permettono operazioni rischiose (es. esecuzione di codice remoto, visualizzazione di errori sensibili).
+Causes
 
-    Abilitazione di funzioni pericolose o non necessarie (es. exec(), shell_exec()).
+    Permissive default configurations that allow risky operations (e.g., remote code execution, displaying sensitive errors).
 
-    Mancanza di limitazioni sulle risorse o sui tempi di esecuzione che possono portare a DoS.
+    Enabling dangerous or unnecessary functions (e.g., exec(), shell_exec()).
 
-    Registrazione di informazioni sensibili nei log o errori esposti agli utenti.
+    Lack of resource or execution time limitations that can lead to DoS.
 
-Soluzioni e prevenzione
+    Logging sensitive information in logs or errors exposed to users.
 
-    Disabilitare funzioni PHP inutili o pericolose (disable_functions).
+Solutions and Prevention
 
-    Disabilitare la visualizzazione degli errori in ambiente di produzione (display_errors=Off) e loggare gli errori in modo sicuro.
+    Disable unnecessary or dangerous PHP functions (disable_functions).
 
-    Limitare l’upload di file e il loro tipo.
+    Disable error display in production (display_errors=Off) and log errors securely.
 
-    Impostare limiti su memoria, tempo di esecuzione, dimensioni upload per prevenire abuso di risorse.
+    Limit file uploads and file types.
 
-    Configurare correttamente la gestione delle sessioni (cookie sicuri, timeout, gestione rigenerazione ID).
+    Set limits on memory, execution time, and upload size to prevent resource abuse.
 
-    Aggiornare PHP e moduli per correggere vulnerabilità note.
+    Correctly configure session management (secure cookies, timeouts, ID regeneration management).
+
+    Update PHP and modules to fix known vulnerabilities.

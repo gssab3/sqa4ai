@@ -1,22 +1,23 @@
-Introduzione
-La Prototype Pollution è una vulnerabilità tipica in ambienti JavaScript, dove un attacker può manipolare la proprietà __proto__ o altre proprietà di prototipo per alterare il comportamento di oggetti globali o specifici, causando effetti imprevisti e potenzialmente pericolosi.
+Introduction
 
-Cause
+Prototype pollution is a common vulnerability in JavaScript environments, where an attacker can manipulate the __proto__ property or other prototype properties to alter the behavior of global or specific objects, causing unexpected and potentially dangerous effects.
 
-    Manca di validazione sull’input che modifica proprietà di oggetti, specialmente quelle riservate al prototipo.
+Causes
 
-    Uso di librerie o codice che permette modifiche dirette ai prototipi senza restrizioni.
+    Lack of validation on input that modifies object properties, especially those reserved for the prototype.
 
-    Passaggio di dati non sicuri da input esterni senza sanificazione.
+    Use of libraries or code that allows direct modifications to prototypes without restrictions.
 
-Soluzioni e prevenzione
+    Passing unsafe data from external inputs without sanitization.
 
-    Validare e filtrare rigorosamente gli input prima di usarli in operazioni di modifica oggetti.
+Solutions and Prevention
 
-    Evitare di assegnare o leggere direttamente proprietà __proto__, constructor.prototype o simili.
+    Rigorously validate and filter inputs before using them in object modification operations.
 
-    Usare librerie aggiornate che prevengono automaticamente la prototype pollution.
+    Avoid directly assigning or reading __proto__, constructor.prototype, or similar properties.
 
-    Applicare principi di programmazione sicura per isolare dati e impedire modifiche globali indesiderate.
+    Use updated libraries that automatically prevent prototype pollution.
 
-    Effettuare test di sicurezza specifici per prototype pollution.
+    Apply safe programming principles to isolate data and prevent unwanted global modifications.
+
+    Conduct specific security tests for prototype pollution.

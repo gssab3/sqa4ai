@@ -1,26 +1,27 @@
-Introduzione
-Le funzionalità di upload file rappresentano una superficie di attacco critica, spesso sfruttata per eseguire codice malevolo, sovraccaricare il sistema o ottenere accessi non autorizzati. Una gestione sicura del caricamento è essenziale per evitare vulnerabilità.
+Introduction
 
-Cause tipiche di vulnerabilità
+File upload capabilities represent a critical attack surface, often exploited to execute malicious code, overload the system, or gain unauthorized access. Secure upload management is essential to avoid vulnerabilities.
 
-    Mancata validazione o filtraggio dei file caricati (es. tipi di file, dimensioni).
+Typical causes of vulnerabilities
 
-    Permessi errati sulle cartelle o file caricati, permettendo accessi indesiderati.
+    Failure to validate or filter uploaded files (e.g., file types, sizes).
 
-    Esecuzione di codice malevolo tramite file upload (es. script in upload).
+    Incorrect permissions on uploaded folders or files, allowing unwanted access.
 
-    Mancanza di controllo sulle dimensioni o frequenza dei file caricati, con rischio di denial of service.
+    Execution of malicious code through file uploads (e.g., upload scripts).
 
-Soluzioni e prevenzione
+    Lack of control over the size or frequency of uploaded files, risking denial of service.
 
-    Limitare i tipi di file accettati e convalidare il contenuto (non solo estensione).
+Solutions and Prevention
 
-    Impostare permessi di scrittura e lettura restrittivi sulle cartelle di upload.
+    Limit accepted file types and validate content (not just extensions).
 
-    Archiviare i file caricati in posizioni isolate e non eseguibili.
+    Set restrictive read and write permissions on upload folders.
 
-    Applicare controlli sulle dimensioni massime e frequenza dei caricamenti.
+    Store uploaded files in isolated, non-executable locations.
 
-    Utilizzare scansioni antivirus e strumenti di verifica per i file caricati.
+    Apply controls on the maximum size and frequency of uploads.
 
-    Implementare autenticazione e autorizzazione per l’accesso alle funzionalità di upload.
+    Use antivirus scans and verification tools for uploaded files.
+
+    Implement authentication and authorization for access to upload features.

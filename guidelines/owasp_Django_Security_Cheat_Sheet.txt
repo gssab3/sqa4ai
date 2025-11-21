@@ -1,30 +1,31 @@
-Introduzione
-Questo cheat sheet raccoglie le raccomandazioni principali per proteggere applicazioni web sviluppate con Django. Copre diversi aspetti della sicurezza, dall’autenticazione alla gestione delle sessioni, dalla protezione contro vulnerabilità comuni fino alla configurazione sicura del framework stesso.
+Introduction
 
-Problemi / Cause Tipiche
+This cheat sheet contains key recommendations for securing web applications developed with Django. It covers various aspects of security, from authentication to session management, from protection against common vulnerabilities to securely configuring the framework itself.
 
-    Configurazioni di sicurezza mancanti o non attivate di default (es. CSRF, X-Frame-Options).
+Typical Problems / Causes
 
-    Gestione non sicura di cookie, sessioni e dati sensibili.
+    Missing or non-default security configurations (e.g., CSRF, X-Frame-Options).
 
-    Utilizzo di versioni non aggiornate di Django o librerie vulnerabili.
+    Insecure handling of cookies, sessions, and sensitive data.
 
-    Esposizione di informazioni di debug e stack trace in ambiente di produzione.
+    Using outdated versions of Django or vulnerable libraries.
 
-    Mancata protezione contro attacchi comuni come XSS, CSRF, SQL Injection.
+    Exposing debugging information and stack traces in production environments.
 
-Cosa fare / Come prevenire
+    Lack of protection against common attacks such as XSS, CSRF, and SQL Injection.
 
-    Attivare e configurare protezioni built-in di Django: CSRF middleware, X-Content-Type-Options, X-Frame-Options, HSTS.
+What to Do / How to Prevent
 
-    Usare cookie sicuri e HttpOnly per sessioni e autenticazione.
+    Enable and configure Django's built-in protections: CSRF middleware, X-Content-Type-Options, X-Frame-Options, and HSTS.
 
-    Aggiornare regolarmente Django e tutte le dipendenze per correggere vulnerabilità note.
+    Use secure cookies and HTTP Only for sessions and authentication.
 
-    Disabilitare la modalità debug in produzione per evitare esposizione di informazioni sensibili.
+    Regularly update Django and all dependencies to fix known vulnerabilities.
 
-    Validare e sanificare l’input utente, utilizzare l’ORM Django per query sicure.
+    Disable debug mode in production to prevent exposure of sensitive information.
 
-    Applicare politiche di gestione password robuste, inclusa la limitazione dei tentativi di login.
+    Validate and sanitize user input, and use the Django ORM for secure queries.
 
-    Implementare logging e monitoraggio degli accessi e degli errori.
+    Enforce robust password management policies, including limiting login attempts.
+
+    Implement logging and monitoring of access and errors.

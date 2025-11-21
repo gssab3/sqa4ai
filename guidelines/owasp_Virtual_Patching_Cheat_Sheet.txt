@@ -1,20 +1,21 @@
-Introduzione
-Il virtual patching è una misura di sicurezza temporanea che protegge un sistema da vulnerabilità note senza modificare il codice sorgente, applicando regole di filtraggio o controllo a livello di rete o applicazione.
+Introduction
 
-Cosa fare / Cause di rischio
+Virtual patching is a temporary security measure that protects a system from known vulnerabilities without modifying the source code by applying filtering or control rules at the network or application level.
 
-    Vulnerabilità note non immediatamente risolte nel codice.
+What to do / Risk factors
 
-    Impossibilità o ritardo nell’aggiornamento del software vulnerabile.
+    Known vulnerabilities not immediately fixed in the code.
 
-    Attacchi mirati a vulnerabilità non ancora corrette.
+    Inability or delay in updating vulnerable software.
 
-Soluzioni e prevenzione
+    Targeted attacks targeting vulnerabilities that have not yet been patched.
 
-    Implementare firewall applicativi (WAF) o sistemi di prevenzione intrusioni (IPS) con regole specifiche per bloccare exploit noti.
+Solutions and prevention
 
-    Monitorare continuamente vulnerabilità e aggiornare le regole di virtual patching.
+    Implement application firewalls (WAFs) or intrusion prevention systems (IPSs) with specific rules to block known exploits.
 
-    Utilizzare virtual patching come misura temporanea, puntando a una correzione definitiva tramite patch ufficiali.
+    Continuously monitor vulnerabilities and update virtual patching rules.
 
-    Testare accuratamente le regole per evitare falsi positivi o blocchi di traffico legittimo.
+    Use virtual patching as a temporary measure, aiming for a permanent fix via official patches.
+
+    Thoroughly test rules to avoid false positives or blocking legitimate traffic.

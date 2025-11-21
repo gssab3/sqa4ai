@@ -1,24 +1,25 @@
-Introduzione
-Gli unvalidated redirects e forwards sono vulnerabilità in cui un’applicazione web reindirizza o inoltra un utente verso una destinazione non controllata o non validata, permettendo attacchi di phishing, malware o furto di informazioni.
+Introduction
 
-Cosa fare / Cause di rischio
+Unvalidated redirects and forwards are vulnerabilities in which a web application redirects or forwards a user to an unchecked or unvalidated destination, allowing phishing, malware, or information theft attacks.
 
-    Input utente non controllati che definiscono URL di destinazione per redirect o forward.
+What to do / Risk factors
 
-    Mancata verifica o sanitizzazione dell’URL di destinazione.
+    Unchecked user input that defines destination URLs for redirects or forwards.
 
-    Uso di redirect open che possono essere sfruttati per portare vittime su siti malevoli.
+    Failure to verify or sanitize the destination URL.
 
-    Design applicativo che non distingue chiaramente le destinazioni autorizzate.
+    Use of open redirects that can be exploited to direct victims to malicious sites.
 
-Soluzioni e prevenzione
+    Application design that does not clearly distinguish authorized destinations.
 
-    Validare sempre gli URL di redirect e forward, accettando solo destinazioni interne o predefinite.
+Solutions and prevention
 
-    Implementare liste bianche di URL o domini sicuri.
+    Always validate redirect and forward URLs, accepting only internal or default destinations.
 
-    Evitare l’uso diretto di input utente come destinazione senza controllo.
+    Implement whitelists of safe URLs or domains.
 
-    Fornire all’utente messaggi chiari e possibilità di conferma prima di redirect esterni.
+    Avoid the direct use of user input as an unchecked destination.
 
-    Monitorare e loggare redirect per individuare eventuali abusi.
+    Provide the user with clear messages and the ability to confirm before external redirects.
+
+    Monitor and log redirects to detect abuse.

@@ -1,22 +1,23 @@
-Introduzione
-La parametrizzazione delle query è una tecnica fondamentale per prevenire vulnerabilità di injection, in particolare SQL Injection, garantendo che i dati forniti dagli utenti non siano interpretati come codice.
+Introduction
 
-Cause
+Query parameterization is a fundamental technique for preventing injection vulnerabilities, particularly SQL injection, by ensuring that user-supplied data is not interpreted as code.
 
-    Costruzione di query SQL concatenando direttamente input utente senza filtro.
+Causes
 
-    Mancata separazione tra dati e codice nelle query.
+    Building SQL queries by directly concatenating user input without filtering.
 
-    Assenza di utilizzo di API di parametrizzazione o ORM sicuri.
+    Failure to separate data from code in queries.
 
-Soluzioni e prevenzione
+    Failure to use secure parameterization APIs or ORMs.
 
-    Usare query parametrizzate o prepared statements forniti dal linguaggio o dal database.
+Solutions and Prevention
 
-    Evitare concatenazioni dirette di stringhe per costruire query.
+    Use parameterized queries or prepared statements provided by the language or database.
 
-    Validare e sanificare comunque gli input, anche se parametrizzati.
+    Avoid direct string concatenation to build queries.
 
-    Applicare principle of least privilege sull’accesso al database.
+    Validate and sanitize inputs, even if parameterized.
 
-    Usare ORM o librerie di accesso a dati che facilitano la parametrizzazione automatica.
+    Apply the principle of least privilege to database access.
+
+    Use ORMs or data access libraries that facilitate automatic parameterization.

@@ -1,30 +1,31 @@
-Introduzione
-Questo cheat sheet illustra le pratiche di sicurezza per la protezione di database e dati memorizzati, prevenendo accessi non autorizzati, perdita o compromissione dei dati. Copre sia aspetti di configurazione che di gestione operativa.
+Introduction
 
-Problemi / Cause Tipiche
+This cheat sheet outlines security practices for protecting databases and stored data, preventing unauthorized access, loss, or compromise. It covers both configuration and operational management aspects.
 
-    Credenziali deboli o condivise tra più servizi.
+Typical Problems / Causes
 
-    Mancanza di cifratura per dati a riposo o in transito.
+    Weak or shared credentials across multiple services.
 
-    Configurazioni predefinite non sicure (porte esposte, utenti di default, permessi eccessivi).
+    Lack of encryption for data at rest or in transit.
 
-    Assenza di monitoraggio e logging delle attività.
+    Insecure default configurations (exposed ports, default users, excessive permissions).
 
-    Query vulnerabili a SQL Injection.
+    Lack of activity monitoring and logging.
 
-Cosa fare / Come prevenire
+    Queries vulnerable to SQL injection.
 
-    Utilizzare autenticazione forte e gestione sicura delle credenziali.
+What to do / How to prevent
 
-    Abilitare la cifratura a riposo (TDE, cifratura colonne) e TLS per connessioni client-server.
+    Use strong authentication and secure credential management.
 
-    Limitare i privilegi seguendo il principio del minimo privilegio.
+    Enable encryption at rest (TDE, column encryption) and TLS for client-server connections.
 
-    Disattivare o rimuovere account e servizi non necessari.
+    Restrict privileges following the principle of least privilege.
 
-    Implementare controlli contro SQL Injection (prepared statements, query parametrizzate).
+    Disable or remove unnecessary accounts and services.
 
-    Abilitare logging e audit per monitorare accessi e modifiche.
+    Implement controls against SQL injection (prepared statements, parameterized queries).
 
-    Tenere il DBMS aggiornato e applicare tempestivamente patch di sicurezza.
+    Enable logging and auditing to monitor access and changes.
+
+    Keep the DBMS up to date and apply security patches promptly.

@@ -1,26 +1,27 @@
-Introduzione
-I JSON Web Token (JWT) sono uno standard aperto per trasmettere in modo sicuro informazioni tra parti come JSON, comunemente usati per autenticazione e autorizzazione in applicazioni Java. Questo cheat sheet guida l’implementazione sicura di JWT in Java, coprendo creazione, firma, verifica e gestione del ciclo di vita del token.
+Introduction
 
-Cause tipiche di problemi
+JSON Web Tokens (JWT) are an open standard for securely transmitting information between parties as JSON, commonly used for authentication and authorization in Java applications. This cheat sheet guides the secure implementation of JWT in Java, covering token creation, signing, verification, and lifecycle management.
 
-    Uso di algoritmi di firma deboli o non adeguati (es. none o HS256 con chiavi insufficienti).
+Typical Causes of Problems
 
-    Mancata verifica della firma del token o dei suoi parametri.
+    Use of weak or inadequate signature algorithms (e.g., none or HS256 with insufficient keys).
 
-    Gestione errata della scadenza e del rinnovo del token.
+    Failure to verify the token signature or its parameters.
 
-    Esposizione di informazioni sensibili all’interno del payload non cifrato.
+    Improper management of token expiration and renewal.
 
-Soluzioni e prevenzione
+    Exposure of sensitive information within the unencrypted payload.
 
-    Usare algoritmi di firma robusti come RS256 con chiavi private/pubbliche.
+Solutions and Prevention
 
-    Verificare sempre la firma e i parametri essenziali (issuer, audience, scadenza).
+    Use strong signature algorithms such as RS256 with private/public keys.
 
-    Impostare una durata breve per i token e usare refresh token per rinnovi sicuri.
+    Always verify the signature and essential parameters (issuer, audience, expiration).
 
-    Non memorizzare dati sensibili in chiaro nel payload.
+    Set a short token lifetime and use refresh tokens for secure renewals.
 
-    Gestire correttamente la revoca e invalidazione dei token.
+    Do not store sensitive data in the clear in the payload.
 
-    Usare librerie Java affidabili e mantenute per la manipolazione dei JWT.
+    Handle token revocation and invalidation correctly.
+
+    Use reliable and maintained Java libraries for JWT manipulation.

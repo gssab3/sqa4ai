@@ -1,28 +1,29 @@
-Introduzione
-La protezione della privacy degli utenti è fondamentale per garantire il rispetto delle normative (es. GDPR) e mantenere la fiducia. Consiste nella corretta gestione, raccolta, conservazione e utilizzo dei dati personali, minimizzando l’esposizione a rischi di violazioni e abusi.
+Introduction
 
-Cosa fare / Cause di rischio
+Protecting user privacy is essential to ensure compliance with regulations (e.g., GDPR) and maintain trust. It involves the proper management, collection, storage, and use of personal data, minimizing exposure to the risk of breaches and abuse.
 
-    Raccolta eccessiva o non necessaria di dati personali.
+What to do / Risk factors
 
-    Conservazione di dati sensibili senza adeguate protezioni.
+    Excessive or unnecessary collection of personal data.
 
-    Mancanza di consenso informato o trasparenza sulle modalità di trattamento.
+    Storage of sensitive data without adequate protection.
 
-    Esposizione accidentale o intenzionale di dati a terzi non autorizzati.
+    Lack of informed consent or transparency regarding processing methods.
 
-    Assenza di controlli di accesso e audit su dati personali.
+    Accidental or intentional exposure of data to unauthorized third parties.
 
-Soluzioni e prevenzione
+    Lack of access controls and auditing of personal data.
 
-    Applicare il principio di minimizzazione dei dati (collezionare solo dati necessari).
+Solutions and prevention
 
-    Implementare politiche di consenso esplicito e trasparenza per gli utenti.
+    Apply the principle of data minimization (collect only necessary data).
 
-    Crittografare dati sensibili a riposo e in transito.
+    Implement explicit consent and transparency policies for users.
 
-    Definire ruoli e permessi chiari per l’accesso ai dati personali.
+    Encrypt sensitive data at rest and in transit.
 
-    Implementare sistemi di audit e monitoraggio per rilevare accessi non autorizzati.
+    Define clear roles and permissions for access to personal data.
 
-    Prevedere meccanismi di anonimizzazione o pseudonimizzazione dove possibile.
+    Implement auditing and monitoring systems to detect unauthorized access.
+
+    Provide anonymization or pseudonymization mechanisms where possible.

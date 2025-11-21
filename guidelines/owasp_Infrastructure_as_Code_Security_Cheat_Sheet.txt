@@ -1,24 +1,25 @@
-Introduzione
-Infrastructure as Code (IaC) è una pratica che consente di definire e gestire l’infrastruttura IT tramite file di configurazione automatizzati. Questa metodologia migliora l’efficienza e la ripetibilità, ma introduce anche rischi di sicurezza se non gestita correttamente, poiché errori o configurazioni insicure possono propagarsi rapidamente nell’ambiente.
+Introduction
 
-Cause tipiche di problemi
+Infrastructure as Code (IaC) is a practice that allows you to define and manage IT infrastructure through automated configuration files. This methodology improves efficiency and repeatability, but it also introduces security risks if not managed properly, as errors or insecure configurations can quickly propagate throughout the environment.
 
-    Codice IaC mal configurato o non revisionato che espone risorse sensibili, come server o database, a accessi non autorizzati.
+Typical Causes of Problems
 
-    Utilizzo di credenziali hardcoded o mancata gestione sicura delle chiavi e segreti all’interno dei file di configurazione.
+    Misconfigured or unreviewed IaC code that exposes sensitive resources, such as servers or databases, to unauthorized access.
 
-    Mancanza di controllo sulle modifiche, assenza di audit e testing delle configurazioni prima del deployment.
+    Use of hard-coded credentials or lack of secure management of keys and secrets within configuration files.
 
-    Dipendenza da moduli o componenti non sicuri o obsoleti.
+    Lack of change control, lack of auditing, and lack of configuration testing before deployment.
 
-Soluzioni e prevenzione
+    Dependence on insecure or outdated modules or components.
 
-    Applicare best practice di gestione del codice, inclusi versionamento, revisione e testing automatico (ad esempio tramite pipeline CI/CD).
+Solutions and Prevention
 
-    Implementare strumenti di scanning statico per rilevare vulnerabilità o configurazioni errate nei file IaC.
+    Apply code management best practices, including versioning, review, and automated testing (e.g., through CI/CD pipelines).
 
-    Separare i segreti e gestirli tramite vault sicuri o sistemi di gestione dedicati, evitando di inserirli direttamente nel codice.
+    Implement static scanning tools to detect vulnerabilities or misconfigurations in IaC files.
 
-    Limitare i privilegi e adottare il principio del minimo privilegio per le risorse definite nel codice.
+    Separate secrets and manage them through secure vaults or dedicated management systems, avoiding embedding them directly in code.
 
-    Educare il team di sviluppo e operazioni sull’importanza della sicurezza nell’IaC e mantenere aggiornate le policy di sicurezza.
+    Limit privileges and adopt the principle of least privilege for resources defined in code.
+
+    Educate the development and operations team on the importance of security in IaC and keep security policies up to date.

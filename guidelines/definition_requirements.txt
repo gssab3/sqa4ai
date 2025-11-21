@@ -1,22 +1,22 @@
-Nel mondo dello sviluppo di progetti software, si parla spesso del termine "Requisito" che, in base alla sua natura, può essere un requisito funzionale o non funzionale.
-Essi sono due pilastri dello studio della creazione di un qualsiasi progetto di Ingegneria del Software.
-La stesura dei requisiti richiede Precisione e Completezza, ma anche Univocità. Ogni requisito deve essere misurabile (indipendentemente da un punto di vista, quindi dalla soggettività, si può facilmente capire se quel requisito è stato soddisfatto o meno), deve essere descritto in maniera chiara e completa. NON DEVE ESSERE VAGO. 
+In the world of software development, the term "requirement" is often used, which, depending on its nature, can be either functional or non-functional.
+They are two pillars of the study of the creation of any Software Engineering project.
+Drafting requirements requires precision and completeness, but also uniqueness. Each requirement must be measurable (regardless of perspective, and therefore subjectivity, it can easily be determined whether a requirement has been met or not) and must be described clearly and completely. IT MUST NOT BE VAGUE.
 
-I requisiti funzionali descrivono le funzionalità effettive che il software deve offrire, ovvero l'elenco di servizi da erogare.
-Rispondono alla domanda "cosa fa" e descrive l'insieme di servizi offerti dal sistema o cosa necessita dall'utente per effettuare determinate operazioni.
+Functional requirements describe the actual functionality the software must offer, i.e., the list of services to be provided.
+They answer the question "what does it do?" and describe the set of services offered by the system or what the user needs to perform certain operations.
 
-I requisiti non funzionali descrivono "come deve fare" il sistema determinati servizi o operazioni. In altre parole, è l'insieme delle caratteristiche e qualità che il sistema deve possedere.
-Esistono 3 diverse categorie di requisiti non funzionali:
-1. Requisiti di Prodotto: Si riferiscono alle caratteristiche del sistema stesso (ciò che ci interesserà maggiormente) e si dividono in:
-    - Prestazioni (e.g. il sistema deve essere in grado di gestire e quindi permettere l'accesso a 50 utenti contemporaneamente e di rispondere alle richieste entro 1 secondo)
-    - Sicurezza ( e.g. Il sistema deve proteggere i dati degli utenti autorizzati e non attraverso x metodo)
-    - Affidabilità (e.g. il sistema deve funzionare in maniera continua senza errori frequenti)
-    - Usabilità (e.g. Il sistema deve avere un buon contrasto tra lo sfondo e i caratteri utilizzati, inoltre quest'ultimi devono avere una dimensione minima di 16px)
-    - Manutenibilità (e.g. Il sistema deve aggiornarsi ogni settimana)
-2. Requisiti di processo/organizzativi: Si definiscono le modalità di consegna, standard da adottare e procedure da seguire
-3. Requisiti esterni: Riguardano fattori completamente esterni al sistema, come requisiti legali da soddisfare, interoperabilità con altri sistemi (dipende perchè anche questo potrebbe essere un requisito di prodotto) o etici.
+Non-functional requirements describe "how" the system must perform certain services or operations. In other words, they are the set of characteristics and qualities the system must possess.
+There are 3 different categories of non-functional requirements:
+1. Product Requirements: These refer to the characteristics of the system itself (which will interest us most) and are divided into:
+    - Performance (e.g., the system must be able to manage and therefore allow access to 50 users simultaneously and respond to requests within 1 second)
+    - Security (e.g., the system must protect the data of authorized and non-authorized users through a certain method)
+    - Reliability (e.g., the system must function continuously without frequent errors)
+    - Usability (e.g., the system must have good contrast between the background and the fonts used, and the latter must have a minimum size of 16px)
+    - Maintainability (e.g., the system must be updated every week)
+2. Process/Organizational Requirements: These define the delivery methods, standards to be adopted, and procedures to be followed.
+3. External Requirements: These concern factors completely external to the system, such as legal requirements to be met, interoperability with other systems (it depends, because this could also be a requirement). Product) or ethical.
 
-I requisiti di sicurezza, in base al tipo di servizio, possono essere funzionali o non funzionali.
-L'autenticazione a 2 fattori o l'autenticazione tramite password è un requisito funzionale, per esempio, poichè si richiede una funzionalità specifica da soddisfare e che richiede interazione con l'utente, mentre un esempio di requisito non funzionale è sicuramente la descrizione di certi criteri di sicurezza (da specificare in maniera esaustiva, dettagliata e misurabile) per non garantire all'attaccante scenari di tipo "Denial of Service" (e.g.).
+Security requirements, depending on the type of service, can be functional or non-functional.
+For example, two-factor authentication or password authentication is a functional requirement because it requires a specific functionality that requires user interaction. An example of a non-functional requirement is the description of certain security criteria (specified exhaustively, in detail, and measurably) to prevent denial-of-service scenarios (e.g., a security breach).
 
-In sintesi, in base a come si formula il requisito e se si occupa di servizi o di qualità di essi può essere funzionale o non funzionale.
+In short, depending on how the requirement is formulated and whether it addresses services or their quality, it can be functional or non-functional.

@@ -1,22 +1,22 @@
-Introduzione
-Gli abuse case descrivono scenari in cui un sistema può essere usato in modo improprio o malevolo, andando oltre i normali casi d’uso. Spesso nei requisiti di sicurezza si trovano frasi vaghe come “Il sistema deve essere sicuro”, ma senza definire precisamente quali abusi si vogliono prevenire. Identificare gli abuse case permette di specificare rischi concreti e requisiti mirati per contrastare azioni dannose, migliorando la sicurezza complessiva.
+Introduction
+Abuse cases describe scenarios in which a system can be misused or used maliciously, going beyond normal use cases. Security requirements often contain vague phrases such as “The system must be secure,” but without precisely defining which abuses are to be prevented. Identifying abuse cases allows you to specify concrete risks and targeted requirements to counter harmful actions, improving overall security.
 
-Cause comuni del problema
+Common causes of the problem
 
-    Mancanza di analisi dettagliata delle modalità di attacco o uso improprio del sistema.
+    Lack of detailed analysis of attack methods or misuse of the system.
 
-    Requisiti di sicurezza troppo generici e non misurabili.
+    Security requirements that are too generic and unmeasurable.
 
-    Assenza di scenari che rappresentino intenzioni malevole o comportamenti anomali degli utenti o attaccanti.
+    Absence of scenarios representing malicious intentions or abnormal behavior by users or attackers.
 
-    Non considerare le possibili deviazioni dai comportamenti attesi durante la progettazione.
+    Failure to consider possible deviations from expected behavior during design.
 
-Soluzioni e prevenzione
+Solutions and prevention
 
-    Definire abuse case specifici, cioè descrizioni dettagliate di possibili usi impropri del sistema.
+    Define specific abuse cases, i.e., detailed descriptions of possible misuse of the system.
 
-    Integrare abuse case all’interno del processo di raccolta requisiti per tradurre rischi concreti in requisiti precisi e verificabili.
+    Integrate abuse cases into the requirements gathering process to translate concrete risks into precise and verifiable requirements.
 
-    Utilizzare gli abuse case come base per progettare controlli di sicurezza mirati, test e validazioni.
+    Use abuse cases as a basis for designing targeted security controls, tests, and validations.
 
-    Mantenere aggiornati gli abuse case durante lo sviluppo, man mano che emergono nuove minacce o scenari.
+-   Keep abuse cases up to date during development as new threats or scenarios emerge.

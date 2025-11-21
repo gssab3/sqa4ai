@@ -1,20 +1,21 @@
-Introduzione
-Gli attacchi XSS avvengono quando un’applicazione web incorpora dati non fidati (ad esempio input utente) in pagine web senza una corretta validazione o codifica, consentendo l’esecuzione di script malevoli nel browser della vittima. Ciò compromette la confidenzialità, l’integrità e la disponibilità del sistema e degli utenti. ([turn0search0])
+Introduction
 
-Problemi / Cause Tipiche
+XSS attacks occur when a web application embeds untrusted data (such as user input) into web pages without proper validation or encoding, allowing malicious scripts to execute in the victim's browser. This compromises the confidentiality, integrity, and availability of the system and users. ([turn0search0])
 
-    Input non validato o sanitizzato che viene incorporato direttamente nel DOM o nel markup HTML.
+Typical Issues / Causes
 
-    Utilizzo di variabili senza escaping, rendendole interpretabili come codice.
+    Unvalidated or sanitized input embedded directly in the DOM or HTML markup.
 
-    Framework impiegati senza sfruttare le protezioni automatiche contro XSS, o con lacune nei contesti specifici (HTML, JavaScript, CSS, URL).
+    Use of unescaped variables, making them interpretable as code.
 
-Cosa fare / Come prevenire
+    Frameworks deployed without leveraging automatic protections against XSS, or with gaps in specific contexts (HTML, JavaScript, CSS, URLs).
 
-    Applicare output encoding contestuale, ad esempio HTML entity encoding per contenuto in markup, escaping JS per dati inseriti in script, URL encoding per parametri, CSS escaping in CSS.
+What to Do / How to Prevent
 
-    Utilizzare preferibilmente framework che automatizzino escaping e validazione (es. React, Angular), ma restare consapevoli dei loro limiti.
+    Apply contextual output encoding, such as HTML entity encoding for content in markup, JS escaping for data inserted in scripts, URL encoding for parameters, CSS escaping in CSS.
 
-    Validare rigorosamente gli input, contrastando l’iniezione attraverso whitelist e sanity checks.
+    Preferably use frameworks that automate escaping and validation (e.g., React, Angular), but be aware of their limitations.
 
-    Implementare Content Security Policy (CSP) come livello di difesa aggiuntivo, per limitare le fonti di script caricabili.
+    Rigorously validate inputs, preventing injection through whitelists and sanity checks.
+
+    Implement Content Security Policy (CSP) as an additional layer of defense to limit the sources of scripts that can be loaded.

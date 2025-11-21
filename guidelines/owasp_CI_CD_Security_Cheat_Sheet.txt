@@ -1,91 +1,58 @@
-Introduzione
-Le pipeline CI/CD automatizzano build, test e deploy; per questo motivo diventano obiettivi attraenti per un attaccante: una compromissione della pipeline può permettere l’inserimento di codice malevolo a valle, la diffusione di credenziali, o la manipolazione degli artefatti distribuiti. La guida OWASP fornisce raccomandazioni pratiche per ridurre il rischio e proteggere la catena di consegna del software.
+Introduction
 
-Problemi / Cause tipiche
+CI/CD pipelines automate build, testing, and deployment; for this reason, they become attractive targets for attackers: a compromised pipeline can allow malicious code to be injected downstream, credentials to be leaked, or distributed artifacts to be manipulated. The OWASP Guide provides practical recommendations to reduce risk and secure the software delivery chain.
 
-    Controlli di accesso inadeguati sul flusso CI/CD (identità e permessi eccessivi per job, token o macchine).
-    OWASP Foundation
+Typical Issues / Causes
 
-    Cattiva gestione dei segreti (credenziali hard-coded, accesso ai segreti non controllato o esposto nei logs).
-    OWASP Cheat Sheet Series+1
+    Inadequate access controls in the CI/CD pipeline (excessive identities and permissions for jobs, tokens, or machines).
 
-    Abuso della supply chain (dependency / artifact): pacchetti o dipendenze compromesse che vengono buildate e distribuite.
-    OWASP Foundation
+    Poor secret management (hard-coded credentials, uncontrolled or exposed access to secrets in logs).
 
-    Poisoned Pipeline Execution: pipeline che eseguono codice non verificato (ad esempio PR maliziosi che attivano job con permessi elevati).
-    OWASP Cheat Sheet Series
+    Supply Chain Abuse (Dependency/Artifact): Compromised packages or dependencies that are built and deployed.
 
-    Configurazioni insicure dei runner/workers o immagini build che permettono escalation o esfiltrazione.
-    OWASP Cheat Sheet Series
+    Poisoned Pipeline Execution: Pipelines that execute unverified code (e.g., malicious PRs that trigger jobs with elevated permissions).
 
-    Scarsa visibilità e logging: mancanza di tracciamento delle azioni di build/deploy e degli accessi. 
+    Insecure runner/worker configurations or build images that allow escalation or exfiltration.
 
-Cosa fare — categorie operative (ogni voce è trasformabile in requisito)
-1) Governance e progettazione del pipeline
+    Poor visibility and logging: lack of tracking of build/deploy actions and access.
 
-    Definire ownership, responsabilità e processi approvativi per ogni stage della pipeline.
+What to do — operational categories (each item can be transformed into a requirement)
 
-    Definire policy per cosa può essere eseguito automaticamente e cosa richiede approvazione umana.
-    OWASP Cheat Sheet Series
+1) Pipeline Governance and Design
+Define ownership, responsibilities, and approval processes for each stage of the pipeline.
+Define policies for what can be executed automatically and what requires human approval.
 
-2) Identity & Access Management per CI/CD
-
-    Applicare least privilege su account, token e service accounts (separare account per build, deploy, ecc.).
-
-    Usare Policy-Based Access Control per limitare azioni sui branch, job e artefatti.
-    OWASP Foundation
-    OWASP Cheat Sheet Series
+2) Identity & Access Management for CI/CD
+Apply least privilege to accounts, tokens, and service accounts (separate accounts for build, deploy, etc.).
+Use Policy-Based Access Control to limit actions on branches, jobs, and artifacts.
 
 3) Secrets Management
+Do not store secrets in accessible code or configurations (avoid cleartext env vars).
+Integrate a secrets management solution (vault, KMS) with rotation and access auditing.
 
-    Non memorizzare segreti nel codice o nelle configurazioni accessibili (evitare env var in chiaro).
+4) Hardening runner/build workers and images
+Use immutable and isolated workers (e.g., ephemeral runners), minimize privileges at the OS/container level.
+Scan and harden base images (remove unnecessary tools, patch CVEs).
 
-    Integrare una soluzione di secrets management (vault, KMS) con rotazione e auditing degli accessi.
-    OWASP Cheat Sheet Series+1
-
-4) Hardening di runner/build workers e immagini
-
-    Usare workers immutabili e isolati (es. ephemeral runners), minimizzare privilegi a livello OS/container.
-
-    Scansionare e hardenare immagini base (rimuovere tool non necessari, patchare CVE).
-    OWASP Cheat Sheet Series
-
-5) Verifica dell’integrità degli artefatti
-
-    Firmare e verificare gli artefatti (build, pacchetti, container images) e applicare controlli d’integrità prima del deploy.
-
-    Validare sorgenti e dipendenze con meccanismi come SLSA / sigstore / in-toto.
-    OWASP Cheat Sheet Series
-    OWASP Foundation
+5) Verify artifact integrity
+Sign and verify artifacts (builds, packages, container images) and apply integrity checks before deployment.
+Validate sources and dependencies with mechanisms such as SLSA / sigstore / in-toto.
 
 6) Dependency & Supply Chain Controls
+Automatic dependency scanning (SCA), blocking versions with critical CVEs, and approval policies for new dependencies.
+Minimize trust in external packages: use internal proxies/registers if possible.
 
-    Scansione automatica delle dipendenze (SCA), blocco di versioni con CVE critiche e policy di approvazione per nuove dipendenze.
+7) Trigger and Execution Controls (Flow Control)
+Limit what can trigger sensitive jobs (e.g., PRs from forks, triggers on protected branches).
+Separate build/test pipelines from pipelines with release privileges.
 
-    Minimizzare fiducia in pacchetti esterni: usare proxy/registry interni se possibile.
-    OWASP Foundation
+8) Logging, Monitoring, and Anomaly Detection
+Log all critical actions (who initiated the build, what secrets were requested, configuration changes).
+Integrate alerts for anomalous executions, unexpected use of secrets, or invalid signatures/artifacts.
 
-7) Controlli sui trigger e sull’esecuzione (flow control)
+9) Automatic Testing & Validation
+Integrate SAST/DAST/SCA into the pipeline; perform security tests before merging and deploying.
+Automate tests that simulate pipeline attacks (e.g., malicious PRs attempting to exfiltrate secrets).
 
-    Limitare cosa può attivare job sensibili (es. PR da forche, triggers su branch protetti).
-
-    Separare pipeline di build/test da pipeline con privilegi di rilascio.
-    OWASP Cheat Sheet Series
-
-8) Logging, monitoring e rilevamento anomalie
-
-    Loggare tutte le azioni critiche (chi ha avviato la build, quali segreti sono stati richiesti, cambi di configurazione).
-
-    Integrare alerting per esecuzioni anomale, uso inaspettato di segreti o firma/artifact non valida.
-    OWASP Foundation
-
-9) Test & Validazione automatica
-
-    Integrare SAST/DAST/SCA in pipeline; eseguire test di sicurezza prima del merge e del deploy.
-
-    Automatizzare test che simulano attacchi alla pipeline (es. PR malevoli che cercano di esfiltrare segreti).
-    OWASP Cheat Sheet Series
-
-10) Incident response e recovery per CI/CD
-
-    Definire playbook per compromissione della pipeline (revoca credenziali, isolamento runner, ricostruzione da sorgenti integrità-verified).
+10) Incident Response and Recovery for CI/CD
+Define pipeline compromise playbooks (revoke credentials, isolate runners, rebuild from integrity-verified sources).

@@ -1,30 +1,32 @@
-Introduzione
-Questo cheat sheet si concentra sugli aspetti pratici della sicurezza nei microservizi, coprendo problematiche comuni, vulnerabilità e le migliori strategie per proteggerli durante tutto il ciclo di vita.
+Microservices Security Cheat Sheet
+Introduction
 
-Cause e rischi tipici
+This cheat sheet focuses on the practical aspects of microservice security, covering common issues, vulnerabilities, and the best strategies for protecting them throughout their lifecycle.
 
-    Errori di configurazione e gestione delle credenziali.
+Typical causes and risks
 
-    Insufficiente isolamento tra microservizi, permettendo escalation di privilegi.
+    Credential configuration and management errors.
 
-    Vulnerabilità legate all’autenticazione e gestione dei token.
+    Insufficient isolation between microservices, allowing privilege escalation.
 
-    Mancanza di validazione e sanitizzazione degli input tra servizi.
+    Vulnerabilities related to authentication and token management.
 
-    Problemi nella gestione della resilienza e protezione da denial-of-service.
+    Lack of validation and sanitization of input between services.
 
-Soluzioni e prevenzione
+    Problems managing resilience and protecting against denial-of-service.
 
-    Applicare una politica di sicurezza “zero trust” per ogni comunicazione e accesso.
+Solutions and prevention
 
-    Isolare microservizi con container e configurare firewall a livello di servizio.
+    Apply a "zero trust" security policy for all communication and access.
 
-    Gestire le credenziali e segreti con strumenti dedicati (es. Vault).
+    Isolate microservices with containers and configure service-level firewalls.
 
-    Validare rigorosamente tutti i dati in ingresso e adottare misure contro injection e XSS.
+    Manage credentials and secrets with dedicated tools (e.g., Vault).
 
-    Impostare limiti di rate e meccanismi di fallback per resistere a DoS.
+    Rigorously validate all incoming data and adopt measures against injection and XSS.
 
-    Eseguire test di sicurezza regolari, inclusi penetration test specifici per microservizi.
+    Set rate limits and fallback mechanisms to resist DoS.
 
-    Automatizzare la sicurezza nel processo CI/CD per garantire policy costanti.
+    Perform regular security tests, including microservice-specific penetration tests.
+
+    Automate security in the CI/CD process to ensure consistent policies.

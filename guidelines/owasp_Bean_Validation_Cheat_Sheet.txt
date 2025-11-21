@@ -1,30 +1,31 @@
-Introduzione
-La Bean Validation è una specifica che definisce un framework per la validazione automatica degli oggetti Java (bean) tramite annotazioni. Serve a garantire che i dati siano corretti, coerenti e conformi ai vincoli prima di essere processati o memorizzati, evitando problemi come input malevoli, dati corrotti o stati inconsistente dell’applicazione.
+Introduction
 
-Problemi e Cause Tipiche
+Bean Validation is a specification that defines a framework for automatically validating Java objects (beans) using annotations. It ensures that data is correct, consistent, and compliant with constraints before being processed or stored, preventing problems such as malicious input, corrupted data, or inconsistent application states.
 
-    Validazione insufficiente o inconsistente sui dati in ingresso.
+Typical Problems and Causes
 
-    Assenza di validazione su campi critici, causando problemi di integrità o sicurezza.
+    Insufficient or inconsistent validation on input data.
 
-    Validazioni duplicate o sparpagliate, difficili da mantenere e aggiornare.
+    Lack of validation on critical fields, causing integrity or security issues.
 
-    Mancanza di validazione su dati provenienti da fonti non affidabili o esterne.
+    Duplicate or scattered validations, difficult to maintain and update.
 
-    Scarsa gestione degli errori di validazione, che può portare a comportamenti inattesi o vulnerabilità.
+    Lack of validation on data from untrusted or external sources.
 
-Cosa Fare / Come Prevenire
+    Poor handling of validation errors, which can lead to unexpected behavior or vulnerabilities.
 
-    Utilizzare annotazioni di Bean Validation per definire vincoli chiari e centralizzati su classi e campi.
+What to Do / How to Prevent
 
-    Applicare la validazione sia lato client che lato server per una doppia verifica.
+    Use Bean Validation annotations to define clear and centralized constraints on classes and fields.
 
-    Validare sempre dati provenienti da input esterni prima di qualsiasi elaborazione o memorizzazione.
+    Apply validation on both the client and server sides for double-checking.
 
-    Gestire in modo appropriato gli errori di validazione, fornendo messaggi chiari e impedendo l’elaborazione di dati non validi.
+    Always validate data from external inputs before any processing or storage.
 
-    Integrare Bean Validation nel ciclo di vita dell’applicazione e nei framework di sviluppo usati (es. Spring, Jakarta EE).
+    Properly handle validation errors, providing clear messages and preventing the processing of invalid data.
 
-    Testare regolarmente la correttezza dei vincoli di validazione, includendo casi limite e input malevoli.
+    Integrate Bean Validation into the application lifecycle and development frameworks used (e.g., Spring, Jakarta EE).
 
-    Mantenere la documentazione aggiornata sui vincoli per facilitare manutenzione e sviluppo.
+    Regularly test the correctness of validation constraints, including edge cases and malicious inputs.
+
+    Maintain up-to-date constraint documentation to facilitate maintenance and development.

@@ -1,30 +1,31 @@
-Introduzione
-Il logging è fondamentale per tracciare eventi, errori e attività di sicurezza in un sistema. Una buona gestione del logging aiuta nel rilevamento di incidenti, nella diagnosi di problemi e nella compliance. Questo cheat sheet illustra best practice per la progettazione e implementazione di un sistema di logging sicuro ed efficace.
+Introduction
 
-Cause tipiche di problemi
+Logging is essential for tracking events, errors, and security activities in a system. Good logging management helps detect incidents, diagnose problems, and ensure compliance. This cheat sheet outlines best practices for designing and implementing a secure and effective logging system.
 
-    Log incompleti o mancanti che impediscono la ricostruzione di eventi.
+Typical Causes of Problems
 
-    Logging eccessivo che può esporre dati sensibili o generare overhead.
+    Incomplete or missing logs that prevent event reconstruction.
 
-    Mancata protezione dei log da accessi non autorizzati o modifiche.
+    Excessive logging that can expose sensitive data or generate overhead.
 
-    Mancanza di correlazione tra eventi di log per l’analisi degli incidenti.
+    Failure to protect logs from unauthorized access or modification.
 
-    Uso di formati incoerenti o non standard.
+    Lack of correlation between log events for incident analysis.
 
-Soluzioni e prevenzione
+    Use of inconsistent or non-standard formats.
 
-    Definire chiaramente quali eventi devono essere loggati (autenticazioni, errori, accessi, ecc.).
+Solutions and Prevention
 
-    Evitare di loggare dati sensibili come password, token o dati personali non necessari.
+    Clearly define which events should be logged (authentication, errors, logins, etc.).
 
-    Proteggere i log tramite crittografia, controllo accessi e integrità (es. checksum).
+    Avoid logging sensitive data such as passwords, tokens, or unnecessary personal data.
 
-    Utilizzare formati di log standardizzati (es. JSON, Common Event Format).
+    Protect logs through encryption, access control, and integrity (e.g., checksums).
 
-    Implementare rotazione, archiviazione e gestione del ciclo di vita dei log.
+    Use standardized log formats (e.g., JSON, Common Event Format).
 
-    Integrare sistemi di monitoraggio e alerting basati sui log per rilevare anomalie.
+    Implement log rotation, archiving, and lifecycle management.
 
-    Correlare eventi su più sistemi per una visione completa degli incidenti.
+    Integrate log-based monitoring and alerting systems to detect anomalies.
+
+    Correlate events across multiple systems for a comprehensive view of incidents.

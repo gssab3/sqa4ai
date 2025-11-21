@@ -1,29 +1,25 @@
-Introduzione
-La Content Security Policy (CSP) è uno standard W3C che consente di specificare da quali origini (script, immagini, stili, ecc.) il browser è autorizzato a caricare risorse. Funziona come una difesa a più livelli, utile per contrastare principalmente attacchi XSS e clickjacking, riducendo l’impatto di codice non affidabile. CSP può anche aiutare a garantire che le risorse siano caricate tramite HTTPS e a fornire visibilità su violazioni tramite sistemi di reporting.
-OWASP Cheat Sheet Series
-MDN Web Docs
+Introduction
 
-Problemi / Cause
+Content Security Policy (CSP) is a W3C standard that allows you to specify from which origins (scripts, images, styles, etc.) the browser is allowed to load resources. It acts as a layered defense, primarily useful for countering XSS and clickjacking attacks, reducing the impact of untrusted code. CSP can also help ensure that resources are loaded over HTTPS and provide visibility into violations through reporting systems.
 
-    Iniezione di script malevoli (XSS) eseguiti nonostante altre misure preventive.
+Problems / Causes
 
-    Clickjacking o specifiche tecniche lato client bypassate per mancanza di controllo dell’iframe.
+    Malicious script injection (XSS) executed despite other preventative measures.
 
-    Rischio elevato dal caricamento di risorse da origini non affidate.
+    Clickjacking or client-side technical specifications bypassed due to lack of iframe control.
 
-    Absence di una policy centralizzata; il sito diventa vulnerabile a risorse compromesse o malintenzionate.
+    High risk from loading resources from untrusted sources.
 
-Cosa Fare / Come Prevenire
+    Lack of a centralized policy; the site becomes vulnerable to compromised or malicious resources.
 
-    Definire e inviare tramite header HTTP una Content-Security-Policy valida per tutte le risposte, non solo la pagina iniziale.
+What to Do / How to Prevent
 
-    Usare direttive chiare come script-src, object-src, img-src, frame-ancestors per limitare le risorse caricate e prevenire framing (sostituendo X-Frame-Options).
-    OWASP Cheat Sheet Series
-    jcarpizo.github.io
-    MDN Web Docs
+    Define and send a Content Security Policy via HTTP header that applies to all responses, not just the home page.
 
-    Adottare una modalità “report-only” iniziale (CSP-Report-Only) per monitorare le violazioni senza bloccare il sito in produzione.
+    Use clear directives such as script-src, object-src, img-src, and frame-ancestors to limit loaded resources and prevent framing (replacing X-Frame-Options).
 
-    Applicare nonce o hash per migliorare la sicurezza nel caricamento di script dinamici.
+    Adopt an initial "report-only" mode (CSP-Report-Only) to monitor for violations without taking down the production site.
 
-    Integrare CSP come layer aggiuntivo, non unico: continuare a seguire le best practice per prevenire XSS (es. input validation corretta).
+    Apply nonces or hashes to improve security when loading dynamic scripts.
+
+    Integrate CSP as an additional layer, not the only one: continue to follow best practices to prevent XSS (e.g., proper input validation).

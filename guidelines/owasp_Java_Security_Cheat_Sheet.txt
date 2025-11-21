@@ -1,26 +1,27 @@
-Introduzione
-La sicurezza in Java copre un ampio spettro di pratiche per proteggere le applicazioni scritte in questo linguaggio, comprese le gestione delle autorizzazioni, la crittografia, il controllo degli accessi e la sandbox di esecuzione. Java fornisce API e framework dedicati a questi scopi.
+Introduction
 
-Cause tipiche di problemi
+Java security covers a broad spectrum of practices for protecting applications written in this language, including authorization management, encryption, access control, and execution sandboxing. Java provides dedicated APIs and frameworks for these purposes.
 
-    Uso improprio o debole di API di sicurezza Java.
+Typical Causes of Problems
 
-    Scarsa gestione delle eccezioni di sicurezza e errori di configurazione.
+    Improper or weak use of Java security APIs.
 
-    Mancanza di aggiornamenti o patch per le librerie di sicurezza.
+    Poor security exception handling and misconfigurations.
 
-    Gestione inadeguata delle credenziali e delle chiavi crittografiche.
+    Lack of updates or patches for security libraries.
 
-Soluzioni e prevenzione
+    Improper management of credentials and cryptographic keys.
 
-    Utilizzare correttamente le API di sicurezza Java come java.security, JAAS, e Java Cryptography Architecture.
+Solutions and Prevention
 
-    Applicare il principio del minimo privilegio usando i manager di sicurezza Java.
+    Properly use Java security APIs such as java.security, JAAS, and Java Cryptography Architecture.
 
-    Gestire in modo sicuro chiavi e certificati, evitando hardcoding.
+    Apply the principle of least privilege using Java security managers.
 
-    Aggiornare regolarmente le librerie e i componenti di sicurezza Java.
+    Securely manage keys and certificates, avoiding hardcoding.
 
-    Implementare un robusto sistema di logging per monitorare eventi di sicurezza.
+    Regularly update Java security libraries and components.
 
-    Eseguire analisi di sicurezza specifiche per il codice Java e fare penetration test mirati.
+    Implement a robust logging system to monitor security events.
+
+    Perform specific security analyses of Java code and targeted penetration testing.

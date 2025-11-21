@@ -1,5 +1,5 @@
 '''
-Questo file python è necessario per la generazione del pdf contenente i requisiti di sicurezza del "testo_unico_numerato"
+This Python file is required to generate the PDF containing the "text_single_numbered" security requirements.
 '''
 
 from reportlab.lib.pagesizes import A4
@@ -8,25 +8,26 @@ from reportlab.lib.units import cm
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.enums import TA_CENTER
 
-def export_requisiti_pdf(output_path: str, testo_unico_numerato: str, titolo: str = "Requisiti Generati dall'LLM"):
+
+def export_requirement_pdf(output_path: str, corpus: str, title: str = "Security Requirements Generated (GEN1+GEN2)"):
     """
-    Crea un PDF con un titolo e un corpo testuale selezionabile/copiabile.
-    - output_path: percorso del PDF (es. 'requisiti_llm.pdf')
-    - testo_unico_numerato: stringa con i requisiti numerati separati da \n
-    - titolo: titolo in cima al PDF
+    Create a PDF with a centered title and selectable/copyable body text.
+    - output_path: path to the generated PDF (e.g. 'requisiti_llm.pdf')
+    - corpus: string with numbered requirements separated by newlines
+    - title: title displayed at the top of the PDF
     """
     doc = SimpleDocTemplate(
         output_path,
         pagesize=A4,
         rightMargin=2*cm, leftMargin=2*cm,
         topMargin=2*cm, bottomMargin=2*cm,
-        title=titolo,
+        title=title,
         author="Pipeline RAG"
     )
 
     styles = getSampleStyleSheet()
 
-    # Stile del titolo
+    # Title style
     title_style = ParagraphStyle(
         name="TitleCentered",
         parent=styles["Title"],
@@ -36,7 +37,7 @@ def export_requisiti_pdf(output_path: str, testo_unico_numerato: str, titolo: st
         spaceAfter=12
     )
 
-    # Stile del corpo
+    # Body style
     body_style = ParagraphStyle(
         name="BodyJustified",
         parent=styles["Normal"],
@@ -47,13 +48,13 @@ def export_requisiti_pdf(output_path: str, testo_unico_numerato: str, titolo: st
     )
 
     story = []
-    story.append(Paragraph(titolo, title_style))
+    story.append(Paragraph(title, title_style))
     story.append(Spacer(1, 0.5*cm))
 
-    # Converti le righe del testo unico in paragrafi separati
-    for line in testo_unico_numerato.splitlines():
+    # Convert corpus lines to separate paragraphs
+    for line in corpus.splitlines():
         if line.strip():
-            # Sostituisci i caratteri speciali che potrebbero rompere il parser di reportlab
+            # Escape characters that may break reportlab parser
             safe_line = line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
             story.append(Paragraph(safe_line, body_style))
 

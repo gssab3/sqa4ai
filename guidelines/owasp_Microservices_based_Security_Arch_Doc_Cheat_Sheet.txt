@@ -1,30 +1,31 @@
-Introduzione
-Questo documento fornisce linee guida e best practice per progettare e implementare architetture di microservizi sicure. I microservizi, essendo componenti autonomi e distribuiti, presentano sfide uniche in termini di sicurezza, come la gestione delle comunicazioni, autenticazione e autorizzazione, e protezione dei dati in movimento e a riposo.
+Introduction
 
-Problematiche tipiche
+This document provides guidelines and best practices for designing and implementing secure microservices architectures. Microservices, as autonomous and distributed components, present unique security challenges, such as managing communications, authentication and authorization, and protecting data in motion and at rest.
 
-    Superficie d’attacco ampliata a causa della molteplicità di servizi e interazioni tra essi.
+Typical Challenges
 
-    Difficoltà nella gestione centralizzata delle identità e delle autorizzazioni.
+    Expanded attack surface due to the multiplicity of services and interactions between them.
 
-    Comunicazioni inter-servizio potenzialmente insicure (es. man-in-the-middle).
+    Difficulty in centrally managing identities and authorizations.
 
-    Gestione complessa dei dati sensibili e della loro protezione in ambienti distribuiti.
+    Potentially insecure inter-service communications (e.g., man-in-the-middle).
 
-    Difficoltà nel monitorare e tracciare eventi di sicurezza in un sistema frammentato.
+    Complex management of sensitive data and its protection in distributed environments.
 
-Soluzioni e prevenzione
+    Difficulty in monitoring and tracking security events in a fragmented system.
 
-    Implementare un gateway API sicuro per controllare e filtrare tutte le richieste esterne.
+Solutions and Prevention
 
-    Utilizzare protocolli di comunicazione sicuri (es. TLS) per le interazioni tra microservizi.
+    Implement a secure API gateway to inspect and filter all external requests.
 
-    Applicare un sistema di autenticazione e autorizzazione centralizzato (es. OAuth2, JWT).
+    Use secure communication protocols (e.g., TLS) for interactions between microservices.
 
-    Adottare il principio del minimo privilegio per ogni microservizio.
+    Implement a centralized authentication and authorization system (e.g., OAuth2, JWT).
 
-    Implementare logging centralizzato e monitoraggio continuo delle attività di sicurezza.
+    Adopt the principle of least privilege for each microservice.
 
-    Usare tecniche di cifratura per dati sensibili sia in transito sia a riposo.
+    Implement centralized logging and continuous monitoring of security activities.
 
-    Effettuare analisi regolari della superficie di attacco e aggiornare le difese.
+    Use encryption techniques for sensitive data both in transit and at rest.
+
+    Conduct regular attack surface analysis and update defenses.

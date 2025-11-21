@@ -1,20 +1,21 @@
-Introduzione
-Gli XS Leaks (Cross-Site Leaks) sono tecniche che sfruttano differenze di comportamento del browser o dei server per ottenere informazioni sensibili tramite canali laterali, bypassando tradizionali misure di sicurezza come la Same-Origin Policy.
+Introduction
 
-Cosa fare / Cause di rischio
+XS Leaks (Cross-Site Leaks) are techniques that exploit differences in browser or server behavior to obtain sensitive information through side channels, bypassing traditional security measures such as the Same-Origin Policy.
 
-    Informazioni dedotte da differenze nei tempi di risposta o nel contenuto di errori.
+What to Do / Risk Causes
 
-    Uso di tecniche come CSRF, CORS mal configurati o cache poisoning.
+    Information inferred from differences in response times or error content.
 
-    Mancanza di protezioni specifiche contro canali laterali.
+    Use techniques such as CSRF, misconfigured CORS, or cache poisoning.
 
-Soluzioni e prevenzione
+    Lack of specific protections against side channels.
 
-    Applicare politiche CORS rigorose.
+Solutions and Prevention
 
-    Evitare la divulgazione di informazioni tramite messaggi di errore o timing.
+    Enforce strict CORS policies.
 
-    Utilizzare tecniche di randomizzazione e mitigazioni per ridurre i canali laterali.
+    Prevent information disclosure through error messages or timing.
 
-    Monitorare comportamenti anomali nel traffico e risposte.
+    Use randomization techniques and mitigations to reduce side channels.
+
+    Monitor for anomalous traffic behavior and responses.

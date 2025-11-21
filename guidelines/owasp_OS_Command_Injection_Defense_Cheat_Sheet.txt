@@ -1,24 +1,25 @@
-Introduzione
-L’OS Command Injection è una vulnerabilità che permette a un attaccante di eseguire comandi arbitrari sul sistema operativo tramite un’applicazione vulnerabile. Questa falla si verifica quando l’applicazione passa dati non sanitizzati direttamente a un interprete di comandi (shell), consentendo esecuzione di codice malevolo.
+Introduction
 
-Cause
+OS Command Injection is a vulnerability that allows an attacker to execute arbitrary commands on the operating system via a vulnerable application. This vulnerability occurs when the application passes unsanitized data directly to a command interpreter (shell), allowing malicious code execution.
 
-    Mancata o insufficiente validazione e sanitizzazione dell’input utente.
+Causes
 
-    Uso diretto di funzioni di sistema (es. exec, system) con parametri non controllati.
+    Lack of or insufficient validation and sanitization of user input.
 
-    Assunzione errata che l’input utente sia sicuro.
+    Direct use of system functions (e.g., exec, system) with unchecked parameters.
 
-    Configurazioni errate o privilegi troppo elevati per il processo che esegue i comandi.
+    Incorrect assumption that user input is safe.
 
-Soluzioni e prevenzione
+    Incorrect configuration or excessive privileges for the process executing the commands.
 
-    Evitare completamente di invocare comandi di sistema con input utente; preferire API sicure o librerie dedicate.
+Solutions and Prevention
 
-    Se necessario, validare rigorosamente gli input (whitelist di valori accettabili).
+    Completely avoid invoking system commands with user input; prefer secure APIs or dedicated libraries.
 
-    Usare funzioni che non passano l’input alla shell (ad esempio execve con array di parametri).
+    If necessary, rigorously validate input (whitelist of acceptable values).
 
-    Limitare i privilegi del processo che esegue i comandi.
+    Use functions that do not pass input to the shell (e.g., execve with arrays of parameters).
 
-    Monitorare e loggare l’attività per individuare eventuali abusi.
+    Limit the privileges of the process executing the commands.
+
+    Monitor and log activity to detect abuse.

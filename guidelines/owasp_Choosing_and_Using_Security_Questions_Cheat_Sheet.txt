@@ -1,28 +1,29 @@
-Introduzione
-Le domande di sicurezza sono un metodo comune per l’autenticazione o il recupero dell’accesso agli account, ma spesso sono poco sicure se scelte o implementate male. Questo cheat sheet fornisce linee guida per la scelta e l’uso corretto di queste domande, minimizzando rischi di compromissione tramite risposte facilmente reperibili o intuibili.
+Introduction
 
-Problemi e Cause Tipiche
+    Security questions are a common method for authenticating or recovering access to accounts, but they are often unsafe if poorly chosen or implemented. This cheat sheet provides guidelines for choosing and using these questions correctly, minimizing the risk of compromise by using easily available or guessable answers.
 
-    Domande troppo semplici o comuni, con risposte facilmente reperibili online o socialmente ingegnerizzabili (es. nome della madre, città natale).
+Typical Problems and Causes
 
-    Mancanza di varietà nelle domande che porta a risposte prevedibili.
+    Questions that are too simple or common, with answers that are easily found online or socially engineerable (e.g., mother's name, hometown).
 
-    Mancanza di opzioni per personalizzare domande, costringendo a scelte insicure.
+    Lack of variety in questions, leading to predictable answers.
 
-    Scarsa protezione delle risposte memorizzate, spesso in chiaro o con crittografia debole.
+    Lack of options for customizing questions, forcing insecure choices.
 
-    Uso esclusivo delle domande di sicurezza come unico meccanismo di recupero, senza backup o autenticazione multifattore.
+    Poor protection of stored answers, often in plain text or with weak encryption.
 
-Cosa Fare / Come Prevenire
+    Exclusive use of security questions as the sole recovery mechanism, without backup or multifactor authentication.
 
-    Scegliere domande con risposte non facilmente reperibili pubblicamente e che richiedano conoscenze personali difficili da indovinare.
+What to Do / How to Prevent
 
-    Fornire una lista varia di domande e permettere all’utente di crearne di personalizzate.
+    Choose questions with answers that are not easily available publicly and that require personal knowledge that is difficult to guess.
 
-    Proteggere le risposte memorizzate usando tecniche di hashing e salting, come per le password.
+    Provide a varied list of questions and allow users to create their own.
 
-    Integrare le domande di sicurezza con metodi di autenticazione multifattore o alternative più sicure per il recupero account.
+    Protect stored answers using hashing and salting techniques, as with passwords.
 
-    Informare gli utenti sui rischi associati e consigliare pratiche di scelta consapevole delle risposte.
+    Integrate security questions with multifactor authentication methods or more secure alternatives for account recovery.
 
-    Monitorare e aggiornare periodicamente le domande e le politiche di sicurezza correlate.
+    Inform users about the associated risks and recommend informed answer choices.
+
+    Periodically monitor and update questions and related security policies.

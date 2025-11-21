@@ -1,30 +1,31 @@
-Introduzione
-Laravel è un framework PHP molto popolare per lo sviluppo di applicazioni web. La sicurezza in Laravel copre vari aspetti, dalla gestione delle autenticazioni alle protezioni contro vulnerabilità comuni come XSS, CSRF, SQL injection e altro. Questo cheat sheet fornisce best practice per sfruttare le funzionalità di sicurezza integrate di Laravel e ridurre i rischi.
+Introduction
 
-Cause tipiche di problemi
+Laravel is a popular PHP framework for web application development. Security in Laravel covers a variety of aspects, from authentication management to protection against common vulnerabilities such as XSS, CSRF, SQL injection, and more. This cheat sheet provides best practices for leveraging Laravel's built-in security features and reducing risks.
 
-    Mancata validazione e sanificazione dell’input utente.
+Typical Causes of Problems
 
-    Gestione inadeguata delle sessioni e dei token CSRF.
+    Failure to validate and sanitize user input.
 
-    Uso errato o assente di escaping nei template Blade.
+    Inadequate session and CSRF token handling.
 
-    Configurazioni di sicurezza errate o mancanti (es. debug attivo in produzione).
+    Incorrect or missing escaping in Blade templates.
 
-    Gestione debole delle password e delle politiche di autenticazione.
+    Incorrect or missing security configurations (e.g., active debugging in production).
 
-Soluzioni e prevenzione
+    Weak password and authentication policy management.
 
-    Usare il sistema di validazione nativo di Laravel per tutti gli input.
+Solutions and Prevention
 
-    Abilitare e proteggere token CSRF per tutte le richieste POST, PUT, DELETE.
+    Use Laravel's native validation system for all input.
 
-    Utilizzare l’escaping automatico di Blade per prevenire XSS.
+    Enable and protect CSRF tokens for all POST, PUT, and DELETE requests.
 
-    Disabilitare modalità debug in ambienti di produzione.
+    Use Blade's automatic escaping to prevent XSS.
 
-    Configurare politiche robuste di password (es. lunghezza minima, hashing con bcrypt).
+    Disable debug mode in production environments.
 
-    Implementare autorizzazioni tramite middleware e policy Laravel.
+    Configure robust password policies (e.g., minimum length, hashing with bcrypt).
 
-    Mantenere aggiornate le dipendenze e il framework.
+    Implement authorizations using Laravel middleware and policies.
+
+    Keep dependencies and the framework up to date.

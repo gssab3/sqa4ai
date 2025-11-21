@@ -1,22 +1,23 @@
-Introduzione
-La Server-Side Request Forgery (SSRF) è un attacco in cui un attacker induce un server vulnerabile a effettuare richieste HTTP verso risorse interne o esterne a cui normalmente non avrebbe accesso. Questo tipo di attacco sfrutta il fatto che il server funge da intermediario, potenzialmente bypassando firewall o controlli di accesso.
+Introduction
 
-Cause
+Server-Side Request Forgery (SSRF) is an attack in which an attacker tricks a vulnerable server into making HTTP requests to internal or external resources to which it would not normally have access. This type of attack exploits the server's role as an intermediary, potentially bypassing firewalls or access controls.
 
-    Mancata validazione o sanificazione degli input che definiscono URL o risorse da contattare.
+Causes
 
-    Assenza di restrizioni sulle destinazioni delle richieste effettuate dal server.
+    Failure to validate or sanitize inputs that define URLs or resources to be contacted.
 
-    Configurazioni errate che permettono accesso a risorse interne non protette.
+    Lack of restrictions on the destinations of requests made by the server.
 
-Soluzioni e prevenzione
+    Misconfigurations that allow access to unprotected internal resources.
 
-    Validare e filtrare rigorosamente gli input che definiscono indirizzi o URL da chiamare.
+Solutions and Prevention
 
-    Limitare le richieste in uscita a una lista bianca di domini o IP noti e affidabili.
+    Rigorously validate and filter inputs that define addresses or URLs to be called.
 
-    Implementare controlli di rete per bloccare richieste a indirizzi interni sensibili (es. localhost, metadata service).
+    Restrict outgoing requests to a whitelist of known and trusted domains or IP addresses.
 
-    Usare meccanismi di autenticazione e autorizzazione anche per le richieste server-side.
+    Implement network controls to block requests to sensitive internal addresses (e.g., localhost, metadata service).
 
-    Monitorare e loggare tutte le richieste esterne per individuare comportamenti anomali.
+    Use authentication and authorization mechanisms for server-side requests as well.
+
+    Monitor and log all external requests to detect anomalous behavior.

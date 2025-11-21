@@ -1,24 +1,25 @@
-Introduzione
-L’Insecure Direct Object Reference (IDOR) si verifica quando un’applicazione espone direttamente oggetti o risorse (es. file, record database) tramite identificatori prevedibili senza adeguati controlli di autorizzazione. Ciò permette ad un attaccante di accedere o manipolare risorse altrui.
+Introduction
 
-Cause tipiche di problemi
+Insecure Direct Object Reference (IDOR) occurs when an application directly exposes objects or resources (e.g., files, database records) via predictable identifiers without adequate authorization controls. This allows an attacker to access or manipulate other people's resources.
 
-    Esposizione di identificatori diretti e prevedibili (es. ID numerici incrementali).
+    Typical Causes of Problems
 
-    Mancanza o scarsa verifica delle autorizzazioni per l’accesso a risorse.
+    Exposing direct and predictable identifiers (e.g., incremental numeric IDs).
 
-    Assunzioni errate sulla sicurezza degli identificatori.
+    Lack of or poor authorization verification for resource access.
 
-    Uso di parametri non protetti nelle URL o nelle API.
+    Incorrect assumptions about identifier security.
 
-Soluzioni e prevenzione
+    Using unprotected parameters in URLs or APIs.
 
-    Implementare controlli rigorosi di autorizzazione per ogni richiesta di accesso a risorse.
+Remediation and Prevention
 
-    Utilizzare identificatori non prevedibili (es. UUID o token randomici).
+    Implement rigorous authorization controls for every request to access resources.
 
-    Non esporre direttamente riferimenti a oggetti sensibili.
+    Use unpredictable identifiers (e.g., UUIDs or random tokens).
 
-    Loggare e monitorare accessi alle risorse critiche per individuare attività sospette.
+    Do not directly expose references to sensitive objects.
 
-    Testare regolarmente le API e le interfacce per vulnerabilità IDOR.
+    Log and monitor access to critical resources to detect suspicious activity.
+
+    Regularly test APIs and interfaces for IDOR vulnerabilities.

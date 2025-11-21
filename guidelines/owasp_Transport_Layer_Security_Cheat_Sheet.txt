@@ -1,28 +1,29 @@
-Introduzione
-TLS è un protocollo crittografico fondamentale che protegge le comunicazioni su reti non sicure, garantendo riservatezza, integrità e autenticità tra client e server. La sua corretta implementazione è essenziale per prevenire intercettazioni, manomissioni e attacchi man-in-the-middle.
+Introduction
 
-Cosa fare / Cause di rischio
+TLS is a fundamental cryptographic protocol that protects communications over unsecured networks, ensuring confidentiality, integrity, and authenticity between client and server. Its correct implementation is essential to prevent eavesdropping, tampering, and man-in-the-middle attacks.
 
-    Uso di versioni obsolete o insicure di TLS (ad esempio SSL, TLS 1.0, 1.1).
+What to do / Risk factors
 
-    Configurazioni errate che permettono l’uso di cifrari deboli o insicuri.
+    Use of obsolete or insecure versions of TLS (e.g., SSL, TLS 1.0, 1.1).
 
-    Assenza di certificati validi o non correttamente verificati.
+    Incorrect configurations that allow the use of weak or insecure ciphers.
 
-    Implementazioni che non supportano il Perfect Forward Secrecy (PFS).
+    Lack of valid or incorrectly verified certificates.
 
-    Mancata gestione del rinnovo o revoca dei certificati.
+    Implementations that do not support Perfect Forward Secrecy (PFS).
 
-Soluzioni e prevenzione
+    Failure to manage certificate renewal or revocation.
 
-    Configurare sempre TLS nelle versioni più aggiornate (TLS 1.2 o superiore).
+Solutions and Prevention
 
-    Disabilitare protocolli e cifrari deboli e abilitare solo suite sicure.
+    Always configure the most up-to-date versions of TLS (TLS 1.2 or higher).
 
-    Usare certificati firmati da autorità di certificazione attendibili e implementarli correttamente.
+    Disable weak protocols and ciphers and enable only secure suites.
 
-    Supportare Perfect Forward Secrecy per proteggere le sessioni passate in caso di compromissione delle chiavi.
+    Use certificates signed by trusted certificate authorities and implement them correctly.
 
-    Monitorare e automatizzare la gestione dei certificati per evitare scadenze e revoche.
+    Support Perfect Forward Secrecy to protect past sessions in the event of key compromise.
 
-    Testare periodicamente la configurazione TLS con strumenti di analisi della sicurezza.
+    Monitor and automate certificate management to prevent expiration and revocations.
+
+    Periodically test TLS configuration with security analysis tools.

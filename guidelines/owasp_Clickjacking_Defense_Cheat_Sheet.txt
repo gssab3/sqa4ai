@@ -1,20 +1,21 @@
-Introduzione
-Il clickjacking è una tecnica malevola in cui un utente viene indotto a cliccare su elementi di una pagina web mascherati o sovrapposti, eseguendo azioni non intenzionali (ad esempio l’invio di un modulo o l’attivazione di comandi sensibili). Il documento OWASP fornisce indicazioni pratiche per proteggere le applicazioni web da questo attacco, con particolare attenzione alla prevenzione lato server e client.
+Introduction
 
-Principali rischi
+Clickjacking is a malicious technique in which a user is tricked into clicking on obscured or overlaid elements on a web page, performing unintended actions (such as submitting a form or activating sensitive commands). The OWASP document provides practical guidance for protecting web applications from this attack, with a focus on server- and client-side prevention.
 
-    Furto di informazioni sensibili (es. dati personali, credenziali).
+Main Risks
 
-    Esecuzione di operazioni non autorizzate su applicazioni legittime.
+    Theft of sensitive information (e.g., personal data, credentials).
 
-    Possibile compromissione di account e manipolazione di transazioni.
+    Performance of unauthorized operations on legitimate applications.
 
-Strategie di prevenzione
+    Possible account compromise and transaction manipulation.
 
-    Utilizzo delle intestazioni HTTP X-Frame-Options o Content-Security-Policy (frame-ancestors) per impedire che le pagine vengano caricate all’interno di iframe non autorizzati.
+Prevention Strategies
 
-    Implementazione di controlli lato server per verificare il referrer o l’origine della richiesta.
+    Use the X-Frame-Options or Content-Security-Policy (frame-ancestors) HTTP headers to prevent pages from being loaded within unauthorized iframes.
 
-    Evitare l’uso di contenuti caricabili in contesti non sicuri e ridurre al minimo gli elementi incorporabili da terze parti.
+    Implement server-side checks to verify the referrer or origin of the request.
 
-    Per applicazioni che devono essere visualizzate in iframe fidati, configurare regole di whitelisting specifiche.
+    Avoid the use of content that can be loaded in unsafe contexts and minimize elements that can be embedded by third parties.
+
+    For applications that need to be displayed in trusted iframes, configure specific whitelisting rules.

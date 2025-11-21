@@ -1,26 +1,27 @@
 Denial of Service Cheat Sheet
 
-Introduzione
-Questo cheat sheet fornisce indicazioni per prevenire e mitigare gli attacchi Denial of Service (DoS) e Distributed Denial of Service (DDoS), volti a rendere un’applicazione o un servizio indisponibile sovraccaricandolo di richieste o risorse. L’obiettivo è garantire la continuità operativa e la resilienza dell’infrastruttura.
+Introduction
 
-Problemi / Cause Tipiche
+This cheat sheet provides guidance for preventing and mitigating Denial of Service (DoS) and Distributed Denial of Service (DDoS) attacks, which are designed to render an application or service unavailable by overloading it with requests or resources. The goal is to ensure operational continuity and infrastructure resilience.
 
-    Mancanza di limiti di risorse o di rate limiting sulle richieste.
+Typical Problems / Causes
 
-    Assenza di controlli su input che possono causare elaborazioni pesanti o cicli infiniti.
+    Lack of resource limits or rate limiting on requests.
 
-    Architetture monolitiche non scalabili o con colli di bottiglia evidenti.
+    Lack of input controls, which can cause heavy processing or infinite loops.
 
-    Mancato utilizzo di protezioni a livello di rete e applicativo.
+    Monolithic architectures that are unscalable or have obvious bottlenecks.
 
-Cosa fare / Come prevenire
+    Failure to implement network and application-level protections.
 
-    Implementare rate limiting e throttling per ridurre richieste abusive.
+What to Do / How to Prevent
 
-    Validare input per prevenire elaborazioni eccessivamente onerose.
+    Implement rate limiting and throttling to reduce abusive requests.
 
-    Utilizzare architetture scalabili e bilanciatori di carico.
+    Validate inputs to prevent excessively expensive processing.
 
-    Adottare WAF, CDN e servizi di mitigazione DDoS dedicati.
+    Use scalable architectures and load balancers.
 
-    Monitorare traffico e risorse per individuare picchi anomali e reagire tempestivamente.
+    Adopt dedicated WAFs, CDNs, and DDoS mitigation services.
+
+    Monitor traffic and resources to identify abnormal spikes and respond promptly.

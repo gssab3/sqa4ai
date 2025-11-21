@@ -1,31 +1,31 @@
-Introduzione
-L’automazione dei test di autorizzazione è fondamentale per garantire che i sistemi di controllo degli accessi funzionino correttamente e siano robusti contro tentativi di accesso non autorizzati. Automatizzare questi test permette di individuare rapidamente problemi di autorizzazione durante lo sviluppo e nel ciclo di vita del software, migliorando la sicurezza generale dell’applicazione.
+Introduction
 
-Problemi e Cause Tipiche
+Automating authorization tests is essential to ensure that access control systems function properly and are robust against unauthorized access attempts. Automating these tests allows you to quickly identify authorization issues during development and throughout the software lifecycle, improving the overall security of the application.
 
-    Mancanza di copertura nei test di autorizzazione, con casi limite e permessi errati non individuati.
+Typical Problems and Causes
 
-    Test manuali troppo costosi e soggetti a errori o omissioni.
+    Lack of authorization test coverage, with edge cases and incorrect permissions going undetected.
 
-    Difficoltà nel simulare utenti con differenti ruoli e privilegi in modo sistematico.
+    Manual testing is too expensive and prone to errors or omissions.
 
-    Test che non riflettono scenari reali di attacco o manipolazione delle richieste.
+    Difficulty in systematically simulating users with different roles and privileges.
 
-    Assenza di integrazione continua dei test di autorizzazione nel processo di sviluppo.
+    Tests that do not reflect real-world attack or request manipulation scenarios.
 
-Cosa Fare / Come Prevenire
+    Lack of continuous integration of authorization tests into the development process.
 
-    Utilizzare framework di testing automatico che supportano la simulazione di utenti con ruoli e permessi diversi.
+What to Do / How to Prevent
 
-    Integrare test di autorizzazione nella pipeline di Continuous Integration (CI) per rilevare regressioni tempestivamente.
+    Use automated testing frameworks that support simulating users with different roles and permissions.
 
-    Definire casi di test chiari e completi che coprano tutte le funzionalità critiche e i livelli di accesso.
+    Integrate authorization tests into the Continuous Integration (CI) pipeline to detect regressions early.
 
-    Automatizzare la verifica dei permessi sia a livello di interfaccia utente sia a livello API.
+    Define clear and comprehensive test cases that cover all critical features and access levels.
 
-    Applicare tecniche di fuzz testing e penetration testing automatizzato per scoprire vulnerabilità nascoste.
+    Automate permission verification at both the user interface and API levels.
 
-    Registrare e analizzare i risultati dei test per migliorare continuamente la copertura e l’efficacia.
+    Apply fuzz testing and automated penetration testing techniques to uncover hidden vulnerabilities.
 
-    Collaborare con team di sicurezza e sviluppo per aggiornare i test in base a nuove minacce e cambiamenti del sistema.
+    Record and analyze test results to continuously improve coverage and effectiveness.
 
+    Work with security and development teams to update tests based on new threats and system changes.

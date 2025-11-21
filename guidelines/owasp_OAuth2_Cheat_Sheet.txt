@@ -1,28 +1,29 @@
-Introduzione
-Questo cheat sheet fornisce linee guida per implementare in modo sicuro OAuth 2.0, il protocollo standard per autorizzazioni delegate, molto usato per l’accesso e la gestione delle identità.
+Introduction
 
-Cause e problematiche
+OAuth2 sheet provides guidelines for securely implementing OAuth 2.0, the standard delegated authorization protocol widely used for access and identity management.
 
-    Implementazioni errate del flusso OAuth che possono portare a esposizione di token o accessi non autorizzati.
+Causes and Issues
 
-    Mancanza di validazione degli stati (state parameter) nei flussi di autorizzazione, esponendo a attacchi CSRF.
+    Incorrect OAuth flow implementations can lead to token exposure or unauthorized access.
 
-    Scarsa gestione della scadenza e revoca dei token.
+    Lack of state parameter validation in authorization flows, exposing them to CSRF attacks.
 
-    Trasmissione di token non cifrati o in contesti insicuri.
+    Poor management of token expiration and revocation.
 
-    Uso di redirect URI non sicuri o non validati, permettendo redirect malevoli.
+    Transmission of unencrypted tokens or tokens in insecure contexts.
 
-Soluzioni e prevenzione
+    Use of insecure or unvalidated redirect URIs, allowing malicious redirects.
 
-    Implementare correttamente i flussi OAuth con validazione del parametro state per protezione CSRF.
+Solutions and Prevention
 
-    Usare HTTPS per tutte le comunicazioni contenenti token e dati sensibili.
+    Correctly implement OAuth flows with state parameter validation for CSRF protection.
 
-    Limitare la durata e i privilegi dei token, implementando meccanismi di revoca.
+    Use HTTPS for all communications containing tokens and sensitive data.
 
-    Validare rigorosamente i redirect URI accettati.
+    Limit token lifetime and privileges by implementing revocation mechanisms.
 
-    Monitorare l’uso dei token per individuare eventuali anomalie o abusi.
+    Rigorously validate accepted redirect URIs.
 
-    Seguire le best practice ufficiali OAuth 2.0 e aggiornarsi sulle vulnerabilità note.
+    Monitor token use to detect any anomalies or abuse.
+
+    Follow official OAuth 2.0 best practices and stay updated on known vulnerabilities.

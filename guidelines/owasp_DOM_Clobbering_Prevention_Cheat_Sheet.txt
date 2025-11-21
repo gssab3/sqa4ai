@@ -1,26 +1,27 @@
-Introduzione
-Il DOM Clobbering è un attacco in cui un aggressore sfrutta la sovrascrittura di proprietà o metodi del DOM, tipicamente tramite elementi HTML con nomi o ID che sovrascrivono variabili JavaScript o funzioni critiche, causando comportamenti imprevisti o vulnerabilità XSS. È un problema spesso sottovalutato ma che può compromettere la sicurezza delle applicazioni web manipolando il modello DOM a livello di scripting.
+Introduction
 
-Cause tipiche
+DOM Clobbering is an attack in which an attacker exploits the overriding of DOM properties or methods, typically through HTML elements with names or IDs that override JavaScript variables or critical functions, causing unexpected behavior or XSS vulnerabilities. It is an often overlooked problem, but it can compromise the security of web applications by manipulating the DOM model at the scripting level.
 
-    Uso di elementi HTML con nomi, ID o attributi che collidono con variabili o funzioni JavaScript.
+Typical Causes
 
-    Assunzione errata che nomi di variabili globali non vengano sovrascritti da elementi DOM.
+    Using HTML elements with names, IDs, or attributes that collide with JavaScript variables or functions.
 
-    Mancanza di isolamento o di scope sicuri per il codice JavaScript nel frontend.
+    Incorrect assumption that global variable names are not overridden by DOM elements.
 
-    Accesso diretto a proprietà globali senza controlli o namespace.
+    Lack of isolation or secure scoping for JavaScript code on the front end.
 
-Soluzioni e prevenzione
+    Direct access to global properties without checks or namespaces.
 
-    Evitare di utilizzare nomi, ID o attributi che possono entrare in conflitto con variabili o metodi JavaScript globali.
+Solutions and Prevention
 
-    Usare nomi univoci e pattern di naming per gli elementi DOM.
+    Avoid using names, IDs, or attributes that may conflict with global JavaScript variables or methods.
 
-    Incapsulare il codice JavaScript in moduli o namespace per evitare conflitti globali.
+    Use unique names and naming patterns for DOM elements.
 
-    Validare e filtrare gli input che possono controllare attributi o nomi degli elementi DOM.
+    Encapsulate JavaScript code in modules or namespaces to avoid global conflicts.
 
-    Implementare pratiche di sviluppo sicure per la manipolazione del DOM, evitando assunzioni sul contesto globale.
+    Validate and filter inputs that may control DOM element attributes or names.
 
-    Testare l’applicazione per rilevare possibili sovrascritture di proprietà DOM.
+    Implement safe development practices for DOM manipulation, avoiding assumptions about global context.
+
+    Test the application for possible DOM property overrides.

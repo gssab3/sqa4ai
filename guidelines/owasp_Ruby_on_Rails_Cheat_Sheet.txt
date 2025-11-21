@@ -1,26 +1,27 @@
-Introduzione
-Questo cheat sheet offre indicazioni per proteggere applicazioni sviluppate con il framework Ruby on Rails, affrontando le vulnerabilità più comuni legate a questa piattaforma. L’obiettivo è aiutare sviluppatori a costruire applicazioni sicure e resilienti contro attacchi noti.
+Introduction
 
-Cause
+The Ruby on Rails Sheet provides guidance for securing applications developed with the Ruby on Rails framework, addressing the most common vulnerabilities associated with this platform. The goal is to help developers build secure and resilient applications against known attacks.
 
-    Utilizzo di versioni obsolete o non aggiornate del framework e delle librerie.
+Causes
 
-    Configurazioni di sicurezza non ottimali, come sessioni o gestione dei cookie insicure.
+    Using outdated or outdated versions of the framework and libraries.
 
-    Mancata o errata protezione contro Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), SQL Injection.
+    Suboptimal security configurations, such as insecure sessions or cookie handling.
 
-    Esposizione accidentale di dati sensibili tramite errori o log.
+    Lack of or incorrect protection against Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and SQL Injection.
 
-Soluzioni e prevenzione
+    Accidental exposure of sensitive data through errors or logs.
 
-    Mantenere aggiornate le versioni di Ruby on Rails e gemme utilizzate.
+Solutions and Prevention
 
-    Abilitare protezioni integrate come CSRF tokens e Strong Parameters per la validazione input.
+    Keep Ruby on Rails versions and gems up to date.
 
-    Usare tecniche di escaping e sanitizzazione per prevenire XSS.
+    Enable built-in protections such as CSRF tokens and Strong Parameters for input validation.
 
-    Implementare controlli rigorosi di autenticazione e autorizzazione.
+    Use escaping and sanitization techniques to prevent XSS.
 
-    Configurare correttamente sessioni e cookie (HttpOnly, Secure, SameSite).
+    Implement strict authentication and authorization controls.
 
-    Gestire in modo appropriato logging e gestione degli errori per non rivelare informazioni sensibili.
+    Properly configure sessions and cookies (HttpOnly, Secure, SameSite).
+
+    Properly manage logging and error handling to avoid revealing sensitive information.
