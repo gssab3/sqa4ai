@@ -37,3 +37,37 @@ Objectives:
 
 - Ensure communication between students and instructors
 - Reduce the time and effort required to find relevant information.
+
+The UniClass platform manages various features based on the user type:
+
+Unregistered User:
+- View the website homepage containing a form that, if completed, displays the schedule for the selected course.
+- View the Log In page for authentication.
+- View the Help page to contact UniClass support in case of malfunctions or for suggestions for implementations and technical improvements.
+- View the University Map.
+- View available classrooms and schedule availability.
+
+Student:
+- View their course schedule automatically on the homepage.
+- View their calendar, including the courses they have taken in any year or program.
+- Booking an exam session with an optional note
+- Communicate directly with a professor of your choice
+
+Professor:
+- View the course schedule for their classes on the homepage
+- View which and how many people are booked into their class session
+- Reply to student messages
+
+Course Coordinator:
+- Add, edit, or delete a class in a course
+- Change the class schedule for one or more courses
+- Send notices or messages to all students and professors
+
+Technical and administrative staff:
+- Add, edit, or remove accounts
+- View log files and system errors.
+
+Non-functional requirements:
+a. The site must be accessible via a web browser with https protocol
+b. The site must be responsive
+c. Passwords must not be stored in clear text in the database

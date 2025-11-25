@@ -82,7 +82,7 @@ llm = ChatOpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
     model="deepseek/deepseek-chat",
     temperature=0.1,
-    max_tokens=9000
+    max_tokens=10000
 )
 
 # Setup of retrieval
