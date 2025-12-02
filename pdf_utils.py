@@ -12,7 +12,7 @@ from reportlab.lib.enums import TA_CENTER
 def export_requirement_pdf(output_path: str, corpus: str, title: str = "Security Requirements Generated (GEN1+GEN2)"):
     """
     Create a PDF with a centered title and selectable/copyable body text.
-    - output_path: path to the generated PDF (e.g. 'requisiti_llm.pdf')
+    - output_path: path to the generated PDF (e.g. 'requirements_llm.pdf')
     - corpus: string with numbered requirements separated by newlines
     - title: title displayed at the top of the PDF
     """
@@ -22,7 +22,7 @@ def export_requirement_pdf(output_path: str, corpus: str, title: str = "Security
         rightMargin=2*cm, leftMargin=2*cm,
         topMargin=2*cm, bottomMargin=2*cm,
         title=title,
-        author="Pipeline RAG"
+        author="RAG System"
     )
 
     styles = getSampleStyleSheet()

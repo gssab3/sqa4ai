@@ -37,7 +37,7 @@ for filename in os.listdir(docs_folder):
         loader = TextLoader(os.path.join(docs_folder, filename), encoding="utf-8")
         docs = loader.load()
 
-        # valori di default
+        # default values
         category = "unknown"
         owasp_top_10 = ""
 
@@ -48,7 +48,7 @@ for filename in os.listdir(docs_folder):
 
         for doc in docs:
             doc.page_content = (
-                f"[Categoria: {category}]\n"
+                f"[Category: {category}]\n"
                 f"[OWASP Top 10: {owasp_top_10}]\n\n"
                 f"{doc.page_content}"
             )
@@ -172,7 +172,7 @@ for owasp_key, entries in data1["owasp_map"].items():
         assert cat in all_categories, f"Category out of domain in gen1: {cat_raw}"
         assert cat in filtered_categories, f"Not filtered category in gen1: {cat}"
 
-        # Normalizating record
+        # Normalize record
         norm1.append({
             "category": cat,
             "requirement": req,
@@ -283,11 +283,11 @@ count_gen2 = Counter(r["category"] for r in norm2)
 all_norm = norm1 + norm2
 final_counting = Counter(r["category"] for r in all_norm)
 
-print("\n[GEN2] Counting requirements per categoria (solo gen2):")
+print("\n[GEN2] Counting requirements per category (generation 2 only):")
 for cat in sorted(not_covered_categories):
     print(f"- {cat}: {count_gen2[cat]}")
 
-print("\n[TOTALE] Counting requirements per categoria (GEN1 + GEN2):")
+print("\n[TOTAL] Counting requirements per category (GEN1 + GEN2):")
 for cat in sorted(filtered_categories):
     g1 = counts_gen1[cat]
     g2 = count_gen2[cat]
@@ -318,7 +318,7 @@ for i, r in enumerate(all_norm, 1):
 lines.append("")  # empty line
 lines.append(f"Total: GEN1={len(norm1)}, GEN2={len(norm2)}, Total={len(all_norm)}")
 lines.append("")
-lines.append("Counting per categoria (total = gen1 + gen2):")
+lines.append("Counting per category (total = gen1 + gen2):")
 for cat in sorted(filtered_categories):
     g1 = counts_gen1[cat]
     g2 = count_gen2[cat]
