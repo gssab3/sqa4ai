@@ -76,7 +76,7 @@ embeddings = HuggingFaceEmbeddings(
 print("Creating FAISS...")
 vectorstore = FAISS.from_documents(split_documents, embeddings)
 
-# LLM (deepseek v1)
+# LLM (deepseek v3)
 llm = ChatOpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY"),
