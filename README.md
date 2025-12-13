@@ -1,8 +1,7 @@
-# SQA4AI
+# SQA4AI - Enhancing Security Requirements Coverage via RAG and Automated Feedback Loops
 
 ## Introduction
-**Software Quality Assurance for Artificial Intelligence** is 
-a specialized RAG framework designed to act as an automated Quality Assurance mechanism for Security Requirements Engineering.
+This project is a specialized RAG framework designed to act as an automated Quality Assurance mechanism for Security Requirements Engineering.
 
 ## Architecture
 
