@@ -1,0 +1,28 @@
+Category;Test 1;Test 2;Test 3;Test 4;Test 5;Test 6;Test 7
+Access Management;2;0;3;4;2;0;3
+Authentication;4;3;2;4;3;3;4
+Availability;4;0;3;0;4;0;0
+Client-Side Security;0;2;3;0;3;2;2
+Data Protection;2;2;5;4;3;4;2
+Input Validation;2;2;4;4;3;4;3
+Operational Security;0;3;0;0;0;0;0
+Privacy Security;4;4;0;0;0;2;2
+Secure Coding;4;4;6;4;4;2;3
+Secure Design;4;2;4;4;3;4;3
+Security Testing;4;0;0;4;0;4;3
+Software Maintenance Security;0;5;0;0;0;2;0
+Web Application Security;3;3;9;11;8;6;5
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+;;;;;;;
+Requirements in Gen1;15;30;30;9;30;30;30
+Requirements in Gen2;18;0;9;30;3;3;0
+Final Sum;33;30;39;39;33;33;30
+Applicability;25/33;33/33;33/39;33/39;25/33;24/33;23/30
+Applicability %;76%;100%;85%;85%;76%;72%;76%
+Completeness;3,3;3;4,333333333;4,875;3,666666667;3,3;3
+Coverage;0.77;0.77;0.69;0.61;0.69;0.77;0.77
+;;;;;;;
+Problems: 1/8 Executions;;;;;;;
