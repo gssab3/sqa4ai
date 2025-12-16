@@ -31,15 +31,3 @@ This project is a specialized RAG framework designed to act as an automated Qual
 ### Prerequisites
 - Python 3.10+
 - OpenRouter API key
-
-### Installation
-```bash
-git clone https://github.com/gssab3/sqa4ai.git
-cd sqa4ai
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-### Run
-python rag_system.py
